@@ -1,0 +1,3 @@
+= RAG
+
+This is _Section 1_ of _Chapter 4_ in the *hello* quick course....
