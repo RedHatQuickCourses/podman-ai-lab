@@ -1,6 +1,63 @@
-= An Example Quick Course
+= Podman AI Lab
 :navtitle: Home
 
 == Introduction
 
-This is an example quick course demonstrating the usage of Antora for authoring and publishing quick courses.
+
+In this course, through the use of Podman Desktop with the AI Lab Extension: students will  experiment with open-source AI models, interacting with integration code examples, and deploying multiple types of AI powered applications using standard laptop / desktop hardware.
+
+In this course you will treat AI Model containerization, Model serving, Model inference, and templatized AI Application deployment as a Black Box, handled completely by the Podman application.   
+
+No knowledge of these topics is required, you simply need to to select components from GUI - graphical user interface and let Podman Desktop handle the rest.
+
+This course will be experienced from the perspective of an Application Developer who works for the ABC corporation. They have been tasked with integrating an AI powered Chatbot into the web interfaces. Our developer will have no experience with AI Models, the Podman Desktop application or understanding of their operation.
+
+This course will progress with the developer through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the playground to experiment & investigate the models knowledge, and finally use *recipe* template to deploy an AI enabled application or two. 
+
+
+== Course Objectives:
+
+As a result of taking this course, you will gain an understanding of the role of the developer in enabling AI backed applications. 
+
+You will gain the ability to use podman desktop to create a container runtime environment to host an AI model, utilize the playground feature to interact with various AI Models, know where to locate code snippets to connect to these AI models, and deploy an AI enabled application using pre-create templates called recipes. 
+
+* Technical overview of Podman Desktop Application
+* Understand the components of Podman AI Lab extension
+* Understand Podman AI Lab from a developer perspective
+* Experiement with AI Models usign the playground
+* Deploy an AI enabled application
+* Knowledge of an Organization's AI Model adoption approach
+
+
+== Prerequisites
+
+* Basic knowledge of large language model terminology
+* Interest the simplest way to interact with AI Models
+* Hardware with at least 16GB of memory, 60GB of disk space, for a good experience.
+
+
+
+== Optional: Workshop Environment for Red Hat Associates
+
+Red Hat associates can use the Red Hat Demo Platform to provision Podman Desktop Workshop
+
+Use the https://demo.redhat.com/catalog?search=podman&item=babylon-catalog-prod%2Fsandboxes-gpte.rhel-podman-desktop.prod[Getting Started with Podman Desktop] catalog item from Red Hat Demo Platform (RHDP).
+
+When ordering this demo item:
+
+* Select `Practice/Enablement` for the `Activity` field, and `Learning about the product` for the `Purpose`.
+
+* If you have a Salesforce ID for a customer sales opportunity, then copy it to the `Salesforce ID` field. Otherwise, leave the field blank
+
+* In the `Region` field, select the region closest to your Geographic area.
+
+* Review the auto-stop and auto-destroy timers. You can change this later after classroom provisioning by opening a ticket with the RHDP team.
+
+
+=== Install Podman Desktop on local hardware
+
+ . Instuctions on how to https://podman-desktop.io/docs/installation[Install Podman Desktop on Mac, Linux, or Windows].  
+  * This does *NOT* have Podman AI Lab extension pre-installed.
+
+ . Instructions on how to https://podman-desktop.io/docs/ai-lab/installing[Install Podman AI Lab extention].
+
