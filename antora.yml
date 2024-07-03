@@ -1,5 +1,5 @@
-name: placeholder-course-name
-title: Placeholder Course Title
+name: Podman Desktop AI Lab
+title: Podman AI Lab Labs
 version: 1
 nav:
 - modules/ROOT/nav.adoc

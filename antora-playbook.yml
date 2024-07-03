@@ -1,6 +1,6 @@
 site:
-  title: Placeholder Course Title
-  start_page: placeholder-course-name::index.adoc
+  title: Podman AI Lab
+  start_page: podman-ai-lab::index.adoc
 
 content:
   sources:

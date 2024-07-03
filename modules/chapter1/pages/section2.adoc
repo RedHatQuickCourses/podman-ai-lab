@@ -1,3 +1,28 @@
-= Section 2
+= Podman
 
-This is _Section 2_ of _Chapter 1_ in the *hello* quick course....
+
+== What is Podman ?
+
+Podman (short for pod manager) is an open source tool for developing, managing, and running containers. Developed by Red Hat® engineers along with the open source community, Podman manages the entire container ecosystem.  Developers can also take advantage of Podman Desktop, a graphical user interface (GUI) for using Podman in local environments.
+
+Users can run Podman on various Linux® distributions, such as Red Hat Enterprise Linux, Fedora, CentOS, and Ubuntu. 
+
+
+=== What are pods?
+Pods are groups of containers that run together and share the same resources, similar to Kubernetes pods. Podman manages these pods via a simple command-line interface (CLI) and the libpod library, which provides application programming interfaces (APIs) for managing containers, pods, container images, and volumes. Podman's CLI creates and supports Open Container Initiative (OCI) containers, which are designed to meet industry standards for container runtimes and formats. 
+
+=== What makes Podman different from other container engines?
+Podman stands out from other container engines because it’s daemonless, meaning it doesn't rely on a process with root privileges to run containers.
+
+Daemons are processes that run in the background of your system to do the work of running containers without a user interface. Think of daemons as the intermediary communicating between the user and the container itself.
+
+While daemons can be a convenient way to manage your container environment, they can also introduce security vulnerabilities. Many daemons run with root privileges. In Linux systems, the root account acts as a superuser with administrative access (while bypassing the need for admin verification) to read files, install programs, edit applications, and more. This makes daemons an ideal target for hackers who want to gain control of your containers and infiltrate the host system.
+
+Podman cuts out the daemon and lets regular users run containers without interacting with a root-owned daemon, or allows for the use of rootless containers. By going rootless, users can create, run, and manage containers without requiring processes with admin privileges, making your container environment more accessible while reducing security risks. Additionally, Podman launches each container with a Security-Enhanced Linux (SELinux) label, giving administrators more control over what resources and capabilities are provided to container processes.
+
+== What is Podman Desktop?
+Podman Desktop is a GUI for Podman, which provides a central place for developers to work with containers right on their laptop or workstation. Developers can build, push, and pull images and manage Podman resources directly using a GUI that’s consistent across local Linux, Windows, and macOS environments. Podman Desktop also lets developers deliver ready-to-deploy containerized applications to Kubernetes environments.
+
+Podman Desktop supports extension packs, which open up additional capabilities. One example, Podman AI Lab, adds recipes for building applications that work with large language models (LLMs) in a local environment and includes a curated catalog of open source-licensed LLMs.
+
+Let's explore the components of Podman Desktop with AI Labs in the next section.
