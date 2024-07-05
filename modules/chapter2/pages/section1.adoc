@@ -4,8 +4,10 @@
 
 Podman Desktop is an innovative desktop tool that brings the power of containers and Kubernetes to your computer, making it easy to create, manage, and run containerized applications visually. Intuitive interfaces and smart integration with the most important container technologies, support for Mac, Windows and Linux, Podman Desktop helps you to use containers, pods and Kubernetes on your local machine.
 
+[NOTE]
 https://podman-desktop.io/docs/installation/macos-install[Podman Desktop Installation Documentation]
 
+---
 
 === Installation for Windows
 
@@ -52,7 +54,7 @@ To verify that Podman is set up:
 
  * In the Dashboard, the Podman tile displays Podman is running.
 
-
+---
 
 === Installation for MacOs
 
@@ -82,6 +84,8 @@ When you open Podman Desktop for the first time, click on the "View detection ch
 Optional installation using brew
 
   brew install podman-desktop
+
+---
 
 === Installation for Linux
 
@@ -115,6 +119,7 @@ Optional installation using brew
 
  $ flatpak update --user io.podman_desktop.PodmanDesktop
 
+---
 
 With Podman Desktop & Podman installed, let's continue with the insallation of the Podman AI Lab in the next section.
 

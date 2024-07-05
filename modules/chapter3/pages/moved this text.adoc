@@ -1,0 +1,34 @@
+= Model Catalog
+
+ LAB - Deploy Chatbot Application. 
+
+Installation of PodMan Desktop 
+Optional new Demo Hub Catalog item- RHEL 9  Desktop with Podman - latest versions
+Hardware requirements - 16GB memory, 100Gb storage, 
+Optional InstructLabs Loaded 
+Installed on Local Laptop Workstation - Linux / Apple Silicon preferred.
+
+Download Graphite Model 
+
+ . Launch the playground along with the Service Component
+ . Explore prompt generation
+ . Explore model tuning parameters
+ . Explore multiple models
+ . Expand on AI Model interaction with an Front end application
+ . Chat is similar to the playground - notice it launches in a new browser window
+ . Summarizer extract main ideas from text documents
+ . Code Generation is specifically designed to create code files
+ . Audio to Text 
+ . Object Detection are all examples of business solutions. 
+ . Launch the Chatbot component 
+ . Evaluate the functionality compared to the playground
+ . Open the deployed chat application code using vscode
+ . Evaluate the code files provided
+ . Understand how a Developer would utilize these to deploy sample
+ . Extend the capabilities of the AI Model
+ . Rag Example
+ . Utilize RAG database
+ . Validate the enhanced responses from the ChatBot
+ . InstructLab
+ . Train the Model with new knowledge & Skills
+ . Export a new model to try with the Chatbot feature

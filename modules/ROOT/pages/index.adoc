@@ -10,31 +10,40 @@ In this course you will treat AI Model containerization, Model serving, Model in
 
 No knowledge of these topics is required, you simply need to to select components from GUI - graphical user interface and let Podman Desktop handle the rest.
 
-This course will be experienced from the perspective of an Application Developer who works for the ABC corporation. They have been tasked with integrating an AI powered Chatbot into the web interfaces. Our developer will have no experience with AI Models, the Podman Desktop application or understanding of their operation.
+This course will be experienced from the perspective of an *Application Developer* who works for the ABC corporation. They have been tasked with integrating an AI powered Chatbot into multiple web interfaces. Our developer will have no experience with: the Podman Desktop application, AI Models or understanding of their operation.
 
-This course will progress with the developer through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the playground to experiment & investigate the models knowledge, and finally use *recipe* template to deploy an AI enabled application or two. 
+This course will progress with the developer through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the playground to experiment & investigate the models knowledge, and finally use *recipe* templates to deploy an AI enabled application or two. 
 
 
 == Course Objectives:
 
 As a result of taking this course, you will gain an understanding of the role of the developer in enabling AI backed applications. 
 
-You will gain the ability to use podman desktop to create a container runtime environment to host an AI model, utilize the playground feature to interact with various AI Models, know where to locate code snippets to connect to these AI models, and deploy an AI enabled application using pre-create templates called recipes. 
+You will gain the ability to:
 
-* Technical overview of Podman Desktop Application
-* Understand the components of Podman AI Lab extension
-* Understand Podman AI Lab from a developer perspective
-* Experiement with AI Models usign the playground
-* Deploy an AI enabled application
-* Knowledge of an Organization's AI Model adoption approach
+ . Use podman desktop to create a container runtime environment to host an AI model, 
+ ** Technical overview of Podman Desktop Application
+ ** Understand the components of Podman AI Lab extension
+ ** Understand Podman AI Lab from a developer perspective
+
+ . Utilize the playground feature to interact with various AI Models 
+ ** Experiement with AI Models to determine their capabilities
+
+
+ . Use code samples to simplify integration with existing code bases
+ **  Know where to locate code snippets to connect to these AI models  
+
+ . Deploy an AI enabled application using pre-create templates called recipes.
+ **  Reverse engineer open source code used in recipes for AI enabled applications
+
 
 
 == Prerequisites
 
 * Basic knowledge of large language model terminology
 * Interest the simplest way to interact with AI Models
-* Hardware with at least 16GB of memory, 60GB of disk space, for a good experience.
-
+* Hardware with 4vCPUs, 8GB of memory, 20~60GB of disk space; for a good experience.
+* MacOS, Windows, Linux Operating System with a GUI or Desktop enabled.
 
 
 == Optional: Workshop Environment for Red Hat Associates
@@ -53,11 +62,4 @@ When ordering this demo item:
 
 * Review the auto-stop and auto-destroy timers. You can change this later after classroom provisioning by opening a ticket with the RHDP team.
 
-
-=== Install Podman Desktop on local hardware
-
- . Instuctions on how to https://podman-desktop.io/docs/installation[Install Podman Desktop on Mac, Linux, or Windows].  
-  * This does *NOT* have Podman AI Lab extension pre-installed.
-
- . Instructions on how to https://podman-desktop.io/docs/ai-lab/installing[Install Podman AI Lab extention].
 

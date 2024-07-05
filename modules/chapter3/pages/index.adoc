@@ -1,3 +1,10 @@
 = Podman AI Lab
 
-This is the home page of _Chapter 3_ in the *hello* quick course....
+== When evaluating AI models
+
+Business problems, consider the following:
+
+ * Problem Type: Identify the nature of the problem you're trying to solve. Is it a well-defined, structured problem that can be easily modeled? Or is it a complex, unstructured problem that requires advanced machine learning techniques?
+* Data Availability: Assess the amount and quality of data available for the problem. More data can help improve model performance, especially for complex tasks. However, having too much data can also introduce noise and bias, which may negatively impact model performance.
+* Computational Resources: Evaluate the computational resources available for model development and deployment. This includes hardware, software, and infrastructure costs.
+* Business Context: Consider the broader business context, such as the organization's goals, budget, and regulatory requirements. For example, if data privacy is a concern, you may need to opt for models that can handle sensitive information securely and ethically.
