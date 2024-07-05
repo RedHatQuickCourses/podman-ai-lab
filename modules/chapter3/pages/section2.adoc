@@ -1,3 +1,5 @@
 = Playground
 
 This is _Section 2_ of _Chapter 3_ in the *hello* quick course....
+
+image::playground.gif[width=640]

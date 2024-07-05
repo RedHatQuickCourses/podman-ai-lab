@@ -1,3 +1,5 @@
 = Model Services
 
 This is _Section 2_ of _Chapter 3_ in the *hello* quick course....
+
+image::start-inference-server.gif[width=640]

@@ -1,3 +1,125 @@
 = Podman Desktop
 
-This is _Section 1_ of _Chapter 2_ in the *hello* quick course....
+== Podman Desktop Installation
+
+Podman Desktop is an innovative desktop tool that brings the power of containers and Kubernetes to your computer, making it easy to create, manage, and run containerized applications visually. Intuitive interfaces and smart integration with the most important container technologies, support for Mac, Windows and Linux, Podman Desktop helps you to use containers, pods and Kubernetes on your local machine.
+
+[NOTE]
+https://podman-desktop.io/docs/installation/macos-install[Podman Desktop Installation Documentation]
+
+---
+
+=== Installation for Windows
+
+To install Podman Desktop:
+
+ . https://podman-desktop.io/downloads/windows[Download the Windows installer.]
+
+ . To start the Podman Desktop installer, open the downloaded file.
+
+Installing Podman:
+
+On Windows, running the Podman container engine requires running a Linux distribution on a virtual machine.
+
+Podman Desktop creates a Windows Subsystem for Linux version 2 (WSL 2) virtual machine: the Podman Machine.
+
+Requirements:
+
+ .. 6 GB RAM for the Podman Machine.
+ .. Windows Subsystem for Linux version 2 (WSL 2) prerequisites. See Enabling WSL 2, WSL basic commands, and Troubleshooting WSL 2:
+ ... The Windows user has administrator privileges.
+ ... Windows 64bit.
+ ... Windows 10 Build 19043 or greater, or Windows 11.
+ ... On a virtual machine: Nested Virtualization enabled.
+
+To install the Podman Machine:
+
+To prepare your system, enable the WSL feature, without installing the default Ubuntu distribution of Linux.
+
+Open the Command Prompt, and run:.
+
+  wsl --install --no-distribution
+
+ * Restart your computer.
+
+ * The Dashboard screen displays:  Podman needs to be set up.
+
+ * Click the Set up button.
+
+ * Review and validate all confirmation screens to set up the Podman Machine.
+
+ * When necessary, follow the instructions to install system prerequisites.
+
+To verify that Podman is set up:
+
+ * In the Dashboard, the Podman tile displays Podman is running.
+
+---
+
+=== Installation for MacOs
+
+
+Download the *.dmg* file from the https://podman-desktop.io/downloads/macos[Downloads] section of this website.
+
+[NOTE]
+While we recommend getting the "universal" binary file which will work irrespective of the chip architecture your Mac possesses, you also have the option to get the applicable .dmg file depending on your Mac Hardware Architecture (that is Intel or Apple M1).
+
+ . Locate the downloaded file, and double-click on it. (Usually, you will find the downloaded file in the Downloads folder)
+
+ .  Drag Podman Desktop icon to the Applications folder.
++
+Start Podman Desktop from the 'Launchpad' or Mac's Applications directory.
++
+. Install Podman from Podman Desktop, if not yet installed.
++
+When you open Podman Desktop for the first time, click on the "View detection checks" button to scan if all the prerequisites to use Podman Desktop are met. If it says ❌ podman cli was not found in the PATH, then you need to install the Podman CLI/Engine which can be done within the application.
++
+. Click on the "Install" button next to the "View detection checks" button, and follow the instructions on screen.
+
+. You will be redirected to the Podman Installer. Follow the instructions on screen and enter your system password when asked.
+
+. After the installation is complete, close the installation program. Podman Engine has been installed and you are now ready to use Podman Desktop.
+
+
+Optional installation using brew
+
+  brew install podman-desktop
+
+---
+
+=== Installation for Linux
+
+*Procedure*
+
+ * Verify the Flathub repository is enabled, and add it if required:
+ +
+
+ flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
++
+
+ * Install Podman Desktop from Flathub:
++
+ $ flatpak install --user flathub io.podman_desktop.PodmanDesktop
+
+
+*Verification*
+
+
+* Open Podman Desktop from a terminal:
++
+
+ $ flatpak run io.podman_desktop.PodmanDesktop
++
+
+
+*Update*
+
+ * Update Podman Desktop from Flathub:
+ +
+
+ $ flatpak update --user io.podman_desktop.PodmanDesktop
+
+---
+
+With Podman Desktop & Podman installed, let's continue with the insallation of the Podman AI Lab in the next section.
+

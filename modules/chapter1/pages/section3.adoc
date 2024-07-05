@@ -1,18 +1,33 @@
 = Podman AI Lab
 
+== What is Podman AI Lab
+
+Podman AI Lab is an open-source tool that enables users to work with large language models (LLMs) on a local environment, simplifying the process of getting started with AI and its applications in their projects.
+
+Podman AI Lab is designed to work seamlessly with Podman Desktop, allowing developers to leverage the power of LLMs without needing to rely on external infrastructure.
+
+It offers resources and guidance for beginners, making it easy to explore AI and its potential.
+Users can experiment with various models and prompts to find the best fit for their needs, thanks to the model experimentation capability.
+
+Podman AI Lab simplifies the process of deploying and managing AI models in a production-like environment, making model serving accessible to all.
+
+The extension provides interactive environments for users to try out and test various AI applications, such as chatbots, natural language processing, and computer vision tasks, through playgrounds for common use cases.
+
+The extension can be installed quickly and easily on macOS, Windows, and Linux systems using the Podman Desktop interface.
+
+
+=== ABC Developers notes Podman AI
+---
+
+Reading through the documtation of Podman AI Labs to get a better idea of the features available, our ABC Developer is able to learn the following:
 
 _Podman AI Lab is an open source extension for Podman Desktop to work with LLMs (Large Language Models) on a local environment. It provides key open-source technologies to start building on AI. A curated catalog of so-called recipes helps navigate the jungle of AI use cases and AI models. AI Lab further ships playgrounds: environments to experiment with and test AI models, for instance, a chat bot._
 
+_As AI and data science move into mainstream application development, tools like Podman AI Lab can help fuel developer adoption of GenAI for building intelligent applications or enhancing their workflow using AI-augmented development capabilities. AI Lab features a recipe catalog with sample applications that give developers a jump start on some of the more common use cases for LLMs._
 
-As AI and data science move into mainstream application development, tools like Podman AI Lab can help fuel developer adoption of GenAI for building intelligent applications or enhancing their workflow using AI-augmented development capabilities. AI Lab features a recipe catalog with sample applications that give developers a jump start on some of the more common use cases for LLMs.
+== Primary Features of Podman AI Labs
 
-== Developer storline Continues:
-
-*Story around how exploration & play within the environment can yeild results and buils confidence.*
-
-
-
-== Recipes Catalog
+=== Recipes Catalog
 
 Podman AI Lab ships with a so-called Recipes Catalog that helps you navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple models allows finding the optimal one for your use case.
 
@@ -22,7 +37,7 @@ Podman AI Lab ships with a so-called Recipes Catalog that helps you navigate a n
  * *Object detection* helps identify and locate objects within digital images or video frames. It is a fundamental component in various applications, including autonomous vehicles, retail inventory management, precision agriculture, and sports broadcasting.
  * *Audio-to-text* transcription involves the process of automatically transcribing spoken language into written text, facilitating documentation, accessibility, and analysis of audio content.
 
-== AI Models
+=== AI Models
 
 Models Catalog -  curated list of Open Source models with the Apache 2.0 license. Once downloaded, the models are available to be used for AI applications, model services and playgrounds.
 
@@ -40,6 +55,8 @@ Once started, each playground ships with a generic chat client to interact with 
 
 Podman AI Lab includes a playground environment that allows users to interact with models and observe their behavior. This can be used to test, experiment and develop prototypes and applications with the models. An intuitive user prompt helps in exploring the capabilities and accuracy of various models and aids in finding the best model and the best settings for the use case in the application.
 
+
+==  ABC Developer note on AI Models
 
 === GGUF Format:
 
