@@ -112,6 +112,9 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter4/section2.html">InstructLab</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter4/section3.html">Roadmap</a>
+  </li>
 </ul>
   </li>
 </ul>
@@ -163,13 +166,24 @@
 <article class="doc">
 <h1 class="page">Podman</h1>
 <div class="sect1">
+<h2 id="_abc_developers_research"><a class="anchor" href="#_abc_developers_research"></a>ABC Developers Research</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As our ABC developer begins their reserach into Podman suite of of applications, they took notes that might be helpful for the rest of use. We&#8217;ll use these notes, beginning with a brief review of podman to gain some basic knowledge before diving into the lab portion of this course.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_what_is_podman"><a class="anchor" href="#_what_is_podman"></a>What is Podman ?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Podman (short for pod manager) is an open source tool for developing, managing, and running containers. Developed by Red Hat® engineers along with the open source community, Podman manages the entire container ecosystem.  Developers can also take advantage of Podman Desktop, a graphical user interface (GUI) for using Podman in local environments.</p>
+<p>Podman (short for pod manager) is an open source tool for developing, managing, and running containers. Developed by Red Hat® engineers along with the open source community, Podman is capable of managing the entire container ecosystem.  Developers can also take advantage of Podman Desktop, a graphical user interface (GUI) for using Podman in local environments.</p>
 </div>
 <div class="paragraph">
 <p>Users can run Podman on various Linux® distributions, such as Red Hat Enterprise Linux, Fedora, CentOS, and Ubuntu.</p>
+</div>
+<div class="paragraph">
+<p>While <strong>"containers are Linux,"</strong> Podman also runs on Mac and Windows, where it provides a native podman CLI and embeds a guest Linux system to launch containers. This guest is referred to as a Podman machine and is managed with the podman machine command. Podman on Mac and Windows also listens for Docker API clients, supporting direct usage of Docker-based tools and programmatic access from your language of choice.</p>
 </div>
 <div class="sect2">
 <h3 id="_what_are_pods"><a class="anchor" href="#_what_are_pods"></a>What are pods?</h3>
@@ -189,7 +203,7 @@
 <p>While daemons can be a convenient way to manage your container environment, they can also introduce security vulnerabilities. Many daemons run with root privileges. In Linux systems, the root account acts as a superuser with administrative access (while bypassing the need for admin verification) to read files, install programs, edit applications, and more. This makes daemons an ideal target for hackers who want to gain control of your containers and infiltrate the host system.</p>
 </div>
 <div class="paragraph">
-<p>Podman cuts out the daemon and lets regular users run containers without interacting with a root-owned daemon, or allows for the use of rootless containers. By going rootless, users can create, run, and manage containers without requiring processes with admin privileges, making your container environment more accessible while reducing security risks. Additionally, Podman launches each container with a Security-Enhanced Linux (SELinux) label, giving administrators more control over what resources and capabilities are provided to container processes.</p>
+<p><strong>Podman cuts out the daemon and lets regular users run containers without interacting with a root-owned daemon, or allows for the use of rootless containers.</strong> By going rootless, users can create, run, and manage containers without requiring processes with admin privileges, making your container environment more accessible while reducing security risks. Additionally, Podman launches each container with a Security-Enhanced Linux (SELinux) label, giving administrators more control over what resources and capabilities are provided to container processes.</p>
 </div>
 </div>
 </div>
