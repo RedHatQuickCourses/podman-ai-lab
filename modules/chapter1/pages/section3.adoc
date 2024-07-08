@@ -16,10 +16,10 @@ The extension provides interactive environments for users to try out and test va
 The extension can be installed quickly and easily on macOS, Windows, and Linux systems using the Podman Desktop interface.
 
 
-=== ABC Developers notes Podman AI
+=== GizmoGobble's developers notes Podman AI Lab
 ---
 
-Reading through the documtation of Podman AI Labs to get a better idea of the features available, our ABC Developer is able to learn the following:
+Reading through the documtation of Podman AI Labs to get a better idea of the features available, our GG developer team is able to learn the following:
 
 _Podman AI Lab is an open source extension for Podman Desktop to work with LLMs (Large Language Models) on a local environment. It provides key open-source technologies to start building on AI. A curated catalog of so-called recipes helps navigate the jungle of AI use cases and AI models. AI Lab further ships playgrounds: environments to experiment with and test AI models, for instance, a chat bot._
 
@@ -43,33 +43,38 @@ Models Catalog -  curated list of Open Source models with the Apache 2.0 license
 
 === Model Services
 
-Once a model has been downloaded, you can start an inference server for the model. This allows to test the model using a playground environment or to connect applications as the inference server is exposing a well know chat API.
+Once a model has been downloaded, you can start an inference server for the model. This allows testing of the model using a playground environment or to connect applications as the inference server is exposing a well know *OpenAI-compatible API*.
 
 A model service offers a configurable endpoint via an OpenAI-compatible web server, facilitating a seamless integration of AI capabilities into existing applications. Upon initialization, effortlessly access detailed service information and generate code snippets in multiple programming languages to ease application integration.
 
+The Services page allows for accessing running model services and provides further details and code snippets to interact with them.
+
 === Playgrounds
-
-The integrated Playground environments allow for experimenting with available models in a local environment. An intuitive user prompt helps in exploring the capabilities, accuracy of various models and aids in finding the best model for the use case at hand. The Playground interface further allows for parameterizing models to further optimize the settings and attributes of each model.
-
-Once started, each playground ships with a generic chat client to interact with the model service. The Services page allows for accessing running model services and provides further details and code snippets to interact with them.
 
 Podman AI Lab includes a playground environment that allows users to interact with models and observe their behavior. This can be used to test, experiment and develop prototypes and applications with the models. An intuitive user prompt helps in exploring the capabilities and accuracy of various models and aids in finding the best model and the best settings for the use case in the application.
 
+The Playground interface further allows for parameterizing models to further optimize the settings and attributes of each model.
 
-==  ABC Developer note on AI Models
+Once started, each playground ships with a generic chat client to interact with the model service. The Services page allows for accessing running model services and provides further details and code snippets to interact with them.
+
+
+
+== AI Models
 
 === GGUF Format:
 
+Podman AI Lab supports large language models in the GGUF format. 
 
-Ability to download these quantized, .gguf files models, and run them locally on a laptop or desktop. Select the model based on the business solutions to provide. 
-Optionally, Models Catalog -  curated list of Open Source models with the Apache 2.0 license.  import your own models. 
+GPT-Generated Unified Format (GGUF) is a file format that streamlines the use and deployment of large language models (LLMs). GGUF is specially designed to store inference models and perform well on consumer-grade computer hardware.
 
-Convertion tool included with podman ia lab respository ??
+Ability to download these quantized, .gguf files models, and run them locally on a laptop or desktop. 
+
+https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository] provides users with the maximum freedom of choice for their models, we provide a tool to quickly and easily convert and quantize a model from huggingface into a *.GGUF format for use with our *.GGUF compatible model servers.
 
 
 === HuggingFace _ 
 
 
-
+https://huggingface.co/[The Hugging Face Hub] is a platform with over 350k models, 75k datasets, and 150k demo apps (Spaces), all open source and publicly available, in an online platform where people can easily collaborate and build ML together.
 
 

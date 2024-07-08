@@ -4,58 +4,16 @@
 
 Podman AI Lab provides a curated list of open source AI models and LLMs. Once downloaded, the models are available to be used for AI applications, model services and playgrounds. 
 
+There are four tabs availble in the Models Catalog
+
+ * *All* - display all available catalog models, whether downloaded or available is indicated by the model icon being highlighted in green for downloaded models.
+ * *Downloaed* - displays all models that have been store locally for offline use. 
+ * *Imported* - displays any models imported that were not originally listed in the catalog
+ * *Available* - display all catalog models that have not been downloaded.
+
 Check license and required resources. Import your own models.
 
 image::download-model.gif[width=640]
-
-Model Catalog Example
-
-[YAML]
----
- "models": [
-    {
-      "id": "hf.instructlab.granite-7b-lab-GGUF",
-      "name": "instructlab/granite-7b-lab-GGUF",
-      "description": "# InstructLab Granite 7B",
-      "hw": "CPU",
-      "registry": "Hugging Face",
-      "license": "Apache-2.0",
-      "url": "https://huggingface.co/instructlab/granite-7b-lab-GGUF/resolve/main/granite-7b-lab-Q4_K_M.gguf",
-      "memory": 4080218931,
-      "properties": {
-        "chatFormat": "openchat"
-      },
-      "sha256": "6adeaad8c048b35ea54562c55e454cc32c63118a32c7b8152cf706b290611487",
-      "backend": "llama-cpp"
-    },
-    {
-      "id": "hf.instructlab.merlinite-7b-lab-GGUF",
-      "name": "instructlab/merlinite-7b-lab-GGUF",
-      "description": "# Merlinite 7b - GGUF\n\n4-bit quantized version of [instructlab/merlinite-7b-lab](https://huggingface.co/instructlab/merlinite-7b-lab)",
-      "hw": "CPU",
-      "registry": "Hugging Face",
-      "license": "Apache-2.0",
-      "url": "https://huggingface.co/instructlab/merlinite-7b-lab-GGUF/resolve/main/merlinite-7b-lab-Q4_K_M.gguf",
-      "memory": 4370129224,
-      "properties": {
-        "chatFormat": "openchat"
-      },
-      "sha256": "9ca044d727db34750e1aeb04e3b18c3cf4a8c064a9ac96cf00448c506631d16c",
-      "backend": "llama-cpp"
-    },
-    {
-      "id": "hf.TheBloke.mistral-7b-instruct-v0.2.Q4_K_M",
-      "name": "TheBloke/Mistral-7B-Instruct-v0.2-GGUF",
-      "description": "# Mistral 7B Instruct v0.2 - GGUF\n- Model creator: [Mistral AI](https://huggingface.co/mistralai)\n- Original model: [Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)\n\n<!-- description start -->\n## Description\n\nThis repo contains GGUF format model files for [Mistral AI's Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2).\n",
-      "hw": "CPU",
-      "registry": "Hugging Face",
-      "license": "Apache-2.0",
-      "url": "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf",
-      "memory": 4370129224,
-      "sha256": "3e0039fd0273fcbebb49228943b17831aadd55cbcbf56f0af00499be2040ccf9",
-      "backend": "llama-cpp"
-    },
-    ---
 
 
 === From the Models section 
@@ -65,57 +23,45 @@ You can select to download one or more of the pre-curated models available in th
 These models all fall under the apache 2.0 license. 
 
 [NOTE]
-What is Apache 2.0 license in short?
 The Apache 2.0 license is a particular type of open-source, permissive software license that ensures that end-users are granted a license to any patent that is covered by the software in question. An Apache 2.0 license ensures the security and availability of safe and powerful open-source software.
 
+== LAB
 
-=== GGUF Format
+=== Download a model from the Models Catalog 
 
-One of the main advantages of GGUF is that it allows users to run LLMs on their CPU. This is particularly beneficial for users who may not own a powerful GPU or who have limited access to GPU resources.
+ . Open the Podman Desktop Application
 
-"GGUF is a file format for storing models for inference with GGML and executors based on GGML. GGUF is a binary format that is designed for fast loading and saving of models, and for ease of reading. Models are traditionally developed using PyTorch or another framework, and then converted to GGUF for use in GGML."
+ . Ensure the Podman AI Lab extention is active from the extentions menu dashboard
 
+ . Select the AI Lab menu icon to open the AI Lab dashboard
 
-the new GGUF (GPT-Generated Unified Format) framework has been developed to facilitate the operation of Large Language Models (LLMs) by predominantly using CPU resources while also tapping into GPU capabilities for enhanced processing of particular layers. This adaptability is of great benefit for systems that rely on CPU processing, including those running on Apple hardware. GGUF compresses the typically 16-bit floating-point model weights, optimizing the use of computational resources. The methodology is crafted to simplify the processes of loading and storing models, making it a more efficient, flexible, and user-friendly option for the inference phase of LLMs.
+ . Select the Models / Catalog menu from the navaigation menu. 
 
+ . Select the instrublab/granite-7b-lab-GGUF model file by clicking the name to view details about the AI Model. 
++
 
-lama-cpp-python
-llama-cpp-python is a Python library that features GPU acceleration, compatibility with LangChain, and serves as an API server aligned with OpenAI’s standards.
+This usually includes details about the model creator, original model location, and a description with additional details about the AI Model. For specific details on the model, visit: https://huggingface.co/instructlab/granite-7b-lab[huggingface hub model card for the Granite-7b-Lab]. 
 
+ . Return the catalog dashboard and use the DownArrow icon on the far right to start the download of the instructlab/granite-7b-lab-GGUF file.
 
+ . Download any additional model files you are interested in working with. 
 
+In order the Model to be availble to the Services and Playground environments, it must be visible in the download tab of the Model Catalog. 
 
-
-
-
-
-=== Hardware
-
-LLMs AI models are heavy resource consumers both in terms of memory and CPU. Each of the provided models consumes about 4GiB of memory and requires at least 4 CPUs to run.
-
-So we recommend that a minimum of 12GB of memory and at least 4 CPUs for the Podman machine.
-
-As an additional recommended practice, do nor run more than 3 simultaneous models concurrently.
-
-Please note that this is not relevant for WSL on Windows as the WSL technology the memory and CPU with the host desktop.
-
-=== Technology
-Podman AI Lab uses Podman machines to run inference servers for LLM models and AI applications. The AI models can be downloaded, and common formats like GGUF, Pytorch or Tensorflow are supported.
-
-Compatible on Windows, macOS & Linux
-
-=== Software:
-
-Podman Desktop 1.8.0+
-Podman 4.9.0+
+===  Importing an InstructLab trained model into Podman AI Lab
+Speaking of importing and working with trained models, let’s take a look at working with an InstructLab-based fine-tuned model. While LLMs are trained on immense amounts of data in a variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open source to AI model development. What’s neat is that this is possible on consumer-grade hardware, and after following the instructions from the project repository, you’ll end up with a quantized .gguf file in the model-trained directory ready to use with Podman AI Lab.
 
 
-=== Convert and Quantize Models
+== GizmoGobble environment
 
-AI Lab Recipes' default model server is llamacpp_python, which needs models to be in a *.GGUF format.
+The development team at GG decided to test 3 of the catalog AI models to determine which was able to respond best to subject specific questions.
 
-However, most models available on huggingface are not provided directly as *.GGUF files. More often they are provided as a set of *.bin or *.safetensor files with some additional metadata produced when the model is trained.
+ * Instructlab/merlinite-7b-lab-GGUF
+ 
+ * Instructlab/granite-7b-lab-GGUF
+ 
+ * TheBloke/Mistral-7B-Instruct-v0.2-GGUF
+ 
+Continue onto the next section to use these models in the playground.
+ 
 
-There are of course a number of users on huggingface who provide *.GGUF versions of popular models. But this introduces an unnecessary interim dependency as well as possible security or licensing concerns.
-
-To avoid these concerns and provide users with the maximum freedom of choice for their models, we https://github.com/containers/ai-lab-recipes/tree/main/convert_models[provide a tool] to quickly and easily convert and quantize a model from huggingface into a *.GGUF format for use with our *.GGUF compatible model servers.

@@ -1,18 +1,13 @@
 = Podman AI Lab
 :navtitle: Home
 
-== Introduction
+
+Welcome to this course on Podman AI Lab. Through the use of Podman Desktop with the AI Lab Extension: students will experiment with open-source AI models, deploying multiple types of AI powered applications, and interact with integration code examples using standard laptop / desktop hardware.
 
 
-In this course, through the use of Podman Desktop with the AI Lab Extension: students will  experiment with open-source AI models, interacting with integration code examples, and deploying multiple types of AI powered applications using standard laptop / desktop hardware.
+This course will be experienced from the perspective of an *Application Developer* who works for the ABC corporation. They have been tasked with integrating an AI powered Chatbot into multiple web interfaces. ABC's developer will have no experience with: the Podman Desktop application, AI Models or understanding of their operation.
 
-In this course you will treat AI Model containerization, Model serving, Model inference, and templatized AI Application deployment as a Black Box, handled completely by the Podman application.   
-
-No knowledge of these topics is required, you simply need to to select components from GUI - graphical user interface and let Podman Desktop handle the rest.
-
-This course will be experienced from the perspective of an *Application Developer* who works for the ABC corporation. They have been tasked with integrating an AI powered Chatbot into multiple web interfaces. Our developer will have no experience with: the Podman Desktop application, AI Models or understanding of their operation.
-
-This course will progress with the developer through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the playground to experiment & investigate the models knowledge, and finally use *recipe* templates to deploy an AI enabled application or two. 
+This course will progress with the developer through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the playground to experiment & investigate the models knowledge, and finally use *recipe* templates to deploy mulitple AI enabled application(s). 
 
 
 == Course Objectives:
