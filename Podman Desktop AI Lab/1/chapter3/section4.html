@@ -50,10 +50,10 @@
     <a class="nav-link" href="../chapter1/index.html">Introduction</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter1/section1.html">ABC Corporation</a>
+    <a class="nav-link" href="../chapter1/section1.html">GizmoGobble Corporation</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter1/section2.html">Podman</a>
+    <a class="nav-link" href="../chapter1/section2.html">Podman &amp; Podman Desktop</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter1/section3.html">Podman AI Lab</a>
@@ -88,7 +88,7 @@
     <a class="nav-link" href="section1.html">Model Catalog</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section2.html">Playground</a>
+    <a class="nav-link" href="section2.html">AI Lab Playground</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="section3.html">Model Services</a>
@@ -165,20 +165,37 @@
 </aside>
 <article class="doc">
 <h1 class="page">Recipe Catalog</h1>
-<div id="preamble">
+<div class="sect1">
+<h2 id="_recipes_catalog_overview"><a class="anchor" href="#_recipes_catalog_overview"></a>Recipes catalog overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This is <em>Section 2</em> of <em>Chapter 3</em> in the <strong>hello</strong> quick course&#8230;&#8203;.</p>
+<p>One of the most important features of the Podman AI Lab extension is the curated catalog of open source recipes that enable you to navigate common AI use cases and solutions.</p>
+</div>
+<div class="paragraph">
+<p>To begin, click the top left option in the sidebar to open the Recipes Catalog. This catalog is organized by categories of example use cases that can inspire you on how to infuse your app with AI, with pre-selected models (and the ability to swap), example code, and easy access to your IDE. Browse through the list and find the recipe that best suits your needs. The catalog of recipes is provided to provide the best practices and inspire you with use cases you can eventually benefit from in your applications.</p>
+</div>
+<div class="paragraph">
+<p>Once you&#8217;ve selected a recipe from the Recipes Catalog, you&#8217;ll be able to see a summary of what the recipe does and how it works. This will give you a better understanding of the recipe&#8217;s capabilities and help you decide if it&#8217;s right for your application. You’ll also find handy links to the application source code and the recommended model, as well as the ability to select other compatible models (curated from Hugging Face’s open source community).</p>
+</div>
+<div class="paragraph">
+<p>When you&#8217;re ready to see the application live and running, you can start it by clicking the Start AI App button on the upper right-hand side. As the application starts, you&#8217;ll be able to see the model it uses and where the source code of the application is located. In the background, Podman is running an inference server for the downloaded model within a container using the freely redistributable Red Hat Enterprise Linux Universal Base Image.</p>
+</div>
+<div class="paragraph">
+<p>During the startup process, you&#8217;ll be shown a few steps that will be completed before the application is ready to use. These steps might include downloading the model, building the container images with the model and the application, etc.</p>
+</div>
+<div class="paragraph">
+<p>Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example, we’re able to interact with the front end application, which is inferencing the model server, the selected Mistral-7B model. It’s this easy to set up a model server and start integrating generative AI in your applications.</p>
+</div>
+<div class="paragraph">
+<p>As you work in other areas of Podman Desktop for your container workflow, you’ll always be able to see your running AI apps (i.e., the recipes you started) in the dedicated Running section for Podman AI Lab.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/start-ai-app.gif" alt="start ai app" width="640">
 </div>
 </div>
-</div>
-</div>
 <div class="sect2">
-<h3 id="_recipes_catalog"><a class="anchor" href="#_recipes_catalog"></a>Recipes Catalog</h3>
+<h3 id="_recipes_catalog_sample_applcations"><a class="anchor" href="#_recipes_catalog_sample_applcations"></a>Recipes catalog sample applcations</h3>
 <div class="paragraph">
 <p>Podman AI Lab ships with a so-called Recipes Catalog that helps you navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple models allows finding the optimal one for your use case.</p>
 </div>
@@ -231,34 +248,135 @@
 </li>
 </ul>
 </div>
-<hr>
-<div class="paragraph">
-<p>Recipe example</p>
 </div>
-<hr>
-<div class="literalblock">
-<div class="content">
-<pre>{
- "recipes": [
-   {
-     "id": "chatbot",
-     "description" : "This is a Streamlit chat demo application.",
-     "name" : "ChatBot",
-     "repository": "https://github.com/containers/ai-lab-recipes",
-     "ref": "v1.1.3",
-     "icon": "natural-language-processing",
-     "categories": [
-       "natural-language-processing"
-     ],
-     "basedir": "recipes/natural_language_processing/chatbot",
-     "readme": "# Chat Application\n\n  This recipe helps developers start building their own custom LLM enabled chat applications. It consists of two main components: the Model Service and the AI Application.\n\n  There are a few options today for local Model Serving, but this recipe will use [`llama-cpp-python`](https://github.com/abetlen/llama-cpp-python) and their OpenAI compatible Model Service. There is a Containerfile provided that can be used to build this Model Service within the repo, [`model_servers/llamacpp_python/base/Containerfile`](/model_servers/llamacpp_python/base/Containerfile).\n\n  The AI Application will connect to the Model Service via its OpenAI compatible API. The recipe relies on [Langchain's](https://python.langchain.com/docs/get_started/introduction) python package to simplify communication with the Model Service and uses [Streamlit](https://streamlit.io/) for the UI layer. You can find an example of the chat application below.\n\n![](/assets/chatbot_ui.png) \n\n\n## Try the Chat Application\n\nThe [Podman Desktop](https://podman-desktop.io) [AI Lab Extension](https://github.com/containers/podman-desktop-extension-ai-lab) includes this recipe among others. To try it out, open `Recipes Catalog` -&gt; `Chatbot` and follow the instructions to start the application.\n\n# Build the Application\n\nThe rest of this document will explain how to build and run the application from the terminal, and will\ngo into greater detail on how each container in the Pod above is built, run, and \nwhat purpose it serves in the overall application. All the recipes use a central [Makefile](../../common/Makefile.common) that includes variables populated with default values to simplify getting started. Please review the [Makefile docs](../../common/README.md), to learn about further customizing your application.\n\n\nThis application requires a model, a model service and an AI inferencing application.\n\n* [Quickstart](#quickstart)\n* [Download a model](#download-a-model)\n* [Build the Model Service](#build-the-model-service)\n* [Deploy the Model Service](#deploy-the-model-service)\n* [Build the AI Application](#build-the-ai-application)\n* [Deploy the AI Application](#deploy-the-ai-application)\n* [Interact with the AI Application](#interact-with-the-ai-application)\n* [Embed the AI Application in a Bootable Container Image](#embed-the-ai-application-in-a-bootable-container-image)\n\n\n## Quickstart\nTo run the application with pre-built images from `quay.io/ai-lab`, use `make quadlet`. This command\nbuilds the application's metadata and generates Kubernetes YAML at `./build/chatbot.yaml` to spin up a Pod that can then be launched locally.\nTry it with:\n\n```\nmake quadlet\npodman kube play build/chatbot.yaml\n```\n\nThis will take a few minutes if the model and model-server container images need to be downloaded. \nThe Pod is named `chatbot`, so you may use [Podman](https://podman.io) to manage the Pod and its containers:\n\n```\npodman pod list\npodman ps\n```\n\nOnce the Pod and its containers are running, the application can be accessed at `http://localhost:8501`. \nPlease refer to the section below for more details about [interacting with the chatbot application](#interact-with-the-ai-application).\n\nTo stop and remove the Pod, run:\n\n```\npodman pod stop chatbot\npodman pod rm chatbot\n```\n\n## Download a model\n\nIf you are just getting started, we recommend using [granite-7b-lab](https://huggingface.co/instructlab/granite-7b-lab). This is a well\nperformant mid-sized model with an apache-2.0 license. In order to use it with our Model Service we need it converted\nand quantized into the [GGUF format](https://github.com/ggerganov/ggml/blob/master/docs/gguf.md). There are a number of\nways to get a GGUF version of granite-7b-lab, but the simplest is to download a pre-converted one from\n[huggingface.co](https://huggingface.co) here: https://huggingface.co/instructlab/granite-7b-lab-GGUF.\n\nThe recommended model can be downloaded using the code snippet below:\n\n```bash\ncd ../../../models\ncurl -sLO https://huggingface.co/instructlab/granite-7b-lab-GGUF/resolve/main/granite-7b-lab-Q4_K_M.gguf\ncd ../recipes/natural_language_processing/chatbot\n```\n\n_A full list of supported open models is forthcoming._  \n\n\n## Build the Model Service\n\nThe complete instructions for building and deploying the Model Service can be found in the\n[llamacpp_python model-service document](../../../model_servers/llamacpp_python/README.md).\n\nThe Model Service can be built from make commands from the [llamacpp_python directory](../../../model_servers/llamacpp_python/).\n\n```bash\n# from path model_servers/llamacpp_python from repo containers/ai-lab-recipes\nmake build\n```\nCheckout the [Makefile](../../../model_servers/llamacpp_python/Makefile) to get more details on different options for how to build.\n\n## Deploy the Model Service\n\nThe local Model Service relies on a volume mount to the localhost to access the model files. It also employs environment variables to dictate the model used and where its served. You can start your local Model Service using the following `make` command from `model_servers/llamacpp_python` set with reasonable defaults:\n\n```bash\n# from path model_servers/llamacpp_python from repo containers/ai-lab-recipes\nmake run\n```\n\n## Build the AI Application\n\nThe AI Application can be built from the make command:\n\n```bash\n# Run this from the current directory (path recipes/natural_language_processing/chatbot from repo containers/ai-lab-recipes)\nmake build\n```\n\n## Deploy the AI Application\n\nMake sure the Model Service is up and running before starting this container image. When starting the AI Application container image we need to direct it to the correct `MODEL_ENDPOINT`. This could be any appropriately hosted Model Service (running locally or in the cloud) using an OpenAI compatible API. In our case the Model Service is running inside the Podman machine so we need to provide it with the appropriate address `10.88.0.1`. To deploy the AI application use the following:\n\n```bash\n# Run this from the current directory (path recipes/natural_language_processing/chatbot from repo containers/ai-lab-recipes)\nmake run \n```\n\n## Interact with the AI Application\n\nEverything should now be up an running with the chat application available at [`http://localhost:8501`](http://localhost:8501). By using this recipe and getting this starting point established, users should now have an easier time customizing and building their own LLM enabled chatbot applications.   \n\n## Embed the AI Application in a Bootable Container Image\n\nTo build a bootable container image that includes this sample chatbot workload as a service that starts when a system is booted, run: `make -f Makefile bootc`. You can optionally override the default image / tag you want to give the make command by specifying it as follows: `make -f Makefile BOOTC_IMAGE=&lt;your_bootc_image&gt; bootc`.\n\nSubstituting the bootc/Containerfile FROM command is simple using the Makefile FROM option.\n\n```bash\nmake FROM=registry.redhat.io/rhel9/rhel-bootc:9.4 bootc\n```\n\nSelecting the ARCH for the bootc/Containerfile is simple using the Makefile ARCH= variable.\n\n```\nmake ARCH=x86_64 bootc\n```\n\nThe magic happens when you have a bootc enabled system running. If you do, and you'd like to update the operating system to the OS you just built\nwith the chatbot application, it's as simple as ssh-ing into the bootc system and running:\n\n```bash\nbootc switch quay.io/ai-lab/chatbot-bootc:latest\n```\n\nUpon a reboot, you'll see that the chatbot service is running on the system. Check on the service with:\n\n```bash\nssh user@bootc-system-ip\nsudo systemctl status chatbot\n```\n\n### What are bootable containers?\n\nWhat's a [bootable OCI container](https://containers.github.io/bootc/) and what's it got to do with AI?\n\nThat's a good question! We think it's a good idea to embed AI workloads (or any workload!) into bootable images at _build time_ rather than\nat _runtime_. This extends the benefits, such as portability and predictability, that containerizing applications provides to the operating system.\nBootable OCI images bake exactly what you need to run your workloads into the operating system at build time by using your favorite containerization\ntools. Might I suggest [podman](https://podman.io/)?\n\nOnce installed, a bootc enabled system can be updated by providing an updated bootable OCI image from any OCI\nimage registry with a single `bootc` command. This works especially well for fleets of devices that have fixed workloads - think\nfactories or appliances. Who doesn't want to add a little AI to their appliance, am I right?\n\nBootable images lend toward immutable operating systems, and the more immutable an operating system is, the less that can go wrong at runtime!\n\n#### Creating bootable disk images\n\nYou can convert a bootc image to a bootable disk image using the\n[quay.io/centos-bootc/bootc-image-builder](https://github.com/osbuild/bootc-image-builder) container image.\n\nThis container image allows you to build and deploy [multiple disk image types](../../common/README_bootc_image_builder.md) from bootc container images.\n\nDefault image types can be set via the DISK_TYPE Makefile variable.\n\n`make bootc-image-builder DISK_TYPE=ami`\n",
-     "recommended": [
-       "hf.instructlab.granite-7b-lab-GGUF",
-       "hf.instructlab.merlinite-7b-lab-GGUF"
-     ],
-     "backend": "llama-cpp"
-   },
-   ---</pre>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lab_sample_application_deployment"><a class="anchor" href="#_lab_sample_application_deployment"></a>LAB: Sample Application Deployment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Located in the AI Apps section of AI Lab is the Reciept Catalog, along with the Running menu option.</p>
+</div>
+<div class="paragraph">
+<p>When opened the recipe catalog display the sample appllications sorted by use case.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s begin with the ChatBot Appliation.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the ChatBot application open a new dashboard with two options, the Summary &amp; Models tab.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>The Summary display details about the application.</p>
+</li>
+<li>
+<p>The Models tab allows the user to select a compatbile model for the applcation to use.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Depending on the available resources in your Podman container running in podman desktop, you may receive a notification about increaseing available resource to improve performance.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>If you did receive this message, close out of the previous resources and restart your podman container</p>
+</li>
+<li>
+<p>Or increase the resources available in your podman container for a pleasant lab experience.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>On right side of the window, will be the AI App Details section with a button to start the AI App.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>In the Model Section, there is a drop down to allow the user to select an alternative Model</p>
+</li>
+<li>
+<p>Also shown is the Repository location for the ai lab recipes where the original applicaiton files are located</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Click the Start AI App to launch the applicaiton.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>If you use a model other than the default, you will need to use the running menu to view and launch the application in a new web browser.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If you used the default AI Model, then you will get a checklist of the progress during the application deployment.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, from the AI App Details sub-menu, there will also be options to open the application in a web browser, restart the application, and delete the application.</p>
+</div>
+<div class="paragraph">
+<p>the application can be launch in a web browser to inact with the model via Chat.</p>
+</div>
+<div class="paragraph">
+<p>This seems exactly like the playground, the difference is the playground interaction happens within the Podman Desktop application while the Recipe is launch using external web service that connect to the model via the interence endpoint.</p>
+</div>
+<div class="paragraph">
+<p>Another difference is this user experience so there are no tuning parameter options provided, or system propmt as those will be set in the background by the developer and stay consistent across users.</p>
+</div>
+<div class="sect2">
+<h3 id="_podman_desktop"><a class="anchor" href="#_podman_desktop"></a>Podman Desktop</h3>
+<div class="paragraph">
+<p>We can use the containers menu of podman desktop to view the running container that make up this application.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>There is a container for the streamlit chat application</p>
+</li>
+<li>
+<p>There is a container for the llama.cpp server hosting the AI Model</p>
+</li>
+<li>
+<p>There is a container for ???</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In Pod section of Podman Desktop, the Pod that contains the three container is displayed</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>view the kubernetes deployment</p>
+</li>
+<li>
+<p>view the log files</p>
+</li>
+<li>
+<p>view the summary of containers running in the pod</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_additional_applications"><a class="anchor" href="#_additional_applications"></a>Additional applications</h3>
+<div class="paragraph">
+<p>Each of the additional Recipe&#8217;s available will launch a service to allow the user to develop experience with a specific business case for AI Model development.</p>
+</div>
+<div class="paragraph">
+<p>There a video walkthrough of each of the additional Recipe&#8217;s in action.</p>
+</div>
+<div class="paragraph">
+<p>In between each, delete the previous recipe, restart the podman container to expereince the best Podman AI lab performance.</p>
+</div>
 </div>
 </div>
 </div>

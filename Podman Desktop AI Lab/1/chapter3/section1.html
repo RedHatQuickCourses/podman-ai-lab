@@ -50,10 +50,10 @@
     <a class="nav-link" href="../chapter1/index.html">Introduction</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter1/section1.html">ABC Corporation</a>
+    <a class="nav-link" href="../chapter1/section1.html">GizmoGobble Corporation</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter1/section2.html">Podman</a>
+    <a class="nav-link" href="../chapter1/section2.html">Podman &amp; Podman Desktop</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter1/section3.html">Podman AI Lab</a>
@@ -88,7 +88,7 @@
     <a class="nav-link" href="section1.html">Model Catalog</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section2.html">Playground</a>
+    <a class="nav-link" href="section2.html">AI Lab Playground</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="section3.html">Model Services</a>
@@ -172,63 +172,30 @@
 <p>Podman AI Lab provides a curated list of open source AI models and LLMs. Once downloaded, the models are available to be used for AI applications, model services and playgrounds.</p>
 </div>
 <div class="paragraph">
+<p>There are four tabs availble in the Models Catalog</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>All</strong> - display all available catalog models, whether downloaded or available is indicated by the model icon being highlighted in green for downloaded models.</p>
+</li>
+<li>
+<p><strong>Downloaed</strong> - displays all models that have been store locally for offline use.</p>
+</li>
+<li>
+<p><strong>Imported</strong> - displays any models imported that were not originally listed in the catalog</p>
+</li>
+<li>
+<p><strong>Available</strong> - display all catalog models that have not been downloaded.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
 <p>Check license and required resources. Import your own models.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/download-model.gif" alt="download model" width="640">
-</div>
-</div>
-<div class="paragraph">
-<p>Model Catalog Example</p>
-</div>
-<hr>
-<div class="literalblock">
-<div class="content">
-<pre>"models": [
-   {
-     "id": "hf.instructlab.granite-7b-lab-GGUF",
-     "name": "instructlab/granite-7b-lab-GGUF",
-     "description": "# InstructLab Granite 7B",
-     "hw": "CPU",
-     "registry": "Hugging Face",
-     "license": "Apache-2.0",
-     "url": "https://huggingface.co/instructlab/granite-7b-lab-GGUF/resolve/main/granite-7b-lab-Q4_K_M.gguf",
-     "memory": 4080218931,
-     "properties": {
-       "chatFormat": "openchat"
-     },
-     "sha256": "6adeaad8c048b35ea54562c55e454cc32c63118a32c7b8152cf706b290611487",
-     "backend": "llama-cpp"
-   },
-   {
-     "id": "hf.instructlab.merlinite-7b-lab-GGUF",
-     "name": "instructlab/merlinite-7b-lab-GGUF",
-     "description": "# Merlinite 7b - GGUF\n\n4-bit quantized version of [instructlab/merlinite-7b-lab](https://huggingface.co/instructlab/merlinite-7b-lab)",
-     "hw": "CPU",
-     "registry": "Hugging Face",
-     "license": "Apache-2.0",
-     "url": "https://huggingface.co/instructlab/merlinite-7b-lab-GGUF/resolve/main/merlinite-7b-lab-Q4_K_M.gguf",
-     "memory": 4370129224,
-     "properties": {
-       "chatFormat": "openchat"
-     },
-     "sha256": "9ca044d727db34750e1aeb04e3b18c3cf4a8c064a9ac96cf00448c506631d16c",
-     "backend": "llama-cpp"
-   },
-   {
-     "id": "hf.TheBloke.mistral-7b-instruct-v0.2.Q4_K_M",
-     "name": "TheBloke/Mistral-7B-Instruct-v0.2-GGUF",
-     "description": "# Mistral 7B Instruct v0.2 - GGUF\n- Model creator: [Mistral AI](https://huggingface.co/mistralai)\n- Original model: [Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)\n\n&lt;!-- description start --&gt;\n## Description\n\nThis repo contains GGUF format model files for [Mistral AI's Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2).\n",
-     "hw": "CPU",
-     "registry": "Hugging Face",
-     "license": "Apache-2.0",
-     "url": "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q4_K_M.gguf",
-     "memory": 4370129224,
-     "sha256": "3e0039fd0273fcbebb49228943b17831aadd55cbcbf56f0af00499be2040ccf9",
-     "backend": "llama-cpp"
-   },
-   ---</pre>
 </div>
 </div>
 <div class="sect2">
@@ -246,80 +213,86 @@
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-What is Apache 2.0 license in short?
 The Apache 2.0 license is a particular type of open-source, permissive software license that ensures that end-users are granted a license to any patent that is covered by the software in question. An Apache 2.0 license ensures the security and availability of safe and powerful open-source software.
 </td>
 </tr>
 </table>
 </div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lab"><a class="anchor" href="#_lab"></a>LAB</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_gguf_format"><a class="anchor" href="#_gguf_format"></a>GGUF Format</h3>
+<h3 id="_download_a_model_from_the_models_catalog"><a class="anchor" href="#_download_a_model_from_the_models_catalog"></a>Download a model from the Models Catalog</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the Podman Desktop Application</p>
+</li>
+<li>
+<p>Ensure the Podman AI Lab extention is active from the extentions menu dashboard</p>
+</li>
+<li>
+<p>Select the AI Lab menu icon to open the AI Lab dashboard</p>
+</li>
+<li>
+<p>Select the Models / Catalog menu from the navaigation menu.</p>
+</li>
+<li>
+<p>Select the instrublab/granite-7b-lab-GGUF model file by clicking the name to view details about the AI Model.</p>
 <div class="paragraph">
-<p>One of the main advantages of GGUF is that it allows users to run LLMs on their CPU. This is particularly beneficial for users who may not own a powerful GPU or who have limited access to GPU resources.</p>
+<p>This usually includes details about the model creator, original model location, and a description with additional details about the AI Model. For specific details on the model, visit: <a href="https://huggingface.co/instructlab/granite-7b-lab">huggingface hub model card for the Granite-7b-Lab</a>.</p>
 </div>
-<div class="paragraph">
-<p>"GGUF is a file format for storing models for inference with GGML and executors based on GGML. GGUF is a binary format that is designed for fast loading and saving of models, and for ease of reading. Models are traditionally developed using PyTorch or another framework, and then converted to GGUF for use in GGML."</p>
-</div>
-<div class="paragraph">
-<p>the new GGUF (GPT-Generated Unified Format) framework has been developed to facilitate the operation of Large Language Models (LLMs) by predominantly using CPU resources while also tapping into GPU capabilities for enhanced processing of particular layers. This adaptability is of great benefit for systems that rely on CPU processing, including those running on Apple hardware. GGUF compresses the typically 16-bit floating-point model weights, optimizing the use of computational resources. The methodology is crafted to simplify the processes of loading and storing models, making it a more efficient, flexible, and user-friendly option for the inference phase of LLMs.</p>
-</div>
-<div class="paragraph">
-<p>lama-cpp-python
-llama-cpp-python is a Python library that features GPU acceleration, compatibility with LangChain, and serves as an API server aligned with OpenAI’s standards.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hardware"><a class="anchor" href="#_hardware"></a>Hardware</h3>
-<div class="paragraph">
-<p>LLMs AI models are heavy resource consumers both in terms of memory and CPU. Each of the provided models consumes about 4GiB of memory and requires at least 4 CPUs to run.</p>
-</div>
-<div class="paragraph">
-<p>So we recommend that a minimum of 12GB of memory and at least 4 CPUs for the Podman machine.</p>
-</div>
-<div class="paragraph">
-<p>As an additional recommended practice, do nor run more than 3 simultaneous models concurrently.</p>
-</div>
-<div class="paragraph">
-<p>Please note that this is not relevant for WSL on Windows as the WSL technology the memory and CPU with the host desktop.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_technology"><a class="anchor" href="#_technology"></a>Technology</h3>
-<div class="paragraph">
-<p>Podman AI Lab uses Podman machines to run inference servers for LLM models and AI applications. The AI models can be downloaded, and common formats like GGUF, Pytorch or Tensorflow are supported.</p>
+</li>
+<li>
+<p>Return the catalog dashboard and use the DownArrow icon on the far right to start the download of the instructlab/granite-7b-lab-GGUF file.</p>
+</li>
+<li>
+<p>Download any additional model files you are interested in working with.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>Compatible on Windows, macOS &amp; Linux</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_software"><a class="anchor" href="#_software"></a>Software:</h3>
-<div class="paragraph">
-<p>Podman Desktop 1.8.0+
-Podman 4.9.0+</p>
+<p>In order the Model to be availble to the Services and Playground environments, it must be visible in the download tab of the Model Catalog.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_convert_and_quantize_models"><a class="anchor" href="#_convert_and_quantize_models"></a>Convert and Quantize Models</h3>
+<h3 id="_importing_an_instructlab_trained_model_into_podman_ai_lab"><a class="anchor" href="#_importing_an_instructlab_trained_model_into_podman_ai_lab"></a>Importing an InstructLab trained model into Podman AI Lab</h3>
 <div class="paragraph">
-<p>AI Lab Recipes' default model server is llamacpp_python, which needs models to be in a *.GGUF format.</p>
+<p>Speaking of importing and working with trained models, let’s take a look at working with an InstructLab-based fine-tuned model. While LLMs are trained on immense amounts of data in a variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open source to AI model development. What’s neat is that this is possible on consumer-grade hardware, and after following the instructions from the project repository, you’ll end up with a quantized .gguf file in the model-trained directory ready to use with Podman AI Lab.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gizmogobble_environment"><a class="anchor" href="#_gizmogobble_environment"></a>GizmoGobble environment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The development team at GG decided to test 3 of the catalog AI models to determine which was able to respond best to subject specific questions.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Instructlab/merlinite-7b-lab-GGUF</p>
+</li>
+<li>
+<p>Instructlab/granite-7b-lab-GGUF</p>
+</li>
+<li>
+<p>TheBloke/Mistral-7B-Instruct-v0.2-GGUF</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>However, most models available on huggingface are not provided directly as *.GGUF files. More often they are provided as a set of *.bin or *.safetensor files with some additional metadata produced when the model is trained.</p>
-</div>
-<div class="paragraph">
-<p>There are of course a number of users on huggingface who provide *.GGUF versions of popular models. But this introduces an unnecessary interim dependency as well as possible security or licensing concerns.</p>
-</div>
-<div class="paragraph">
-<p>To avoid these concerns and provide users with the maximum freedom of choice for their models, we <a href="https://github.com/containers/ai-lab-recipes/tree/main/convert_models">provide a tool</a> to quickly and easily convert and quantize a model from huggingface into a *.GGUF format for use with our *.GGUF compatible model servers.</p>
-</div>
+<p>Continue onto the next section to use these models in the playground.</p>
 </div>
 </div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="index.html">Podman AI Lab</a></span>
-  <span class="next"><a href="section2.html">Playground</a></span>
+  <span class="next"><a href="section2.html">AI Lab Playground</a></span>
 </nav>
 </article>
   </div>

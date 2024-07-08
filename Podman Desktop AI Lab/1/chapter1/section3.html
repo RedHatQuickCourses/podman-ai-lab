@@ -50,10 +50,10 @@
     <a class="nav-link" href="index.html">Introduction</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section1.html">ABC Corporation</a>
+    <a class="nav-link" href="section1.html">GizmoGobble Corporation</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section2.html">Podman</a>
+    <a class="nav-link" href="section2.html">Podman &amp; Podman Desktop</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="section3.html">Podman AI Lab</a>
@@ -88,7 +88,7 @@
     <a class="nav-link" href="../chapter3/section1.html">Model Catalog</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/section2.html">Playground</a>
+    <a class="nav-link" href="../chapter3/section2.html">AI Lab Playground</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter3/section3.html">Model Services</a>
@@ -188,10 +188,10 @@ Users can experiment with various models and prompts to find the best fit for th
 <p>The extension can be installed quickly and easily on macOS, Windows, and Linux systems using the Podman Desktop interface.</p>
 </div>
 <div class="sect2">
-<h3 id="_abc_developers_notes_podman_ai"><a class="anchor" href="#_abc_developers_notes_podman_ai"></a>ABC Developers notes Podman AI</h3>
+<h3 id="_gizmogobbles_developers_notes_podman_ai_lab"><a class="anchor" href="#_gizmogobbles_developers_notes_podman_ai_lab"></a>GizmoGobble&#8217;s developers notes Podman AI Lab</h3>
 <hr>
 <div class="paragraph">
-<p>Reading through the documtation of Podman AI Labs to get a better idea of the features available, our ABC Developer is able to learn the following:</p>
+<p>Reading through the documtation of Podman AI Labs to get a better idea of the features available, our GG developer team is able to learn the following:</p>
 </div>
 <div class="paragraph">
 <p><em>Podman AI Lab is an open source extension for Podman Desktop to work with LLMs (Large Language Models) on a local environment. It provides key open-source technologies to start building on AI. A curated catalog of so-called recipes helps navigate the jungle of AI use cases and AI models. AI Lab further ships playgrounds: environments to experiment with and test AI models, for instance, a chat bot.</em></p>
@@ -239,47 +239,57 @@ Users can experiment with various models and prompts to find the best fit for th
 <div class="sect2">
 <h3 id="_model_services"><a class="anchor" href="#_model_services"></a>Model Services</h3>
 <div class="paragraph">
-<p>Once a model has been downloaded, you can start an inference server for the model. This allows to test the model using a playground environment or to connect applications as the inference server is exposing a well know chat API.</p>
+<p>Once a model has been downloaded, you can start an inference server for the model. This allows testing of the model using a playground environment or to connect applications as the inference server is exposing a well know <strong>OpenAI-compatible API</strong>.</p>
 </div>
 <div class="paragraph">
 <p>A model service offers a configurable endpoint via an OpenAI-compatible web server, facilitating a seamless integration of AI capabilities into existing applications. Upon initialization, effortlessly access detailed service information and generate code snippets in multiple programming languages to ease application integration.</p>
+</div>
+<div class="paragraph">
+<p>The Services page allows for accessing running model services and provides further details and code snippets to interact with them.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_playgrounds"><a class="anchor" href="#_playgrounds"></a>Playgrounds</h3>
 <div class="paragraph">
-<p>The integrated Playground environments allow for experimenting with available models in a local environment. An intuitive user prompt helps in exploring the capabilities, accuracy of various models and aids in finding the best model for the use case at hand. The Playground interface further allows for parameterizing models to further optimize the settings and attributes of each model.</p>
+<p>Podman AI Lab includes a playground environment that allows users to interact with models and observe their behavior. This can be used to test, experiment and develop prototypes and applications with the models. An intuitive user prompt helps in exploring the capabilities and accuracy of various models and aids in finding the best model and the best settings for the use case in the application.</p>
+</div>
+<div class="paragraph">
+<p>The Playground interface further allows for parameterizing models to further optimize the settings and attributes of each model.</p>
 </div>
 <div class="paragraph">
 <p>Once started, each playground ships with a generic chat client to interact with the model service. The Services page allows for accessing running model services and provides further details and code snippets to interact with them.</p>
-</div>
-<div class="paragraph">
-<p>Podman AI Lab includes a playground environment that allows users to interact with models and observe their behavior. This can be used to test, experiment and develop prototypes and applications with the models. An intuitive user prompt helps in exploring the capabilities and accuracy of various models and aids in finding the best model and the best settings for the use case in the application.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_abc_developer_note_on_ai_models"><a class="anchor" href="#_abc_developer_note_on_ai_models"></a>ABC Developer note on AI Models</h2>
+<h2 id="_ai_models_2"><a class="anchor" href="#_ai_models_2"></a>AI Models</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_gguf_format"><a class="anchor" href="#_gguf_format"></a>GGUF Format:</h3>
 <div class="paragraph">
-<p>Ability to download these quantized, .gguf files models, and run them locally on a laptop or desktop. Select the model based on the business solutions to provide.
-Optionally, Models Catalog -  curated list of Open Source models with the Apache 2.0 license.  import your own models.</p>
+<p>Podman AI Lab supports large language models in the GGUF format.</p>
 </div>
 <div class="paragraph">
-<p>Convertion tool included with podman ia lab respository ??</p>
+<p>GPT-Generated Unified Format (GGUF) is a file format that streamlines the use and deployment of large language models (LLMs). GGUF is specially designed to store inference models and perform well on consumer-grade computer hardware.</p>
+</div>
+<div class="paragraph">
+<p>Ability to download these quantized, .gguf files models, and run them locally on a laptop or desktop.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/containers/ai-lab-recipes/tree/main/convert_models">ai-lab-recipes github respository</a> provides users with the maximum freedom of choice for their models, we provide a tool to quickly and easily convert and quantize a model from huggingface into a *.GGUF format for use with our *.GGUF compatible model servers.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_huggingface"><a class="anchor" href="#_huggingface"></a>HuggingFace _</h3>
-
+<div class="paragraph">
+<p><a href="https://huggingface.co/">The Hugging Face Hub</a> is a platform with over 350k models, 75k datasets, and 150k demo apps (Spaces), all open source and publicly available, in an online platform where people can easily collaborate and build ML together.</p>
+</div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="section2.html">Podman</a></span>
+  <span class="prev"><a href="section2.html">Podman &amp; Podman Desktop</a></span>
   <span class="next"><a href="../chapter2/index.html">Installation</a></span>
 </nav>
 </article>
