@@ -62,7 +62,7 @@ To verify that Podman is set up:
 Download the *.dmg* file from the https://podman-desktop.io/downloads/macos[Downloads] section of this website.
 
 [NOTE]
-While we recommend getting the "universal" binary file which will work irrespective of the chip architecture your Mac possesses, you also have the option to get the applicable .dmg file depending on your Mac Hardware Architecture (that is Intel or Apple M1).
+It is recommended to use the "universal" binary file which will work irrespective of the chip architecture your Mac possesses, you also have the option to get the applicable .dmg file depending on your Mac Hardware Architecture (that is Intel or Apple M1+).
 
  . Locate the downloaded file, and double-click on it. (Usually, you will find the downloaded file in the Downloads folder)
 

@@ -1,6 +1,19 @@
 = Recipe Catalog
 
-This is _Section 2_ of _Chapter 3_ in the *hello* quick course....
+Recipes Catalog
+One of the most important features of the Podman AI Lab extension is the curated catalog of open source recipes that enable you to navigate common AI use cases and solutions. To begin, click the top left option in the sidebar to open the Recipes Catalog, as shown in Figure 5. This catalog is organized by categories of example use cases that can inspire you on how to infuse your app with AI, with pre-selected models (and the ability to swap), example code, and easy access to your IDE. Browse through the list and find the recipe that best suits your needs.
+
+With Podman AI Lab, you have access to a wide range of tools and resources that can help you begin infusing AI into your own applications. The catalog of recipes is provided to provide the best practices and inspire you with use cases you can eventually benefit from in your applications. 
+Once you've selected a recipe from the Recipes Catalog, you'll be able to see a summary of what the recipe does and how it works. This will give you a better understanding of the recipe's capabilities and help you decide if it's right for your application. You’ll also find handy links to the application source code and the recommended model, as well as the ability to select other compatible models (curated from Hugging Face’s open source community). Figure 6 depicts this.
+
+When you're ready to see the application live and running, you can start it by clicking the Start AI App button on the upper right-hand side. As the application starts, you'll be able to see the model it uses and where the source code of the application is located (Figure 7). In the background, Podman is running an inference server for the downloaded model within a container using the freely redistributable Red Hat Enterprise Linux Universal Base Image.
+
+During the startup process, you'll be shown a few steps that will be completed before the application is ready to use. These steps might include downloading the model, building the container images with the model and the application, etc. See Figure 8.
+
+Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example (Figure 9), we’re able to interact with the front end application, which is inferencing the model server, the selected Mistral-7B model. It’s this easy to set up a model server and start integrating generative AI in your applications.
+
+As you work in other areas of Podman Desktop for your container workflow, you’ll always be able to see your running AI apps (i.e., the recipes you started) in the dedicated Running section for Podman AI Lab.
+
 
 
 image::start-ai-app.gif[width=640]
