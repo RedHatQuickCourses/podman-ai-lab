@@ -6,19 +6,20 @@ Podman AI Lab provides a curated list of open source AI models and LLMs. Once do
 
 There are four tabs availble in the Models Catalog
 
- * *All* - display all available catalog models, whether downloaded or available is indicated by the model icon being highlighted in green for downloaded models.
- * *Downloaed* - displays all models that have been store locally for offline use. 
+ * *All* - displays all available catalog models. Whether downloaded or available is indicated by the model icon being highlighted in green for downloaded models.
+ * *Downloaded* - displays all models that have been stored locally for offline use. 
  * *Imported* - displays any models imported that were not originally listed in the catalog
  * *Available* - display all catalog models that have not been downloaded.
 
-Check license and required resources. Import your own models.
+_Check license and required resources before importing your own models._
 
 image::download-model.gif[width=640]
 
+---
 
-=== From the Models section 
+=== Models Catalog dashboard
 
-You can select to download one or more of the pre-curated models available in the AI Lab.
+You can select to download one or more of the pre-curated models available in Podman AI Lab.
 
 These models all fall under the apache 2.0 license. 
 
@@ -49,7 +50,7 @@ This usually includes details about the model creator, original model location, 
 In order the Model to be availble to the Services and Playground environments, it must be visible in the download tab of the Model Catalog. 
 
 ===  Importing an InstructLab trained model into Podman AI Lab
-Speaking of importing and working with trained models, let’s take a look at working with an InstructLab-based fine-tuned model. While LLMs are trained on immense amounts of data in a variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open source to AI model development. What’s neat is that this is possible on consumer-grade hardware, and after following the instructions from the project repository, you’ll end up with a quantized .gguf file in the model-trained directory ready to use with Podman AI Lab.
+Speaking of importing and working with trained models, let’s take a look at working with an https://github.com/instructlab[InstructLab-based fine-tuned mode]l. While LLMs are trained on immense amounts of data in a variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open source to AI model development. What’s neat is that this is possible on consumer-grade hardware, and after following the instructions from the project repository, you’ll end up with a quantized .gguf file in the model-trained directory ready to use with Podman AI Lab.
 
 
 == GizmoGobble environment
