@@ -1,6 +1,6 @@
 name: Podman Desktop AI Lab
-title: Podman AI Lab Labs
-version: 1
+title: Podman AI Lab
+version: 1.20
 nav:
 - modules/ROOT/nav.adoc
 - modules/chapter1/nav.adoc

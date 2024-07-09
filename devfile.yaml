@@ -1,8 +1,8 @@
 schemaVersion: 1.0.0
 metadata:
   name: PodMan AI LAb
-  displayName: Podman Quick Course
-  description: Podman Quick Course published using Antora
+  displayName: Podman AI Lab Quick Course
+  description: Podman AI Lab Quick Course published using Antora
   icon: https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg
   tags:
     - Node.js
@@ -12,7 +12,7 @@ metadata:
   language: JavaScript
   version: 2.1.1
 starterProjects:
-  - name: rhods-quick-course
+  - name: podman-ai-lab-quick-course
     git:
       remotes:
         origin: 'https://github.com/RedHatTraining/rhods-quick-course.git'
