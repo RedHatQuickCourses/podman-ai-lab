@@ -50,7 +50,7 @@ This usually includes details about the model creator, original model location, 
 In order the Model to be availble to the Services and Playground environments, it must be visible in the download tab of the Model Catalog. 
 
 ===  Importing an InstructLab trained model into Podman AI Lab
-Speaking of importing and working with trained models, let’s take a look at working with an InstructLab-based fine-tuned model. While LLMs are trained on immense amounts of data in a variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open source to AI model development. What’s neat is that this is possible on consumer-grade hardware, and after following the instructions from the project repository, you’ll end up with a quantized .gguf file in the model-trained directory ready to use with Podman AI Lab.
+Speaking of importing and working with trained models, let’s take a look at working with an https://github.com/instructlab[InstructLab-based fine-tuned mode]l. While LLMs are trained on immense amounts of data in a variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open source to AI model development. What’s neat is that this is possible on consumer-grade hardware, and after following the instructions from the project repository, you’ll end up with a quantized .gguf file in the model-trained directory ready to use with Podman AI Lab.
 
 
 == GizmoGobble environment
