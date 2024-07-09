@@ -2,23 +2,19 @@
 :navtitle: Home
 
 
-Welcome to this course on Podman AI Lab. Through the use of Podman Desktop with the AI Lab Extension: students will experiment with open-source AI models, deploying multiple types of AI powered applications, and interact with integration code examples using standard laptop / desktop hardware.
+Welcome to this course on Podman AI Lab. Through the use of *Podman Desktop with the AI Lab Extension*: You will experiment with open-source AI models, deploy multiple types of AI powered applications, and interact with integration code examples using standard laptop / desktop hardware.
 
 
-This course will be experienced from the perspective of an *Application Developer* who works for the ABC corporation. They have been tasked with integrating an AI powered Chatbot into multiple web interfaces. ABC's developer will have no experience with: the Podman Desktop application, AI Models or understanding of their operation.
+This course will be experienced from the perspective of a *development team* at the GizmoGobble  corporation. They have been tasked with integrating an AI powered Chatbot into multiple web interfaces. GizmoGobble's development team will have no experience with: the Podman Desktop application, AI Models or understanding of their operation.
 
-This course will progress with the developer through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the playground to experiment & investigate the models knowledge, and finally use *recipe* templates to deploy mulitple AI enabled application(s). 
+This course will progress with the developers through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the *playground* to experiment & investigate the effectives of an AI Model, and finally use *recipe* templates to deploy mulitple AI enabled applications. 
 
 
 == Course Objectives:
 
-As a result of taking this course, you will gain an understanding of the role of the developer in enabling AI backed applications. 
-
-You will gain the ability to:
-
- . Use podman desktop to create a container runtime environment to host an AI model, 
- ** Technical overview of Podman Desktop Application
- ** Understand the components of Podman AI Lab extension
+ . Use Podman Desktop to create a container runtime environment to host an AI model: 
+ ** Basic knowledge of the features of Podman Desktop Application
+ ** Understand and apply the components of Podman AI Lab extension
  ** Understand Podman AI Lab from a developer perspective
 
  . Utilize the playground feature to interact with various AI Models 
@@ -26,10 +22,12 @@ You will gain the ability to:
 
 
  . Use code samples to simplify integration with existing code bases
- **  Know where to locate code snippets to connect to these AI models  
+ **  Know where to locate code snippets to integrate  AI models to applcations
 
  . Deploy an AI enabled application using pre-create templates called recipes.
  **  Reverse engineer open source code used in recipes for AI enabled applications
+
+ . Explain why Podman AI Lab is the entry point for customers into Red Hat's AI Ecosystem
 
 
 
