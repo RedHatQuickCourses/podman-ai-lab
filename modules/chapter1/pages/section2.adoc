@@ -29,6 +29,10 @@ While daemons can be a convenient way to manage your container environment, they
 *Podman cuts out the daemon and lets regular users run containers without interacting with a root-owned daemon, or allows for the use of rootless containers.* By going rootless, users can create, run, and manage containers without requiring processes with admin privileges, making your container environment more accessible while reducing security risks. Additionally, Podman launches each container with a Security-Enhanced Linux (SELinux) label, giving administrators more control over what resources and capabilities are provided to container processes.
 
 == What is Podman Desktop?
+
+[NOTE]
+A graphical user interface (GUI) is a digital interface in which a user interacts with graphical components such as icons, buttons, and menus (visual indicator representations).
+
 Podman Desktop is a GUI for Podman, which provides a central place for developers to work with containers right on their laptop or workstation. Developers can build, push, and pull images and manage Podman resources directly using a GUI that’s consistent across local Linux, Windows, and macOS environments. Podman Desktop also lets developers deliver ready-to-deploy containerized applications to Kubernetes environments.
 
 Podman Desktop supports extension packs, which open up additional capabilities. One example, Podman AI Lab, adds recipes for building applications that work with large language models (LLMs) in a local environment and includes a curated catalog of open source-licensed LLMs.

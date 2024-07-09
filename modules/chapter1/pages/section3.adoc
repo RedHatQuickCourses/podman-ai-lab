@@ -16,15 +16,6 @@ The extension provides interactive environments for users to try out and test va
 The extension can be installed quickly and easily on macOS, Windows, and Linux systems using the Podman Desktop interface.
 
 
-=== GizmoGobble's developers notes Podman AI Lab
----
-
-Reading through the documtation of Podman AI Labs to get a better idea of the features available, our GG developer team is able to learn the following:
-
-_Podman AI Lab is an open source extension for Podman Desktop to work with LLMs (Large Language Models) on a local environment. It provides key open-source technologies to start building on AI. A curated catalog of so-called recipes helps navigate the jungle of AI use cases and AI models. AI Lab further ships playgrounds: environments to experiment with and test AI models, for instance, a chat bot._
-
-_As AI and data science move into mainstream application development, tools like Podman AI Lab can help fuel developer adoption of GenAI for building intelligent applications or enhancing their workflow using AI-augmented development capabilities. AI Lab features a recipe catalog with sample applications that give developers a jump start on some of the more common use cases for LLMs._
-
 == Primary Features of Podman AI Labs
 
 === Recipes Catalog
@@ -59,21 +50,19 @@ Once started, each playground ships with a generic chat client to interact with 
 
 
 
-== AI Models
+== AI & Large Language Model Format
 
 === GGUF Format:
 
-Podman AI Lab supports large language models in the GGUF format. 
+Podman AI Lab supports large language models in the .gguf format and the ability to download or import these quantized, .gguf files models, and run them locally on a laptop or desktop. 
 
 GPT-Generated Unified Format (GGUF) is a file format that streamlines the use and deployment of large language models (LLMs). GGUF is specially designed to store inference models and perform well on consumer-grade computer hardware.
 
-Ability to download these quantized, .gguf files models, and run them locally on a laptop or desktop. 
 
-https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository] provides users with the maximum freedom of choice for their models, we provide a tool to quickly and easily convert and quantize a model from huggingface into a *.GGUF format for use with our *.GGUF compatible model servers.
+https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository] provides a tool to quickly and easily convert and quantize a model from huggingface into a *.gguf format for use with Podman AI Lab. 
 
 
 === HuggingFace _ 
-
 
 https://huggingface.co/[The Hugging Face Hub] is a platform with over 350k models, 75k datasets, and 150k demo apps (Spaces), all open source and publicly available, in an online platform where people can easily collaborate and build ML together.
 
