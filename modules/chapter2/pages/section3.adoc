@@ -1,0 +1,43 @@
+= Create Podman Machine
+
+== Initialize and start Podman
+
+To start working with containers, Podman needs to be initialized.
+
+Podman desktop will automatically install the latest version of podman by 
+
+From the Podman Desktop dashboard
+
+From the Podman menu or widget section - Click to install or initialize Podman.
+
+From this same menu you can also start the Podman machine will create a container running virtually to host the resources needed to run the Podman AI resources.
+
+Hoewver, this machine while optimized to run containers and applications, is properly sized to host the resources needed for AI Model inference.
+
+== Create a custom Podman Instance
+
+ 
+Open Podman Desktop dashboard,
+
+Click on setting from the navaigation menu at the bottom left.  It's the icon that appears as a gear.
+
+Click *create new podman machine* (the button may show as create new) or if a machine is already running, stop then delete the machine. Then click create new.
+
+ . Optionally change the machine name, if you plan to host multiple AI application at once.
+
+ . For the vCPUs, you can leave the default of 5
+ 
+ . Change the memory to at least 8GB recommended, 12-16GB if possible.
+
+ . For the drive space, reduce the amount to 20-40GB  ( this is not where downloaded models are stored).
+
+ . leave the defaults for the other options. 
+
+ . Click Create
+
+It should take a short time for the podman machine to become ready, which is indicated by the resource meters and Running under the machine name.
+
+
+
+
+
