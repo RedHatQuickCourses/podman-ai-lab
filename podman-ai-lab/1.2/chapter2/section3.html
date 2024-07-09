@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Roadmap :: Podman AI Lab</title>
+    <title>Create Podman Machine :: Podman AI Lab</title>
     <link rel="prev" href="section2.html">
-    <link rel="next" href="../appendix/appendix.html">
+    <link rel="next" href="../chapter3/index.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -66,16 +66,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter2/index.html">Installation</a>
+    <a class="nav-link" href="index.html">Installation</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/section1.html">Podman Desktop</a>
+    <a class="nav-link" href="section1.html">Podman Desktop</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/section2.html">Podman AI Lab Extention</a>
+    <a class="nav-link" href="section2.html">Podman AI Lab Extention</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/section3.html">Create Podman Machine</a>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="section3.html">Create Podman Machine</a>
   </li>
 </ul>
   </li>
@@ -107,16 +107,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="index.html">Advanced Concepts</a>
+    <a class="nav-link" href="../chapter4/index.html">Advanced Concepts</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section1.html">RAG</a>
+    <a class="nav-link" href="../chapter4/section1.html">RAG</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section2.html">InstructLab</a>
+    <a class="nav-link" href="../chapter4/section2.html">InstructLab</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="section3.html">Roadmap</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter4/section3.html">Roadmap</a>
   </li>
 </ul>
   </li>
@@ -158,8 +158,8 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Podman AI Lab</a></li>
-    <li><a href="index.html">Advanced Concepts</a></li>
-    <li><a href="section3.html">Roadmap</a></li>
+    <li><a href="index.html">Installation</a></li>
+    <li><a href="section3.html">Create Podman Machine</a></li>
   </ul>
 </nav>
 </div>
@@ -168,49 +168,72 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Roadmap</h1>
+<h1 class="page">Create Podman Machine</h1>
 <div class="sect1">
-<h2 id="_roadmap"><a class="anchor" href="#_roadmap"></a>Roadmap</h2>
+<h2 id="_initialize_and_start_podman"><a class="anchor" href="#_initialize_and_start_podman"></a>Initialize and start Podman</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The roadmap is always open and we are looking for your feedback. Please create new issues and upvote on the issues that are feeling the most important for you.</p>
+<p>To start working with containers, Podman needs to be initialized.</p>
 </div>
 <div class="paragraph">
-<p>We will be working on the following items:</p>
+<p>Podman desktop will automatically install the latest version of podman by</p>
 </div>
-<div class="ulist">
-<ul>
+<div class="paragraph">
+<p>From the Podman Desktop dashboard</p>
+</div>
+<div class="paragraph">
+<p>From the Podman menu or widget section - Click to install or initialize Podman.</p>
+</div>
+<div class="paragraph">
+<p>From this same menu you can also start the Podman machine will create a container running virtually to host the resources needed to run the Podman AI resources.</p>
+</div>
+<div class="paragraph">
+<p>Hoewver, this machine while optimized to run containers and applications, is properly sized to host the resources needed for AI Model inference.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_a_custom_podman_instance"><a class="anchor" href="#_create_a_custom_podman_instance"></a>Create a custom Podman Instance</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Open Podman Desktop dashboard,</p>
+</div>
+<div class="paragraph">
+<p>Click on setting from the navaigation menu at the bottom left.  It&#8217;s the icon that appears as a gear.</p>
+</div>
+<div class="paragraph">
+<p>Click <strong>create new podman machine</strong> (the button may show as create new) or if a machine is already running, stop then delete the machine. Then click create new.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>Expanded Recipes: Discover new use cases and samples to inspire and accelerate your applications.</p>
+<p>Optionally change the machine name, if you plan to host multiple AI application at once.</p>
 </li>
 <li>
-<p>GPU Acceleration: Speeding up processing times by leveraging GPU acceleration.</p>
+<p>For the vCPUs, you can leave the default of 5</p>
 </li>
 <li>
-<p>API/CLI: Interact with Podman AI Lab from CLI and APIs.</p>
+<p>Change the memory to at least 8GB recommended, 12-16GB if possible.</p>
 </li>
 <li>
-<p>Enhanced Playgrounds: Streamlined workflows and UX giving a better space to experiment with LLMs and quickly iterate.</p>
+<p>For the drive space, reduce the amount to 20-40GB  ( this is not where downloaded models are stored).</p>
 </li>
 <li>
-<p>Fine Tuning with InstructLab: Re-train LLMs with a set of taxonomy knowledges. Learn more about the InstructLab project.</p>
+<p>leave the defaults for the other options.</p>
 </li>
 <li>
-<p>Enable Function Calling: Use LLMs to retrieve or interact with external tool by doing API calls.</p>
+<p>Click Create</p>
 </li>
-<li>
-<p>Local RAG: Explore RAG pattern, load your document and test behavior of the model.</p>
-</li>
-<li>
-<p>Bridge with AI Platforms (incl. K8s): Connect to remote models and ease deployment of applications.</p>
-</li>
-</ul>
+</ol>
+</div>
+<div class="paragraph">
+<p>It should take a short time for the podman machine to become ready, which is indicated by the resource meters and Running under the machine name.</p>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="section2.html">InstructLab</a></span>
-  <span class="next"><a href="../appendix/appendix.html">Appendix A</a></span>
+  <span class="prev"><a href="section2.html">Podman AI Lab Extention</a></span>
+  <span class="next"><a href="../chapter3/index.html">Podman AI Lab</a></span>
 </nav>
 </article>
   </div>
