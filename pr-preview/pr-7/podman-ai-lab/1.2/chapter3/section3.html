@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Model Services :: Podman AI Lab</title>
+    <link rel="prev" href="section2.html">
+    <link rel="next" href="section4.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Podman AI Lab</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/changeme/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="podman-ai-lab" data-version="1.2">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Podman AI Lab</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter1/index.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section1.html">GizmoGobble Corporation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section2.html">Podman &amp; Podman Desktop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section3.html">Podman AI Lab</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">Installation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section1.html">Podman Desktop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section2.html">Podman AI Lab Extention</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section3.html">Create Podman Machine</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Podman AI Lab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section1.html">Model Catalog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section2.html">AI Lab Playground</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="section3.html">Model Services</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section4.html">Recipe Catalog</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter4/index.html">Advanced Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter4/section1.html">RAG</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter4/section2.html">InstructLab</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter4/section3.html">Roadmap</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix A</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Podman AI Lab</span>
+    <span class="version">1.2</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Podman AI Lab</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.2</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Podman AI Lab</a></li>
+    <li><a href="section3.html">Model Services</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Model Services</h1>
+<div class="sect2">
+<h3 id="_local_model_serving"><a class="anchor" href="#_local_model_serving"></a>Local model serving</h3>
+<div class="paragraph">
+<p>With LLMs, we now apply container technology with the same simplicity and ease of use when it comes to running AI models locally.</p>
+</div>
+<div class="paragraph">
+<p>To do that, Podman AI Lab provides the ability to spin up local inference servers using llama.cpp within containers. It’s now easy to run a model locally, establish an endpoint, and start writing code to wrap new application capabilities around the model.</p>
+</div>
+<div class="paragraph">
+<p>To create a model server, go to the Services page and click the Create Model service button. If your environment does not have sufficient memory, you’ll get a notification indicating that you need to increase the available memory, which can easily be updated from Podman Desktop’s Settings page. Here, you can select the desired model you want to serve and define the port you want to use. The list of models displayed in the form will only include models that have been previously downloaded.</p>
+</div>
+<div class="paragraph">
+<p>Once the model service has been started, you can open its detail page. This helps you understand the details of the model-service endpoint and see a number of code snippets that help you learn how to interact with the model service from your application; for instance, an application written in Python and using LangChain. See Figure 24.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/start-inference-server.gif" alt="start inference server" width="640">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lab_model_services"><a class="anchor" href="#_lab_model_services"></a>LAB - Model Services</h3>
+<div class="paragraph">
+<p>From the Podman AI Dashboard select <strong>Services</strong> from the navigation menu.</p>
+</div>
+<div class="paragraph">
+<p>in the window, any running model service from the playground is also displayed here as services is the engine that provide the model serving for the playground environment.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>From the top right, select the <strong>New Model Service</strong> button.</p>
+</li>
+<li>
+<p>Select a Model from the Models dropdown (only downloaded models will be populated in the list)</p>
+</li>
+<li>
+<p>Selection the Create Service button</p>
+</li>
+<li>
+<p>Once the Service is populated in the window with a green icon, the Model is ready to use.</p>
+</li>
+<li>
+<p>Click on the green icon or the Model&#8217;s container name, which is unique identifier number.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This opens the Model Service Details dashboard.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>First in the window in the container name that is running the Model</p>
+<div class="ulist">
+<ul>
+<li>
+<p>the reason we need this name is we can visit the container section of Podman Desktop</p>
+</li>
+<li>
+<p>to interact directly with the container via a terminal</p>
+</li>
+<li>
+<p>to view container logs</p>
+</li>
+<li>
+<p>to view the kubenertes manifest file for deployment</p>
+</li>
+<li>
+<p>to inspect the detailed state of the running container.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Next is the model name that was selected to be served, along with Model&#8217;s license &amp; source repository</p>
+</li>
+<li>
+<p>In the Server section is the local url or inference endpoint for the Model</p>
+<div class="ulist">
+<ul>
+<li>
+<p>List is the CPU interence, designated that the Model is Served using CPU only. (no GPU or accelerator)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The final Section is the Client Code selector window.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_client_code"><a class="anchor" href="#_client_code"></a>Client Code</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once the inference server is started, the details for the inference server allows you to generate code snippets in various languages to access the model through the inference server.</p>
+</div>
+<div class="paragraph">
+<p>Using the dropdown to the right of <strong>client code</strong> , the code language and the specifc application types can be selected to show example integration code snippets to inference responses from the AI model</p>
+</div>
+<div class="paragraph">
+<p>This simplies developers having to search or create the integration code base, and allows them to focus on the tasks of integrating the solution not building the connection programming code.</p>
+</div>
+<div class="paragraph">
+<p>Use these as a starting point to integrate the model&#8217;s capabilities into your application backend. The API is compatible with the OpenAI format, so you can easily swap between local and hosted models.</p>
+</div>
+<div class="paragraph">
+<p>Let’s say we’re working on a banking application built with Quarkus, the Kubernetes-native Java stack for developer joy. We can easily integrate the generative AI model into my application by adding the new dependencies for LangChain4j and a connection to my served model to the application.properties. Now, we can create a service to interact with the LLM through a @RegisterAiService annotation, and call that method in other resources (more about Quarkus and Langchain4j here)! Figure 16 depicts this service.
+Figure 16: An example Quarkus application with LangChain4j to inference a model.
+Podman Desktop manages the model server container, ensuring high availability and efficient resource utilization. You can monitor its performance and logs through the Podman Desktop dashboard. Since it runs locally, you keep full control of your data and intellectual property.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>Podman AI Lab enables you to serve the model as a containerized REST endpoint that your code can call, just like any other API. From the Services tab, select New Model Service to specify the model and port to expose</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="section2.html">AI Lab Playground</a></span>
+  <span class="next"><a href="section4.html">Recipe Catalog</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
