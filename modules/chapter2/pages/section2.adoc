@@ -2,19 +2,27 @@
 
 https://podman-desktop.io/docs/ai-lab[Podman AI Lab Documentation]
 
-=== Installing the Podman AI Lab extension
+== Installing the Podman AI Lab extension
 
 *Procedure*
 
-If you have Podman Desktop already installed, podman-desktop:extension/redhat.ai-lab[click here] to launch the installation of Podman AI Lab in Podman Desktop.
-Verification
+If you have Podman Desktop already installed, let's install the Podman AI Lab extention in Podman Desktop.
+
+
+// Verification
+
+image::ai-lab-extention.png[width=800]
 
  . Click on the extentions icon in Podman Desktop, it looks like puzzle and will be located on the left hand side navigation bar. 
 
- . search for Podman AI Lab Extention 
+ . Optionally, search for Podman AI Lab Extention 
 
- . Find the Podman AI Lab extention tile.
+ . Locate the Podman AI Lab extention tile
 
- .. Click the down arrow button to install Podman AI Lab - verion 1.1.2 current 07.01.2024
+ . Click the down arrow button to install Podman AI Lab - verion 1.1.2 
 
- 
+image::ai-lab-extentionv2.png[width=800]
+
+Once the Podman AI Lab extention is installed, a new icon will appear in the Podman Desktop quick navigation bar on the left. Select this icon to access the Podman AI Lab dashboard.  
+
+Before we can use the AI Lab environment, there is one more step to complete, creating the Podman Machine.

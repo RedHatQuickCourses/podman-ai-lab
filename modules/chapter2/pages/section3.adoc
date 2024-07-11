@@ -1,5 +1,11 @@
 = Create Podman Machine
 
+Before using the services available in Podman AI Lab, a podman machine needs to be setup to provide cpu, memory, & storage resources.  In this case a virtualized container instance on the desktop or laptop hardware.
+
+If podman machine is not running, you will see the following message in most AI Lab resources.
+
+image::podman_machine.png[width=800]
+
 == Initialize and start Podman
 
 To start working with containers, Podman needs to be initialized.
@@ -7,6 +13,10 @@ To start working with containers, Podman needs to be initialized.
 Podman desktop will automatically install the latest version of podman by 
 
 From the Podman Desktop dashboard
+
+Insure the Podman Extention is now installed from the extentions menu
+
+image::podman_extention.png[width=800]
 
 From the Podman menu or widget section - Click to install or initialize Podman.
 
@@ -17,11 +27,15 @@ Hoewver, this machine while optimized to run containers and applications, is pro
 == Create a custom Podman Instance
 
  
-Open Podman Desktop dashboard,
+Open Podman Desktop dashboard
 
-Click on setting from the navaigation menu at the bottom left.  It's the icon that appears as a gear.
+Click on settings from the navaigation menu, it's the gear icon at the bottom left. 
+
+image::create-podman-machine.png[width=800]
 
 Click *create new podman machine* (the button may show as create new) or if a machine is already running, stop then delete the machine. Then click create new.
+
+
 
  . Optionally change the machine name, if you plan to host multiple AI application at once.
 
@@ -35,9 +49,12 @@ Click *create new podman machine* (the button may show as create new) or if a ma
 
  . Click Create
 
+image::config-podman-machine.png[width=800]
+
 It should take a short time for the podman machine to become ready, which is indicated by the resource meters and Running under the machine name.
 
 
+image::running-podman-machine.png[width=800]
 
 
-
+Now is time to get the favorite part, working with AI - lets get to it.
