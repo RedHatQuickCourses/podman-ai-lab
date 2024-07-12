@@ -2,18 +2,20 @@
 :navtitle: Home
 
 
-Welcome to this course on Podman AI Lab. Through the use of *Podman Desktop with the AI Lab Extension*: You will experiment with open-source AI models, deploy multiple types of AI powered applications, and interact with integration code examples using standard laptop / desktop hardware.
+Welcome to this course on Podman AI Lab. 
+
+Through the use of *Podman Desktop with the AI Lab Extension*: You will experiment with open-source AI models, deploy multiple types of AI powered applications, and interact with integration code examples using standard laptop / desktop hardware. 
 
 
 This course will be experienced from the perspective of a *development team* at the GizmoGobble  corporation. They have been tasked with integrating an AI powered Chatbot into multiple web interfaces. GizmoGobble's development team will have no experience with: the Podman Desktop application, AI Models or understanding of their operation.
 
-This course will progress with the developers through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the *playground* to experiment & investigate the effectives of an AI Model, and finally use *recipe* templates to deploy mulitple AI enabled applications. 
+This course will progress with the developers through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the *playground* to experiment & investigate the effectiveness of AI Models, and finally use *recipe* templates to deploy mulitple AI enabled applications. 
 
 
 == Course Objectives:
 
  . Use Podman Desktop to create a container runtime environment to host an AI model: 
- ** Basic knowledge of the features of Podman Desktop Application
+ ** Gain basic knowledge of the features of Podman Desktop Application
  ** Understand and apply the components of Podman AI Lab extension
  ** Understand Podman AI Lab from a developer perspective
 

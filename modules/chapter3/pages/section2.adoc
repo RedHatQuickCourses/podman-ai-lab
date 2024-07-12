@@ -1,8 +1,11 @@
 = AI Lab Playground
 
+=== GizmoGobble team on Ai Lab Playground
+
+
 The integrated Playground environments allow for experimenting with available models in a local environment. An intuitive user prompt helps in exploring the capabilities and accuracy of various models and aids in finding the best model for the use case at hand. The Playground interface further allows for parameterizing models to further optimize the settings and attributes of each model.
 
-The playground is about experiementation and learning. While it may seem like random and non-essential learning.  The playground is where ideas, theories, and hypothesis's are evaluated to determine how models are tuned, interacted with, and evaluated. 
+The playground is about experiementation and learning. While it may seem like random and non-essential learning.  The playground is where ideas, theories, and hypothesis's are tested to determine how base AI models respond to prompt scenarios, system messages, parameter turning to discover which Models perform best. 
 
 
 image::playground.gif[width=640]
@@ -10,13 +13,13 @@ image::playground.gif[width=640]
 
 == Starting a playground environment
 
-from the AI Lab navigation pane:
+From the AI Lab navigation menu:
 
- .  Select the Playgrounds menu
+ .  Select Playgrounds
 
  . Select the *New Playground* button at the top right
 
- . Optionally give the playground a name
+ . Optionally give the playground a unique name
 
  . Select a Model from the Models dropdown (only downloaded models will be populated in the list)
 
@@ -25,11 +28,29 @@ from the AI Lab navigation pane:
 
 This will deploy:
 
- * a new Model Services which exposes the AI Model via API services
+ * a new *Model Service* for the selected AI Model, which exposes the AI Model via an inference endpoint API.
 
- * a new chat container interface to allow interaction with the AI Model. 
+ * a new *ai-lab-playground-chat container* that provides a Visual user interface to allow interaction with Services AI Model.  This container can be viewed from the Podman Desktop containers dashboard.
 
-=== Playground dashboard
+=== Verify resources are running
+
+ .  Click on the Playground and from the Playground Environments dash, there should now one running playground, denoted by the green icon, next to the playground name you selected.
+ If you left the name field blank, this will display playground1.
+
+ . Click on the playground to open the environment. Check the right hand side fo the bar at the top to insure that there is a *model service running* with a green dot shown. 
+ ** if so continue, if not correct the error shown.
+
+ . Next select the services menu, and verify there is now a service with the green indicator that the service is runnning.  We will return to this shortly. 
+
+ ** If there is no service shown, continue to wait for bit, sometimes the first services takes minute or so to create.
+
+ . Return to the Playground menu, and once again select the Playground you deployed to open the envvironment. 
+
+[INFORMATION]
+ 
+We can deploy multiple playgrounds utilzing a single model inference service.  This allows testing of various interations of experiments occur simultaneously while conserving resources usage.  
+
+== Exploring the playground
 
 
 ==== Define a system prompt
@@ -38,29 +59,40 @@ While setting the default system prompt is optional,  it's important to tune the
 
 System prompts are a set of instructions, guidelines, and contextual information provided to AI models before they engage with user queries. These prompts act as a framework, setting the stage for the AI to operate within specific parameters and generate responses that are coherent, relevant, and aligned with the desired outcome. System prompts play a pivotal role in bridging the gap between the vast knowledge acquired by AI models during training and their application in real-world scenarios.
 
-GG's example system prompt:  you are fantastic story teller injecting humor and entertainment into every answer.  
+GG's example system prompts:  
+
+. You are a helpful, respectful and honest assistant. Always be as helpful as possible, while being safe. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.  If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.
+
+.  You are fantastic story teller injecting humor and entertainment into every answer.
+
+. You are a helpful, respectful and honest Master Chef with years of experience in the Culinary Arts. You are familiar wtih various types of cooking utensils and can recommend the best one for the task at hand. 
+
+The system prompt is where we can ask the AI to assume some personality or role, and act as that type of persona, while also adding guidelines and rules for the AI's responeses madhere to.
+
 
 
 === Model parameters 
 
-The Playground allows you to tune the model's behavior through several configuration options
+On the right side of the Playground Console is a *Settings widget*, with the message *next prompt will use these settings*. The Playground allows you to tune the model's behavior through several configuration parameters.
 
- . Temperature: Controls the randomness of responses. Lower values are more focused, higher values are more creative. Accepts values betwen 0 and 2. Higher values like .8 will make the output more random, while lower values like. 0.2 will make it more focused and deterministic. 
+There are three Model Parameters that can be adjusted from this sub-menu.
 
- . Max Tokens: Sets the maximum length of the *model's output*, influencing verbosity and resource consumption. Accepts values between -1 an 32768 tokens, This is also known as the context window length, context window, context length, or manimum sequence length. Setting the limit is input tokens is not specified at this time. 
+ . *Temperature*: Controls the randomness of responses. Lower values are more focused, higher values are more creative. Accepts values betwen 0 and 2. Higher values like .8 will make the output more random, while lower values like. 0.2 will make it more focused and deterministic. 
 
- . Top-p: Adjusts the balance between relevance and diversity in word choices. Accepts values between 0 and 1. An alternative to sampling with temperature, where the model considers the results of the tokens with the top_p probability mass.  So 0.1 means only the tokens comprising the top 10% probability mass are considered. 
+ . *Max Tokens*: Sets the maximum length of the *model's output*, influencing verbosity and resource consumption. Accepts values between -1 an 32768 tokens, This is also known as the context window length, context window, context length, or manimum sequence length. Setting the limit is input tokens is not specified at this time. 
+
+ . *Top-p*: Adjusts the balance between relevance and diversity in word choices. Accepts values between 0 and 1. An alternative to sampling with temperature, where the model considers the results of the tokens with the top_p probability mass.  So 0.1 means only the tokens comprising the top 10% probability mass are considered. 
 
 
 Experiment with these settings interactively to find the optimal configuration for your use case. You'll notice there are tradeoffs between predictability and creativity, as well as conciseness and comprehensiveness.
 
-LAB:
+== LAB:
 
 Interact with the Playground
 
  . Set a system prompt and evaluate the various responses  
 
- .. Use a system prompt that instructs the model answer a  comedian, a scholar, or for our use case a master chef and note the results of questions. 
+ .. Use a system prompt that instructs the model answer as a  comedian, a scholar, or for our use case a master chef and note the results of questions. 
 
  . Change the model parameter settings and evaluate response actions
 
@@ -72,7 +104,12 @@ Interact with the Playground
 .. The top_p setting is similiar to temperature, but increases the vocabulary of the models responses. Change the temperature to 1.9, and the top-p to 1.0. Give this a try and find out what the results are.  This should yeild a response with words that less frequntly heard in the english language. 
 
 
-We used the Playground to experiment with various settings, queried the models with various prompts. Now let's head over to the Model Serving dashboard to learn more about integrating our AI Models with existing or new applications. 
+
+
+
+
+
+We use the Playground to experiment with various settings, queried the models with various prompts. Now let's head over to the Model Serving dashboard to learn more about integrating our AI Models with existing or new applications. 
 
 
 [NOTE]

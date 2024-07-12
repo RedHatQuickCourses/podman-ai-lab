@@ -1,0 +1,34 @@
+= Introduction
+
+== Accelerating AI Adoption
+
+As businesses integrate generative AI into their operations, staff must adapt to new ways of interacting with these systems, such as training them on specific tasks, validating their outputs, and ensuring ethical considerations are addressed. This requires a deep understanding of both the technical aspects of AI and the ethical implications of its use.
+
+Moreover, businesses are increasingly recognizing the value of fostering a culture of continuous learning and upskilling. By investing in training programs that focus on AI literacy, employees can stay abreast of the latest developments and ensure their organizations remain competitive in the rapidly evolving AI landscape.
+
+In summary, the integration of generative AI into businesses is driving a paradigm shift that demands a diverse set of skills and competencies from staff. By embracing continuous learning and upskilling, businesses can help their employees thrive in this new environment and unlock the full potential of AI technologies.
+
+
+== Accelerating AI Adoption
+
+You decide to temporarily break some rules. 
+
+There will be short-term technical debt. There will be inefficient processes. There will be redundant capabilities. There will be wasted efforts from committing to a technology stack that you may switch away from.
+
+What tools, services, and solutions are available today that will allow my product teams to get to market as quickly as possible based on their current skill sets, internal technology landscape, and data availability?
+
+What offers the least friction in development? How can I guide this with accelerators that don’t require months of build? How can I allow our product teams to focus on our company’s core differentiators while combining the power of Foundation Models (FM) to innovate on behalf of our customers?
+
+In the context of LLM development, exhaust the path of least custom development before moving to more complicated and costly approaches.
+
+* 		Develop your product using base Foundation Models (FM).
+* 		Iterate through multiple FM to determine which one best fits the use case.
+* 		An FM evaluation framework will be needed based on your defined output criteria to test and iterate quickly
+* 		Once you find the FM that works best, focus on that FM and minimize continuous testing of other FMs.
+* 		Decompose your problem as needed as you may even make use of multiple FMs by task.
+* 		Apply prompt engineering techniques against the FM.
+* 		Apply RAG technique using internal/external data.
+* 		Combine LLM with other ML capabilities or other standard algorithms where applicable. Be reminded that just because you can use an FM to build a capability, doesn’t mean you always should.
+* 		Fine tune a FM with your data.
+* 		Combine your Fine-tuned FM with techniques from the earlier steps.
+* 		Pre-train your own Foundation Model.

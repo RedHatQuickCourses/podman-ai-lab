@@ -28,13 +28,11 @@ Podman AI Lab ships with a so-called Recipes Catalog that helps you navigate a n
  * *Object detection* helps identify and locate objects within digital images or video frames. It is a fundamental component in various applications, including autonomous vehicles, retail inventory management, precision agriculture, and sports broadcasting.
  * *Audio-to-text* transcription involves the process of automatically transcribing spoken language into written text, facilitating documentation, accessibility, and analysis of audio content.
 
-=== AI Models
+=== AI Models Catalog
 
-Models Catalog -  curated list of Open Source models with the Apache 2.0 license. Once downloaded, the models are available to be used for AI applications, model services and playgrounds.
+The models catalog is a curated list of Open Source models with the Apache 2.0 license. Once downloaded, the models are available to be used for AI applications, model services and playgrounds. The catalog will also users to import custom AI model and store them. 
 
 === Model Services
-
-Once a model has been downloaded, you can start an inference server for the model using *Model Services*. This allows testing of the model using a playground environment or to connect applications as the inference server is exposing a well know *OpenAI-compatible API*.
 
 A model service offers a configurable endpoint via an OpenAI-compatible web server, facilitating a seamless integration of AI capabilities into existing applications. Upon initialization, effortlessly access detailed service information and generate code snippets in multiple programming languages to ease application integration.
 
@@ -42,24 +40,20 @@ The Services page allows for accessing running model services and provides furth
 
 === Playgrounds
 
-Podman AI Lab includes a playground environment that allows users to interact with models and observe their behavior. This can be used to test, experiment and develop prototypes and applications with the models. An intuitive user prompt helps in exploring the capabilities and accuracy of various models and aids in finding the best model and the best settings for the use case in the application.
-
-The Playground interface further allows for parameterizing models to further optimize the settings and attributes of each model.
-
-Once started, each playground ships with a generic chat client to interact with the model service. The Services page allows for accessing running model services and provides further details and code snippets to interact with them.
+Podman AI Lab includes a playground environment that allows users to interact with AI models and observe their behavior. Once started, each playground ships with a generic chat client to interact with the model service. A customizable system prompt & paraemter modifcation settings widget helps in exploring the capabilities and accuracy of various models and aids in finding the best model with the best settings for the task.
 
 
 
-== AI & Large Language Model Format
+== AI & Large Language Model supported format
 
 === GGUF Format:
 
-Podman AI Lab supports large language models in the .gguf format and the ability to download or import these quantized, .gguf files models, and run them locally on a laptop or desktop. 
+Podman AI Lab supports large language models in the .gguf format and the ability to download or import these quantized, .gguf model files, and run them locally on a laptop, desktop, or equivilant virtual machine. 
 
 GPT-Generated Unified Format (GGUF) is a file format that streamlines the use and deployment of large language models (LLMs). GGUF is specially designed to store inference models and perform well on consumer-grade computer hardware.
 
 
-https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository] provides a tool to quickly and easily convert and quantize a model from huggingface into a *.gguf format for use with Podman AI Lab. 
+https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository] provides a tool to quickly and easily convert and quantize a model from huggingface into the *.gguf format for use with Podman AI Lab. 
 
 
 === HuggingFace _ 

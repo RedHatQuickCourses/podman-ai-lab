@@ -1,9 +1,22 @@
 = Introduction
 
-== AI Adoption
+== Accelerating AI Adoption
 
-As businesses integrate generative AI into their operations, staff must adapt to new ways of interacting with these systems, such as training them on specific tasks, validating their outputs, and ensuring ethical considerations are addressed. This requires a deep understanding of both the technical aspects of AI and the ethical implications of its use.
+As businesses integrate generative AI into their operations,They are asking? 
 
-Moreover, businesses are increasingly recognizing the value of fostering a culture of continuous learning and upskilling. By investing in training programs that focus on AI literacy, employees can stay abreast of the latest developments and ensure their organizations remain competitive in the rapidly evolving AI landscape.
+What tools, services, and solutions are available today that will allow my product teams to get to market as quickly as possible based on their current skill sets, internal technology landscape, and data availability?
 
-In summary, the integration of generative AI into businesses is driving a paradigm shift that demands a diverse set of skills and competencies from staff. By embracing continuous learning and upskilling, businesses can help their employees thrive in this new environment and unlock the full potential of AI technologies.
+What offers the least friction in development? How can I guide this with accelerators that don't require months of build? How can I allow our product teams to focus on our company's core differentiators while combining the power of Large Language Models (LLMs) to innovate on behalf of our customers?
+
+The GizmoGobble's leadership team decided when it comes to LLM development, exhaust the path of least custom development before moving to more complicated and costly approaches. 
+
+These are the requirement they forth: 
+
+* 		Develop first using existing open source large language models (LLMs)
+* 		Iterate through multiple LLMs to determine which one best fits the use case.
+*       Apply prompt engineering techniques against the LLM.
+* 		Once you find the LLM that works best, focus on that LLM
+* 		We may make use of multiple LLMs depending on the task.
+* 		Fine tune a LLM with custom data.
+
+Now that have an idea of the approach, let's a step back to learn more about the GizmoGobble Corportion and why they selected to begin with Podman AI Labs to achieve their goals.

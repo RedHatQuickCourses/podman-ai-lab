@@ -1,8 +1,22 @@
 = Model Catalog
 
-== AI Models
-
 Podman AI Lab provides a curated list of open source AI models and LLMs. Once downloaded, the models are available to be used for AI applications, model services and playgrounds. 
+
+== AI Model License
+
+
+Like a software license, a Machine Learning (ML) model license governs the use, redistribution of the model and/or algorithm, and distribution of any derivatives of it. Additionally, there are other components to an AI system, such as data, source code, or applications, which may have their own separate licenses.
+
+You can select to download one or more of the pre-curated models available in Podman AI Lab.These models all fall under the apache 2.0 license. 
+
+[NOTE]
+The Apache 2.0 license is a particular type of open-source, permissive software license that ensures that end-users are granted a license to any patent that is covered by the software in question. An Apache 2.0 license ensures the security and availability of safe and powerful open-source software.  Check the Models license and required resources before importing your own models.
+
+image::download-model.gif[width=640]
+
+---
+
+=== Model Catalog
 
 There are four tabs availble in the Models Catalog
 
@@ -11,20 +25,10 @@ There are four tabs availble in the Models Catalog
  * *Imported* - displays any models imported that were not originally listed in the catalog
  * *Available* - display all catalog models that have not been downloaded.
 
-_Check license and required resources before importing your own models._
 
-image::download-model.gif[width=640]
 
----
 
-=== Models Catalog dashboard
 
-You can select to download one or more of the pre-curated models available in Podman AI Lab.
-
-These models all fall under the apache 2.0 license. 
-
-[NOTE]
-The Apache 2.0 license is a particular type of open-source, permissive software license that ensures that end-users are granted a license to any patent that is covered by the software in question. An Apache 2.0 license ensures the security and availability of safe and powerful open-source software.
 
 == LAB
 
@@ -40,22 +44,32 @@ The Apache 2.0 license is a particular type of open-source, permissive software 
 
  . Select the instrublab/granite-7b-lab-GGUF model file by clicking the name to view details about the AI Model. 
 +
+[NOTE]
+Appreciately this specific model is limited to a bolded name and needs some updates. This section includes details about the model creator, original model source location, along with a description that includes details about the AI Model. For specific details on this model, visit: https://huggingface.co/instructlab/granite-7b-lab[huggingface hub model card for the Granite-7b-Lab]. 
 
-This usually includes details about the model creator, original model location, and a description with additional details about the AI Model. For specific details on the model, visit: https://huggingface.co/instructlab/granite-7b-lab[huggingface hub model card for the Granite-7b-Lab]. 
 
- . Return the catalog dashboard and use the DownArrow icon on the far right to start the download of the instructlab/granite-7b-lab-GGUF file.
+ . Return the catalog dashboard and use the DownArrow icon on the far right to start the download of the *Instructlab/granite-7b-lab-GGU*F* file.
 
- . Download any additional model files you are interested in working with. 
+ . Download any additional model files you are interested in working with; suggested models: 
+ .. *Instructlab/merlinite-7b-lab-GGUF*
+ .. *TheBloke/Mistral-7B-Instruct-v0.2-GGUF*
 
-In order the Model to be availble to the Services and Playground environments, it must be visible in the download tab of the Model Catalog. 
+*In order for an AI Model to be availble to the Services and Playground environments, it must be vis_ible in the download tab of the Model Catalog with Green icon indicating it's been copied to the local machine.*_
+
+---
 
 ===  Importing an InstructLab trained model into Podman AI Lab
-Speaking of importing and working with trained models, let’s take a look at working with an https://github.com/instructlab[InstructLab-based fine-tuned mode]l. While LLMs are trained on immense amounts of data in a variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open source to AI model development. What’s neat is that this is possible on consumer-grade hardware, and after following the instructions from the project repository, you’ll end up with a quantized .gguf file in the model-trained directory ready to use with Podman AI Lab.
+
+Podman AI Lab supports the models created during fine-tuning with the InstructLab Project
+
+While LLMs are trained on immense amounts of data in a variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open source to AI model development. What’s neat is that this is possible on consumer-grade hardware, and after following the instructions from the project repository, you'll end up with a quantized .gguf file in the model-trained directory ready to use with Podman AI Lab.
+
+For more information on the InstructLab project and training models with specific knowledge and skills visit the project homepage at  https://github.com/instructlab[InstructLab Project]. 
 
 
 == GizmoGobble environment
 
-The development team at GG decided to test 3 of the catalog AI models to determine which was able to respond best to subject specific questions.
+The development team at GG sorted through the Models Catalog list of AI Models. After researching several Models in detail, they selected three AI Models as possible candidates for the GizmoGenie chatbot.
 
  * Instructlab/merlinite-7b-lab-GGUF
  
@@ -63,6 +77,6 @@ The development team at GG decided to test 3 of the catalog AI models to determi
  
  * TheBloke/Mistral-7B-Instruct-v0.2-GGUF
  
-Continue onto the next section to use these models in the playground.
+Let's see how they are going to use the playground features to test each model.
  
 
