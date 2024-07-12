@@ -2,7 +2,7 @@
 
 == GizmoGobble (GG) team and Podman Desktop
 
-As the GG developer team begins the installation of Podman Desktop on their various devices, which primarily consist of Macbook users, so you will see MacOs based screen captures as examples in this course. However, the team decided to composed notes on the installation instructions for Linux, MaxOs, and Windows as part of their onborading future developers initiative.
+As the GG developer team begins the installation of Podman Desktop on their various devices, which primarily consist of Macbook users, so you will see MacOs based screen captures as examples in this course. However, the team decided to compose notes on the installation instructions for Linux, MacOs, and Windows as part of their onborading future developers initiative.
 
 
 
