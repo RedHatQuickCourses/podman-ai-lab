@@ -168,6 +168,28 @@
 </aside>
 <article class="doc">
 <h1 class="page">Recipe Catalog</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Podman AI Lab ships with a so-called Recipes Catalog that helps you navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple models allows finding the optimal one for your use case.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gizmogobble_teams_use_of_recipe_catalog"><a class="anchor" href="#_gizmogobble_teams_use_of_recipe_catalog"></a>GizmoGobble team&#8217;s use of Recipe Catalog</h3>
+<div class="paragraph">
+<p>As the main goal of GizmoGenie application is to provide a ChatBot style interaction with web customers, The GG Developer&#8217;s decided after downloading a few models to evalute using the playground and model services. It was time test their selection in simulated application that would mirror the web interface solution they planned to develop.</p>
+</div>
+<div class="paragraph">
+<p>In the natural language section of the Recipe Catalog, there is a recipe for a Chat application that could provides a great model for us to use to build their beta GizmoGenie Chat interface for our customers.</p>
+</div>
+<div class="paragraph">
+<p>The best part about the Chat Application recipe is the provided links to the github repository that contains all the application code. This repo contains recipes for building and running containerized AI and LLM Applications with Podman.</p>
+</div>
+<div class="paragraph">
+<p>These containerized AI recipes can be used to help developers quickly prototype new AI and LLM based applications locally, without the need for relying on any other externally hosted services. Since they are already containerized, it also helps developers move quickly from prototype to production.</p>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_recipes_catalog_overview"><a class="anchor" href="#_recipes_catalog_overview"></a>Recipes catalog overview</h2>
 <div class="sectionbody">
@@ -175,10 +197,13 @@
 <p>One of the most important features of the Podman AI Lab extension is the curated catalog of open source recipes that enable you to navigate common AI use cases and solutions.</p>
 </div>
 <div class="paragraph">
-<p>To begin, click the top left option in the sidebar to open the Recipes Catalog. This catalog is organized by categories of example use cases that can inspire you on how to infuse your app with AI, with pre-selected models (and the ability to swap), example code, and easy access to your IDE. Browse through the list and find the recipe that best suits your needs. The catalog of recipes is provided to provide the best practices and inspire you with use cases you can eventually benefit from in your applications.</p>
+<p>To begin, click the top left option the Recipes Catalog menu option.</p>
 </div>
 <div class="paragraph">
-<p>Once you&#8217;ve selected a recipe from the Recipes Catalog, you&#8217;ll be able to see a summary of what the recipe does and how it works. This will give you a better understanding of the recipe&#8217;s capabilities and help you decide if it&#8217;s right for your application. You’ll also find handy links to the application source code and the recommended model, as well as the ability to select other compatible models (curated from Hugging Face’s open source community).</p>
+<p>This catalog is organized by categories of example use cases that can inspire you on how to infuse your app with AI, with pre-selected models (and the ability to swap), example code, and easy access to your IDE. The catalog of recipes is provided to provide the best practices and inspire you with use cases you can eventually benefit from in your applications.</p>
+</div>
+<div class="paragraph">
+<p>Once you&#8217;ve selected a recipe from the Recipes Catalog, you&#8217;ll be able to see a summary of what the recipe does and how it works. This will give you a better understanding of the recipe&#8217;s capabilities and help you decide if it&#8217;s right for your application. You&#8217;ll also find handy links to the application source code and the recommended model, as well as the ability to select other compatible models (curated from Hugging Face&#8217;s open source community).</p>
 </div>
 <div class="paragraph">
 <p>When you&#8217;re ready to see the application live and running, you can start it by clicking the Start AI App button on the upper right-hand side. As the application starts, you&#8217;ll be able to see the model it uses and where the source code of the application is located. In the background, Podman is running an inference server for the downloaded model within a container using the freely redistributable Red Hat Enterprise Linux Universal Base Image.</p>
@@ -187,21 +212,21 @@
 <p>During the startup process, you&#8217;ll be shown a few steps that will be completed before the application is ready to use. These steps might include downloading the model, building the container images with the model and the application, etc.</p>
 </div>
 <div class="paragraph">
-<p>Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example, we’re able to interact with the front end application, which is inferencing the model server, the selected Mistral-7B model. It’s this easy to set up a model server and start integrating generative AI in your applications.</p>
+<p>Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example, we&#8217;re able to interact with the front end application, which is inferencing the model server, the selected Mistral-7B model. It’s this easy to set up a model server and start integrating generative AI in your applications.</p>
 </div>
 <div class="paragraph">
-<p>As you work in other areas of Podman Desktop for your container workflow, you’ll always be able to see your running AI apps (i.e., the recipes you started) in the dedicated Running section for Podman AI Lab.</p>
+<p>As you work in other areas of Podman Desktop for your container workflow, you&#8217;ll always be able to see your running AI apps (i.e., the recipes you started) in the dedicated Running section for Podman AI Lab.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/start-ai-app.gif" alt="start ai app" width="640">
 </div>
 </div>
-<div class="sect2">
-<h3 id="_recipes_catalog_sample_applcations"><a class="anchor" href="#_recipes_catalog_sample_applcations"></a>Recipes catalog sample applcations</h3>
-<div class="paragraph">
-<p>Podman AI Lab ships with a so-called Recipes Catalog that helps you navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple models allows finding the optimal one for your use case.</p>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_available_catagories_of_ai_solutions"><a class="anchor" href="#_available_catagories_of_ai_solutions"></a>Available catagories of AI solutions</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><strong>natural language processing</strong></p>
 </div>
@@ -253,7 +278,6 @@
 </div>
 </div>
 </div>
-</div>
 <div class="sect1">
 <h2 id="_lab_sample_application_deployment"><a class="anchor" href="#_lab_sample_application_deployment"></a>LAB: Sample Application Deployment</h2>
 <div class="sectionbody">
@@ -261,15 +285,15 @@
 <p>Located in the AI Apps section of AI Lab is the Reciept Catalog, along with the Running menu option.</p>
 </div>
 <div class="paragraph">
-<p>When opened the recipe catalog display the sample appllications sorted by use case.</p>
+<p>When opened the recipe catalog displays the sample appllications sorted by catagory.</p>
 </div>
 <div class="paragraph">
-<p>Let&#8217;s begin with the ChatBot Appliation.</p>
+<p>Let&#8217;s begin with the ChatBot Appliation in the natural language section</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Select the ChatBot application open a new dashboard with two options, the Summary &amp; Models tab.</p>
+<p>Selecting the ChatBot application open a new dashboard with two options, the Summary &amp; Models tab.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
