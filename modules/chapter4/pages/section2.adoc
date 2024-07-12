@@ -1,6 +1,5 @@
 = InstructLab
 
-This is _Section 2_ of _Chapter 4_ in the *hello* quick course....
 
 image::instructlab-banner.png[width=640]
 
