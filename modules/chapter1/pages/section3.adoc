@@ -40,7 +40,7 @@ The Services page allows for accessing running model services and provides furth
 
 === Playgrounds
 
-Podman AI Lab includes a playground environment that allows users to interact with AI models and observe their behavior. Once started, each playground ships with a generic chat client to interact with the model service. A customizable system prompt & paraemter modifcation settings widget helps in exploring the capabilities and accuracy of various models and aids in finding the best model with the best settings for the task.
+Podman AI Lab includes a playground environment that allows users to interact with AI models and observe their behavior. Once started, each playground ships with a generic chat client to interact with the model service. A customizable system prompt & parameter modification settings widget helps in exploring the capabilities and accuracy of various models and aids in finding the best model with the best settings for the task.
 
 
 
@@ -48,7 +48,7 @@ Podman AI Lab includes a playground environment that allows users to interact wi
 
 === GGUF Format:
 
-Podman AI Lab supports large language models in the .gguf format and the ability to download or import these quantized, .gguf model files, and run them locally on a laptop, desktop, or equivilant virtual machine. 
+Podman AI Lab supports large language models in the .gguf format and the ability to download or import these quantized, .gguf model files, and run them locally on a laptop, desktop, or equivalent virtual machine. 
 
 GPT-Generated Unified Format (GGUF) is a file format that streamlines the use and deployment of large language models (LLMs). GGUF is specially designed to store inference models and perform well on consumer-grade computer hardware.
 

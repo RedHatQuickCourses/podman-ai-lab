@@ -7,7 +7,7 @@ Welcome to this course on Podman AI Lab.
 Through the use of *Podman Desktop with the AI Lab Extension*: You will experiment with open-source AI models, deploy multiple types of AI powered applications, and interact with AI model integration code examples using standard laptop / desktop hardware. 
 
 
-This course will be experienced from the perspective of a *development team* at the GizmoGobble  corporation. They have been tasked with integrating an AI powered Chatbot into multiple web interfaces. GizmoGobble's development team has no experience with the Podman AI Lab software, AI Model serving, or integration of existing application with AI technology.
+This course will be experienced from the perspective of a *development team* at the GizmoGobble  corporation. They have been tasked with integrating an AI powered Chatbot into multiple web interfaces. GizmoGobble's development team has no experience with the Podman AI Lab software, AI Model serving, or integration of existing applications with AI technology.
 
 This course will progress with the developers through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the *playground* to experiment & investigate the effectiveness of AI Models, and finally use the *recipe catalog* to deploy various AI enabled applications. 
 
@@ -20,11 +20,11 @@ This course will progress with the developers through installing Podman Desktop,
  ** Understand Podman AI Lab from a developer perspective
 
  . Utilize the playground feature to interact with various AI Models 
- ** Experiement with AI Models to determine their capabilities
+ ** Experiment with AI Models to determine their capabilities
 
 
  . Use code samples to simplify integration with existing code bases
- **  Know where to locate code snippets to integrate  AI models to applcations
+ **  Know where to locate code snippets to integrate  AI models to applications
 
  . Deploy an AI enabled application using pre-create templates called recipes.
  **  Reverse engineer open source code used in recipes for AI enabled applications

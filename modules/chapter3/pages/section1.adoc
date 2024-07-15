@@ -18,7 +18,7 @@ image::download-model.gif[width=640]
 
 === Model Catalog
 
-There are four tabs availble in the Models Catalog
+There are four tabs available in the Models Catalog
 
  * *All* - displays all available catalog models. Whether downloaded or available is indicated by the model icon being highlighted in green for downloaded models.
  * *Downloaded* - displays all models that have been stored locally for offline use. 
@@ -36,16 +36,16 @@ There are four tabs availble in the Models Catalog
 
  . Open the Podman Desktop Application
 
- . Ensure the Podman AI Lab extention is active from the extentions menu dashboard
+ . Ensure the Podman AI Lab extension is active from the extensions menu dashboard
 
  . Select the AI Lab menu icon to open the AI Lab dashboard
 
- . Select the Models / Catalog menu from the navaigation menu. 
+ . Select the Models / Catalog menu from the navigation menu. 
 
- . Select the instrublab/granite-7b-lab-GGUF model file by clicking the name to view details about the AI Model. 
+ . Select the instructlab/granite-7b-lab-GGUF model file by clicking the name to view details about the AI Model. 
 +
 [NOTE]
-Appreciately this specific model is limited to a bolded name and needs some updates. This section includes details about the model creator, original model source location, along with a description that includes details about the AI Model. For specific details on this model, visit: https://huggingface.co/instructlab/granite-7b-lab[huggingface hub model card for the Granite-7b-Lab]. 
+This specific model is limited to a bolded name and needs some updates. This section includes details about the model creator, original model source location, along with a description that includes details about the AI Model. For specific details on this model, visit: https://huggingface.co/instructlab/granite-7b-lab[huggingface hub model card for the Granite-7b-Lab]. 
 
 
  . Return the catalog dashboard and use the DownArrow icon on the far right to start the download of the *Instructlab/granite-7b-lab-GGU*F* file.
@@ -54,7 +54,7 @@ Appreciately this specific model is limited to a bolded name and needs some upda
  .. *Instructlab/merlinite-7b-lab-GGUF*
  .. *TheBloke/Mistral-7B-Instruct-v0.2-GGUF*
 
-*In order for an AI Model to be availble to the Services and Playground environments, it must be vis_ible in the download tab of the Model Catalog with Green icon indicating it's been copied to the local machine.*_
+*In order for an AI Model to be available to the Services and Playground environments, it must be vis_ible in the download tab of the Model Catalog with Green icon indicating it's been copied to the local machine.*_
 
 ---
 
