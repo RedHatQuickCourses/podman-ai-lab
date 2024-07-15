@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Podman &amp; Podman Desktop :: Podman AI Lab</title>
+    <link rel="prev" href="section1.html">
+    <link rel="next" href="section3.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Podman AI Lab</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/changeme/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="podman-ai-lab" data-version="1.2">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Podman AI Lab</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section1.html">GizmoGobble Corporation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="section2.html">Podman &amp; Podman Desktop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section3.html">Podman AI Lab</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">Installation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section1.html">Podman Desktop</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section2.html">Podman AI Lab Extension</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section3.html">Create Podman Machine</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter3/index.html">Podman AI Lab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section1.html">Model Catalog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section2.html">AI Lab Playground</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section3.html">Model Services</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section4.html">Recipe Catalog</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter4/index.html">Advanced Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter4/section1.html">RAG</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter4/section2.html">InstructLab</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter4/section3.html">Roadmap</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix A</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Podman AI Lab</span>
+    <span class="version">1.2</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Podman AI Lab</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.2</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Podman AI Lab</a></li>
+    <li><a href="index.html">Introduction</a></li>
+    <li><a href="section2.html">Podman &amp; Podman Desktop</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Podman &amp; Podman Desktop</h1>
+<div class="sect1">
+<h2 id="_gizmogobble_gg_team_podman_research"><a class="anchor" href="#_gizmogobble_gg_team_podman_research"></a>GizmoGobble (GG) team Podman research</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As the GG developer team began their research into Podman Desktop &amp; AI Labs, they took notes that might be helpful for the rest of us to use. We&#8217;ll use these notes, beginning with a brief review of Podman to gain some basic knowledge before diving into the lab portion of this course.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_is_podman"><a class="anchor" href="#_what_is_podman"></a>What is Podman ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Podman (short for pod manager) is an open source tool for developing, managing, and running containers. Developed by Red Hat® engineers along with the open source community, Podman is capable of managing the entire container ecosystem.  Developers can also take advantage of Podman Desktop, a graphical user interface (GUI) for using Podman in local environments.</p>
+</div>
+<div class="paragraph">
+<p>Users can run Podman on various Linux® distributions, such as Red Hat Enterprise Linux, Fedora, CentOS, and Ubuntu.</p>
+</div>
+<div class="paragraph">
+<p>While <strong>"containers are Linux,"</strong> Podman also runs on Mac and Windows, where it provides a native podman CLI and embeds a guest Linux system to launch containers. This guest is referred to as a <strong>Podman machine</strong> and is managed with the Podman Machine command. Podman on Mac and Windows also listens for Docker API clients, supporting direct usage of Docker-based tools and programmatic access from your language of choice.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://podman.io/">Visit the official Podman website for more details</a></p>
+</div>
+<div class="sect2">
+<h3 id="_what_are_pods"><a class="anchor" href="#_what_are_pods"></a>What are pods?</h3>
+<div class="paragraph">
+<p>Pods are groups of containers that run together and share the same resources, similar to Kubernetes pods. Podman manages these pods via a simple command-line interface (CLI) and the libpod library, which provides application programming interfaces (APIs) for managing containers, pods, container images, and volumes. Podman&#8217;s CLI creates and supports Open Container Initiative (OCI) containers, which are designed to meet industry standards for container runtimes and formats.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_makes_podman_different_from_other_container_engines"><a class="anchor" href="#_what_makes_podman_different_from_other_container_engines"></a>What makes Podman different from other container engines?</h3>
+<div class="paragraph">
+<p>Podman stands out from other container engines because it’s daemonless, meaning it doesn&#8217;t rely on a process with root privileges to run containers.</p>
+</div>
+<div class="paragraph">
+<p>Daemons are processes that run in the background of your system to do the work of running containers without a user interface. Think of daemons as the intermediary communicating between the user and the container itself.</p>
+</div>
+<div class="paragraph">
+<p>While daemons can be a convenient way to manage your container environment, they can also introduce security vulnerabilities. Many daemons run with root privileges. In Linux systems, the root account acts as a superuser with administrative access (while bypassing the need for admin verification) to read files, install programs, edit applications, and more. This makes daemons an ideal target for hackers who want to gain control of your containers and infiltrate the host system.</p>
+</div>
+<div class="paragraph">
+<p><strong>Podman cuts out the daemon and lets regular users run containers without interacting with a root-owned daemon, or allows for the use of rootless containers.</strong> By going rootless, users can create, run, and manage containers without requiring processes with admin privileges, making your container environment more accessible while reducing security risks. Additionally, Podman launches each container with a Security-Enhanced Linux (SELinux) label, giving administrators more control over what resources and capabilities are provided to container processes.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_is_podman_desktop"><a class="anchor" href="#_what_is_podman_desktop"></a>What is Podman Desktop?</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+A graphical user interface (GUI) is a digital interface in which a user interacts with graphical components such as icons, buttons, and menus (visual indicator representations).
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Podman Desktop is a GUI for Podman, which provides a central place for developers to work with containers right on their laptop or workstation. Developers can build, push, and pull images and manage Podman resources directly using a GUI that’s consistent across local Linux, Windows, and macOS environments. Podman Desktop also lets developers deliver ready-to-deploy containerized applications to Kubernetes environments.</p>
+</div>
+<div class="paragraph">
+<p>Podman Desktop supports extension packs, which open up additional capabilities. One example, Podman AI Lab, adds recipes for building applications that work with large language models (LLMs) in a local environment and includes a curated catalog of open source-licensed LLMs.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s explore the components of Podman Desktop with AI Labs in the next section.</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="section1.html">GizmoGobble Corporation</a></span>
+  <span class="next"><a href="section3.html">Podman AI Lab</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
