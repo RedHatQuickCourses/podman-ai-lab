@@ -2,7 +2,7 @@
 
 == GizmoGobble (GG) team and Podman Desktop
 
-As the GG developer team begins the installation of Podman Desktop on their various devices, which primarily consist of Macbook users, so you will see MacOs based screen captures as examples in this course. However, the team decided to compose notes on the installation instructions for Linux, MacOs, and Windows as part of their onborading future developers initiative.
+As the GG developer team begins the installation of Podman Desktop on their various devices, which primarily consist of Macbook users, so you will see MacOs based screen captures as examples in this course. However, the team decided to compose notes on the installation instructions for Linux, MacOs, and Windows as part of their onboarding future developers initiative.
 
 
 
@@ -29,7 +29,7 @@ Start Podman Desktop from the 'Launchpad' or Mac's Applications directory.
 +
 . Install Podman from Podman Desktop, if not yet installed.
 +
-When you open Podman Desktop for the first time, click on the "View detection checks" button to scan if all the prerequisites to use Podman Desktop are met. If it says ❌ podman cli was not found in the PATH, then you need to install the Podman CLI/Engine which can be done within the application.
+When you open Podman Desktop for the first time, click on the "View detection checks" button to scan if all the prerequisites to use Podman Desktop are met. If it says ❌ Podman cli was not found in the PATH, then you need to install the Podman CLI/Engine which can be done within the application.
 +
 . Click on the "Install" button next to the "View detection checks" button, and follow the instructions on screen.
 

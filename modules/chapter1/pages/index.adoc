@@ -19,4 +19,4 @@ These are the requirement they forth:
 * 		We may make use of multiple LLMs depending on the task.
 * 		Fine tune an LLM with custom data.
 
-Now that have an idea of the approach, let's a step back to learn more about the GizmoGobble Corportion and why they selected to begin with Podman AI Labs to achieve their goals.
+Now that we have an idea of the approach, let's take a step back to learn more about the GizmoGobble Corporation and why they selected to begin with Podman AI Labs to achieve their goals.

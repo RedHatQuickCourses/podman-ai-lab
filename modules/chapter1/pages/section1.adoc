@@ -20,7 +20,7 @@ Next, they discovered the curated list of open-source Generative AI Large Langua
 GizmoGobble's team was eager to incorporate these advanced technologies into GizmoGenie.
 With a newfound sense of determination and the intuitive user interface of Podman AI Lab made it easy for them to explore and learn about AI technology.
 
-Now it's your turn to discover how Podman Desktop's AI Lab extention provides the perfect entry point for any organization looking to implement AI intelligence into their products. 
+Now it's your turn to discover how Podman Desktop's AI Lab extension provides the perfect entry point for any organization looking to implement AI intelligence into their products. 
 
 If you are new to Podman & Podman desktop continue onto the next section, or if your already familiar with these products, feel free to skip ahead to the Podman AI lab section. 
 
