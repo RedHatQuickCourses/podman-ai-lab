@@ -15,6 +15,7 @@ While *"containers are Linux,"* Podman also runs on Mac and Windows, where it pr
 
 https://podman.io/[Visit the official Podman website for more details]
 
+Regarding pricing, Podman is open-source and free to use. It was developed by Red Hat and is included in many Linux distributions. There are no direct costs associated with the tool, which makes it an interesting platform for companies on a tighter budget.
 
 === What are pods?
 Pods are groups of containers that run together and share the same resources, similar to Kubernetes pods. Podman manages these pods via a simple command-line interface (CLI) and the libpod library, which provides application programming interfaces (APIs) for managing containers, pods, container images, and volumes. Podman's CLI creates and supports Open Container Initiative (OCI) containers, which are designed to meet industry standards for container runtimes and formats. 
