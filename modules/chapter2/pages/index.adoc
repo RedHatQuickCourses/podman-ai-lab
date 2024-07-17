@@ -5,5 +5,7 @@
  . Instructions on how to https://podman-desktop.io/docs/installation[Install Podman Desktop on Mac, Linux, or Windows].  
   * This does *NOT* have Podman AI Lab extension pre-installed.
 
- . Instructions on how to https://podman-desktop.io/docs/ai-lab/installing[Install Podman AI Lab extention].
+ . Instructions on how to https://podman-desktop.io/docs/ai-lab/installing[Install the Podman AI Lab extention].
+
+ . Instructions on how to https://podman-desktop.io/docs/podman/creating-a-podman-machine[creating a Podman Machine]
 
