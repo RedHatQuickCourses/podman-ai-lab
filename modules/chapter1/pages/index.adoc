@@ -10,7 +10,7 @@ What offers the least friction in development? How can we guide this with accele
 
 The GizmoGobble's leadership team decided when it comes to LLM development, exhaust the path of least custom development before moving to more complicated and costly approaches. 
 
-These are the requirement they forth: 
+These are the requirements they forth: 
 
 * 		Develop first using existing open source large language models (LLMs)
 * 		Iterate through multiple LLMs to determine which one best fits the use case.
@@ -19,4 +19,4 @@ These are the requirement they forth:
 * 		We may make use of multiple LLMs depending on the task.
 * 		Fine tune an LLM with custom data.
 
-Now that we have an idea of the approach, let's take a step back to learn more about the GizmoGobble Corporation and why they selected to begin with Podman AI Labs to achieve their goals.
+Now that we have an idea of the approach, let's take a step back to learn more about the GizmoGobble Corporation and how Podman AI Labs to can help them achieve their AIgoals.
