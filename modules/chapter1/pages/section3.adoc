@@ -2,14 +2,12 @@
 
 == What is Podman AI Lab
 
-Podman AI Lab is an open-source tool that enables users to work with large language models (LLMs) on a local environment, simplifying the process of getting started with AI powered applications in their projects.
+Podman AI Lab is an open-source tool that enables users to work with large language models (LLMs) in a local environment, simplifying the process of getting started with AI powered applications in their projects.
 
-Podman AI Lab is designed to work seamlessly with Podman Desktop, allowing developers to leverage the power of LLMs without needing to rely on external infrastructure.
 
 It offers resources and guidance for beginners, making it easy to explore AI and its potential.
 Users can experiment with various models and prompts to find the best fit for their needs, thanks to the model experimentation capability.
 
-Podman AI Lab simplifies the process of deploying and managing AI models in a production-like environment, making model serving accessible to all.
 
 The extension provides interactive environments for users to try out and test various AI applications, such as chatbots, natural language processing, and computer vision tasks, through playgrounds for common use cases.
 
@@ -20,7 +18,7 @@ The extension can be installed quickly and easily on macOS, Windows, and Linux s
 
 === Recipes Catalog
 
-Podman AI Lab ships with a so-called Recipes Catalog that helps you navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple models allows finding the optimal one for your use case.
+Podman AI Lab ships with a Recipes Catalog that helps us navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple AI models allows finding the optimal one for the business our use case.
 
  * *Chatbots* that simulate human conversation, using AI to comprehend user inquiries and offer suitable responses. These capabilities are often used to augment applications that provide self-service customer support or virtual personal assistance.
  * *Text summarizers* which provide versatile capabilities across many applications and industries, where they can deliver effective and efficient information management. Using this recipe, developers can build applications to assist with things like content creation and curation, research, news aggregation, social media monitoring, and language learning.
@@ -30,17 +28,16 @@ Podman AI Lab ships with a so-called Recipes Catalog that helps you navigate a n
 
 === AI Models Catalog
 
-The models catalog is a curated list of Open Source models with the Apache 2.0 license. Once downloaded, the models are available to be used for AI applications, model services and playgrounds. The catalog will also users to import custom AI model and store them. 
+The models catalog is a curated list of Open Source models with the Apache 2.0 license. Once downloaded, these models are available to be used for AI applications, model services and playgrounds. The catalog supports custom AI Models in the .GGUF format, allowing users to import AI model and store them. 
 
 === Model Services
 
-A model service offers a configurable endpoint via an OpenAI-compatible web server, facilitating a seamless integration of AI capabilities into existing applications. Upon initialization, effortlessly access detailed service information and generate code snippets in multiple programming languages to ease application integration.
+The model service creates a local AI Model endpoint, supporting an OpenAI-compatible API, facilitating a seamless integration of AI capabilities into existing applications. Upon initialization, effortlessly access detailed service information and generate code snippets in multiple programming languages to ease application integration.
 
-The Services page allows for accessing running model services and provides further details and code snippets to interact with them.
 
 === Playgrounds
 
-Podman AI Lab includes a playground environment that allows users to interact with AI models and observe their behavior. Once started, each playground ships with a generic chat client to interact with the model service. A customizable system prompt & parameter modification settings widget helps in exploring the capabilities and accuracy of various models and aids in finding the best model with the best settings for the task.
+Podman AI Lab includes a playground environment that allows users to interact with AI models and observe their behavior. Each playground ships with a generic chat client to interact with an AI deployed via the AI Lab model service. A customizable system prompt & parameter modification settings widget helps in exploring the capabilities and accuracy of various models. We can deploy multiple playgrounds against a single served AI Model to aid in finding the best model with the best settings for the task.
 
 
 
@@ -53,7 +50,7 @@ Podman AI Lab supports large language models in the .gguf format and the ability
 GPT-Generated Unified Format (GGUF) is a file format that streamlines the use and deployment of large language models (LLMs). GGUF is specially designed to store inference models and perform well on consumer-grade computer hardware.
 
 
-https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository] provides a tool to quickly and easily convert and quantize a model from huggingface into the *.gguf format for use with Podman AI Lab. 
+https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository] provides a tool to quickly convert and quantize a model from huggingface into the *.gguf format for use with Podman AI Lab. 
 
 
 === HuggingFace _ 

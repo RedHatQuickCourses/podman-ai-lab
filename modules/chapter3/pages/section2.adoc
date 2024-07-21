@@ -3,15 +3,15 @@
 === GizmoGobble team on Ai Lab Playground
 
 
-The integrated Playground environments allow for experimenting with available models in a local environment. An intuitive user prompt helps in exploring the capabilities and accuracy of various models and aids in finding the best model for the use case at hand. The Playground interface further allows for parameterizing models to further optimize the settings and attributes of each model.
+The integrated Playground environment allows for experimenting with available models in a local environment. An intuitive user interface helps in exploring the capabilities and accuracy of various models and aids in finding the best model for the use case at hand. 
 
-The playground is about experimentation and learning. While it may seem like random and non-essential learning.  The playground is where ideas, theories, and hypotheses are tested to determine how base AI models respond to prompt scenarios, system messages, parameter turning to discover which Models perform best. 
+The playground is about experimentation and learning. While it may seem like random and non-essential learning.  The playground is where ideas, theories, and hypotheses are tested to determine how base AI models respond to prompt scenarios, system messages, parameter tuning to discover which Models perform best. 
 
 
 image::playground.gif[width=640]
 
 
-== Starting a playground environment
+== Start a playground environment
 
 From the AI Lab navigation menu:
 
@@ -21,7 +21,7 @@ From the AI Lab navigation menu:
 
  . Optionally give the playground a unique name
 
- . Select a Model from the Models dropdown (only downloaded models will be populated in the list)
+ . Select a Model from the models dropdown (only downloaded models will be populated in the list)
 
  . Selection the Create Playground button to begin 
 
