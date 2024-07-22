@@ -1,6 +1,6 @@
 = Model Services
 
-Once a model has been downloaded, we can start an inference server for the model. This allows testing of the model using a playground environment or to connect applications to the inference server which is exposing a well known OpenAI-compatible API endpoint.
+Once a model has been downloaded via the Model Catalog, we can start an inference server for the model. This allows testing of the model using a playground environment or to directly connect applications to the inference server using the exposed well known OpenAI-compatible API endpoint.
 
 // === Local model serving
 
@@ -13,22 +13,28 @@ Once a model has been downloaded, we can start an inference server for the model
 
 As we experienced during our playground lab, a model service is automatically created as the AI Model endpoint for the playground environment.
 
-However, there will be times when we don't need the playground, such as experimenting with connecting an existing or new application with the AI Model directly.
+However, there will be times when we don't need the playground, such as connecting an existing or new application with the AI Model directly.
+
+==== Model creation details (read only section - not a lab)
 
 To create a model server, go to the Services page and click the Create Model service button. If your environment (Podman machine) does not have sufficient resources (memory), we'll get a notification indicating that we need to increase the available memory, which can easily be updated from Podman Desktop's Settings page.
 
-Next, select the desired model you want to serve and if necessary customize the port you want to use to one already used in your application. 
+If local resources are at capacity, stop an previously deployed Model services or playgrounds, then restart the podman machine to begin with a fresh virtual instance. 
 
-The list of models displayed in the form will only include models that have been previously downloaded. 
+Select the desired model you want to serve and if necessary customize the port you want to use to one already used in your application. 
 
-Once the model service has been started, you can open its detail page. This helps you understand the details of the model-service endpoint and explore a number of code snippets that help you learn how to interact with the model service from your application.
+The list of models displayed in the Model dropdown will only include models that are currently downloaded. 
+
+Once the model service has been started, we can open its detail page. This helps you understand the details of the model-service endpoint and explore a number of code snippets that help you learn how to interact with the model service from your application.
 
 image::start-inference-server.gif[width=640]
 
 == LAB - Model Services
 
-==== From the Podman AI Dashboard select *Services* from the navigation menu. 
+==== Return to the  Podman AI Dashboard 
 
+ . Under Models menu, select *Services*
++
 In the window, any running model service is displayed here with a green indicator.  From this menu, using the icons on the right, we can stop, restart and delete the model service.  If a model is already running from the previous exercise, skip to the next section, otherwise continue:
 
 
@@ -40,7 +46,7 @@ In the window, any running model service is displayed here with a green indicato
  ..  select the same model from the previous exercise:  *instructlab/granite-7b-lab-GGUF*
  ..  use defaults for the remaining options
 
- . Select the Create Service button 
+ . Select the *Create Service* button 
 
  . Once the Service is populated in the window with a green icon, the model endpoint is ready to use
 
@@ -50,6 +56,8 @@ In the window, any running model service is displayed here with a green indicato
 ==== Model Service Details dashboard.
 
  * First in the window is the *Container section* along with the Model's container name.
++
+image::service_details.png[width=640]
 
  ** the reason we need this name is we can visit the container section of Podman Desktop
 
@@ -68,16 +76,34 @@ In the window, any running model service is displayed here with a green indicato
  ** The CPU inference flag designates that the Model is Served using CPU only. (no GPU or accelerator)
 
 * The final section is the *Client Code* selector window.
++
+image::client_code.png[width=640]
+
+---
 
 == Client Code 
 
-The _Model Service Details dashboard_ is dedicated to making AI application integration simple.
+image::curl-example.png[width=800]
+
+The _Client Code_ Section is dedicated to making AI application integration simple.
 
 In the client code section, simply select the programming language from the top right drop down.  
 
-The window will populate with sample code with all the correct information pre-populated to connect to the running model and have it return a response to the question:  What is the capital of France? 
+The window will populate with sample code with all the correct information pre-populated to connect to the running model with a question prompt containing the question:  What is the capital of France? 
+In addition to prompt, the sample also includes a sample code snippet to send a system message along with the prompt.  Usually this is set outside of the users input, but included with the sample for inclusion in the application integration code if needed. 
 
-For example if we open a terminal window and paste the generated code from the Curl language, in a few moments the answer will appear.  The format will not be ideal, but it works!
+An example of using the client code can be tested with a running model service,  
+
+ . open a terminal window 
+ 
+ .  copy the code snippet from the client code window for the CURL language 
+ 
+ . paste the generated code from the Curl language in the terminal window
+
+ . Press enter to execute the command
+
+
+In a few moments the answer will appear.  The format will not be ideal, but this example just demonstrates that the code in the sample is valid and will send the prompt to and collect the response from the AI model. 
 
 image::curl-example.png[width=800]
 
@@ -85,23 +111,19 @@ image::curl-example.png[width=800]
 
 // Using the dropdown to the right of *client code* , to select the programming language, for some the specific libraries can be selected to provide example integration code snippets to inference responses from the AI model 
 
-This simplifies developers having to search for, research, or learn new technologies to create the integration code base, allowing them to focus on outcomes of the integration.
+With support for over 20 combinations of programming languages and libraries, the client code section provides these benefits:
 
-Use these as a starting point to integrate the model's capabilities into your application's frontend. The API is compatible with the OpenAI format, so you can easily swap between local and hosted models
+ * Simplifies developers having to search for, research, or learn new technologies to create the integration code base, allowing them to focus on outcomes of the integration.
 
-== GG Example -- Create this
-
-We're working on the GizmoGenie web interface for their Apple mobile application written in swift. integration with the GizmoGobble Mobile App which was developed with Swift.
-
-We were able to select the sample integration code for Swift, and add it to the existing code base to receive AI generated responses.  Now, we can create simple route queries from Chat application to our Service endpoint to interact with the LLM.
-
-
-Podman Desktop manages the model server container, ensuring high availability and efficient resource utilization. You can monitor its performance and logs through the Podman Desktop dashboard. Since it runs locally, you keep full control of your data and intellectual property.
+  * The API is compatible with the OpenAI format, so we can easily swap between local, SaaS provided and hybird-cloud based AI models.
 
 
 ---
 
-Podman AI Lab enables you to serve the model as a containerized REST endpoint that your code can call, just like any other API. This allows testing of remote connectivity, application integration testing, and evaluation of the model's ability to answer test questions.
+Podman AI Lab enables you to serve the model as a containerized REST endpoint that your code can call, just like any other API. This allows testing of applicatione connectivity, application integration testing, and evaluation of the model's base resource requirements.
+
+The GizmoGobble team used Model serving as part of the playground enteraction, however, they didn't plan to integrate an application, they plan was to connect a chatbot to the AI Model service. So let's try the *AI Application Recipe Catalog* in the next section where the example deploys the AI Model, A Chatbot and the integration service to connect them.  
+
 
 
 
