@@ -1,17 +1,17 @@
 = AI Lab Playground
 
-=== GizmoGobble team on Ai Lab Playground
+=== GizmoGobble team on AI Lab Playground
 
 
-The integrated Playground environments allow for experimenting with available models in a local environment. An intuitive user prompt helps in exploring the capabilities and accuracy of various models and aids in finding the best model for the use case at hand. The Playground interface further allows for parameterizing models to further optimize the settings and attributes of each model.
+The integrated Playground environment allows for experimenting with available models in a local environment. An intuitive user interface helps in exploring the capabilities and accuracy of various models whle aiding in finding the best model for the use case at hand. 
 
-The playground is about experimentation and learning. While it may seem like random and non-essential learning.  The playground is where ideas, theories, and hypotheses are tested to determine how base AI models respond to prompt scenarios, system messages, parameter turning to discover which Models perform best. 
-
-
-image::playground.gif[width=640]
+The playground is about experimentation and learning. While it may seem like random and non-essential learning.  The playground is where ideas, theories, and hypotheses are tested to determine how base AI models respond to prompt scenarios, system messages, and parameter tuning to discover which Models perform best. 
 
 
-== Starting a playground environment
+image::ailab_playground.gif[width=800]
+
+
+== Start a playground environment
 
 From the AI Lab navigation menu:
 
@@ -21,16 +21,16 @@ From the AI Lab navigation menu:
 
  . Optionally give the playground a unique name
 
- . Select a Model from the Models dropdown (only downloaded models will be populated in the list)
+ . Select a Model from the models dropdown (only downloaded models will be populated in the list)
 
- . Selection the Create Playground button to begin 
+ . Select the *Create Playground* button to provision the playground environment
 
 
 This will deploy:
 
  * a new *Model Service* for the selected AI Model, which exposes the AI Model via an inference endpoint API.
 
- * a new *ai-lab-playground-chat container* that provides a Visual user interface to allow interaction with Services AI Model.  This container can be viewed from the Podman Desktop containers dashboard.
+ * a new *ai-lab-playground-chat container* that provides the visual user interface to allow interaction with Services AI Model.  This container can be viewed from the Podman Desktop containers dashboard.
 
 === Verify resources are running
 
@@ -42,12 +42,11 @@ This will deploy:
 
  . Next select the services menu, and verify there is now a service with the green indicator that the service is running.  We will return to this shortly. 
 
- ** If there is no service shown, continue to wait for a bit, sometimes the first service takes a minute or so to create.
+ ** If there is no service shown, continue to wait for a bit, sometimes the first service takes a few minutes to create.
 
  . Return to the Playground menu, and once again select the Playground you deployed to open the environment. 
 
-[INFORMATION]
- 
+[NOTE]
 We can deploy multiple playgrounds utilizing a single model inference service.  This allows testing of various iterations of experiments occurring simultaneously while conserving resources usage.  
 
 == Exploring the playground
@@ -74,6 +73,8 @@ The system prompt is where we can ask the AI to assume some personality or role,
 === Model parameters 
 
 On the right side of the Playground Console is a *Settings widget*, with the message *next prompt will use these settings*. The Playground allows you to tune the model's behavior through several configuration parameters.
+
+image::playground_settings.png[width=400]
 
 There are three Model Parameters that can be adjusted from this sub-menu.
 
@@ -109,7 +110,7 @@ Interact with the Playground
 
 
 
-We use the Playground to experiment with various settings, queried the models with various prompts. Now let's head over to the Model Serving dashboard to learn more about integrating our AI Models with existing or new applications. 
+We use the Playground to experiment with various settings, randomly query the models with various prompts, to evalute performance and tuning possibilities.  Now let's head over to the Model Serving dashboard to learn more about integrating our AI Models with existing or new applications. 
 
 
 [NOTE]
