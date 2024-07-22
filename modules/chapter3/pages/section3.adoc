@@ -1,11 +1,11 @@
 = Model Services
 
-Once a model has been downloaded, we can start an inference server for the model. This allows testing of the model using a playground environment or to connect applications to the inference server which is exposing a well known OpenAI-compatible API endpoint.
+Once a model has been downloaded, you can start an inference server for the model. This allows you to test the model using a playground environment or connect applications to the inference server, which exposes a well-known OpenAI-compatible API endpoint.
 
-// === Local model serving
+// === Local Model Serving
 
 
-// We now apply container technology with the same simplicity and ease of use when it comes to running AI models virtually in a local environment.  These OCI compatible containers can run in any containerized environment making AI Model Portable. 
+// We now apply container technology with the same simplicity and ease of use when it comes to running AI models virtually in a local environment. These OCI compatible containers can run in any containerized environment making AI Model Portable. 
 
 // To do that, Podman AI Lab provides the ability to spin up local inference servers using llama.cpp within containers. It's now easy to run a model locally, establish an endpoint, and start writing code to wrap new application capabilities around the model.
 
@@ -13,11 +13,11 @@ Once a model has been downloaded, we can start an inference server for the model
 
 As we experienced during our playground lab, a model service is automatically created as the AI Model endpoint for the playground environment.
 
-However, there will be times when we don't need the playground, such as experimenting with connecting an existing or new application with the AI Model directly.
+However, there will be times when we don't need the playground, such as when experimenting with connecting an existing or new application with the AI Model directly.
 
-To create a model server, go to the Services page and click the Create Model service button. If your environment (Podman machine) does not have sufficient resources (memory), we'll get a notification indicating that we need to increase the available memory, which can easily be updated from Podman Desktop's Settings page.
+To create a model server, go to the Services page and click the Create Model service button. If your environment (Podman machine) does not have sufficient resources (memory), you will get a notification indicating that you need to increase the available memory. This can easily be updated from Podman Desktop's Settings page.
 
-Next, select the desired model you want to serve and if necessary customize the port you want to use to one already used in your application. 
+Next, select the desired model you want to serve, and if necessary, customize the port you want to use to one already used in your application. 
 
 The list of models displayed in the form will only include models that have been previously downloaded. 
 
@@ -29,41 +29,41 @@ image::start-inference-server.gif[width=640]
 
 ==== From the Podman AI Dashboard select *Services* from the navigation menu. 
 
-In the window, any running model service is displayed here with a green indicator.  From this menu, using the icons on the right, we can stop, restart and delete the model service.  If a model is already running from the previous exercise, skip to the next section, otherwise continue:
+In the window, any running model service is displayed with a green indicator. From this menu, using the icons on the right, you can stop, restart, and delete the model service. If a model is already running from the previous exercise, skip to the next section; otherwise, continue.
 
 
 
  . From the top right, select the *New Model Service* button.
 
- . Select a Model from the Models dropdown (only downloaded models will be populated in the list)
+ . Select a Model from the Models dropdown (only downloaded models will be populated in the list).
 
- ..  select the same model from the previous exercise:  *instructlab/granite-7b-lab-GGUF*
- ..  use defaults for the remaining options
+ ..  Select the same model from the previous exercise:  *instructlab/granite-7b-lab-GGUF*
+ ..  Use defaults for the remaining options.
 
- . Select the Create Service button 
+ . Select the Create Service button.
 
- . Once the Service is populated in the window with a green icon, the model endpoint is ready to use
+ . Once the Service is populated in the window with a green icon, the model endpoint is ready to use.
 
  . Click anywhere along the green icon or the model's container name to open the *Model Service details*.
 
 
-==== Model Service Details dashboard.
+==== Model Service Details Dashboard
 
  * First in the window is the *Container section* along with the Model's container name.
 
- ** the reason we need this name is we can visit the container section of Podman Desktop
+ ** The reason we need this name is we can visit the container section of Podman Desktop to:
 
- *** to interact directly with the container via a terminal
+ *** Interact directly with the container via a terminal
 
- *** to view container logs
+ *** View container logs
 
- *** to view the kubernetes manifest file used for deployment 
+ *** View the kubernetes manifest file used for deployment 
 
- ***  to inspect the detailed state of the running container
+ ***  Inspect the detailed state of the running container
 
- * Next in the *Model section*, is the model name that was selected to be served, along with tags that indicate Model's license & source repository
+ * Next in the *Model section*, is the model name that was selected to be served, along with tags that indicate Model's license & source repository.
 
- * In the *Server section*, is the local url or inference endpoint for the Model
+ * In the *Server section*, is the local url or inference endpoint for the Model.
 
  ** The CPU inference flag designates that the Model is Served using CPU only. (no GPU or accelerator)
 
@@ -73,11 +73,11 @@ In the window, any running model service is displayed here with a green indicato
 
 The _Model Service Details dashboard_ is dedicated to making AI application integration simple.
 
-In the client code section, simply select the programming language from the top right drop down.  
+In the client code section, simply select the programming language from the dropdown in the top right.  
 
-The window will populate with sample code with all the correct information pre-populated to connect to the running model and have it return a response to the question:  What is the capital of France? 
+The window will populate with sample code that includes all the correct information pre-populated to connect to the running model and have it return a response to the question:  What is the capital of France? 
 
-For example if we open a terminal window and paste the generated code from the Curl language, in a few moments the answer will appear.  The format will not be ideal, but it works!
+For example, if we open a terminal window and paste the generated code from the Curl language, in a few moments the answer will appear.  The format will not be ideal, but it works!
 
 image::curl-example.png[width=800]
 
@@ -87,16 +87,16 @@ image::curl-example.png[width=800]
 
 This simplifies developers having to search for, research, or learn new technologies to create the integration code base, allowing them to focus on outcomes of the integration.
 
-Use these as a starting point to integrate the model's capabilities into your application's frontend. The API is compatible with the OpenAI format, so you can easily swap between local and hosted models
+Use these as a starting point to integrate the model's capabilities into your application's frontend. The API is compatible with the OpenAI format, so you can easily swap between local and hosted models.
 
-== GG Example -- Create this
+== GG Example -- Create This
 
-We're working on the GizmoGenie web interface for their Apple mobile application written in swift. integration with the GizmoGobble Mobile App which was developed with Swift.
+We're working on the GizmoGenie web interface for their Apple mobile application written in swift. 
 
 We were able to select the sample integration code for Swift, and add it to the existing code base to receive AI generated responses.  Now, we can create simple route queries from Chat application to our Service endpoint to interact with the LLM.
 
 
-Podman Desktop manages the model server container, ensuring high availability and efficient resource utilization. You can monitor its performance and logs through the Podman Desktop dashboard. Since it runs locally, you keep full control of your data and intellectual property.
+Podman Desktop manages the model server container, ensuring high availability and efficient resource utilization. You can monitor its performance and logs through the Podman Desktop dashboard. Since it runs locally, you can keep full control of your data and intellectual property.
 
 
 ---

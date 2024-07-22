@@ -2,32 +2,34 @@
 :navtitle: Home
 
 
-Welcome to this course on Podman AI Lab. 
+Welcome to this course on Podman AI Lab!
+// Added a exclamation mark at the end of the line for a more welcoming tone and proper punctuation.
 
-Through the use of *Podman Desktop with the AI Lab Extension*: You will experiment with open-source AI models, deploy multiple types of AI powered applications, and interact with AI model integration code examples using standard laptop / desktop hardware. 
-
+In this course, you will use *Podman Desktop with the AI Lab Extension*: You will experiment with open-source AI models, deploy multiple types of AI-powered applications, and interact with AI model integration code examples using standard laptop / desktop hardware. 
+// To avoid starting with a preposition, I rephrased the statement.
 
 This course will be experienced from the perspective of a *development team* at the GizmoGobble  corporation. They have been tasked with integrating an AI powered Chatbot into multiple web interfaces. GizmoGobble's development team has no experience with the Podman AI Lab software, AI Model serving, or integration of existing applications with AI technology.
+// Can we add a hyperlink for GizmoGobble corporation? This way, someone who is interested to learn more about it can visit the page and get information.
 
-This course will progress with the developers through installing Podman Desktop, adding the Podman AI Lab extension, downloading & serving an AI models, using the *playground* to experiment & investigate the effectiveness of AI Models, and finally use the *recipe catalog* to deploy various AI enabled applications. 
+This course will guide you through the developers' journey as they install Podman Desktop, add the Podman AI Lab extension, download & serve AI models, use the *playground* to experiment with & investigate the effectiveness of AI Models, and finally use the *recipe catalog* to deploy various AI enabled applications. 
 
 
 == Course Objectives:
 
  . Use Podman Desktop to create a container runtime environment to host an AI model: 
- ** Gain basic knowledge of the features of Podman Desktop Application
- ** Understand and apply the components of Podman AI Lab extension
- ** Understand Podman AI Lab from a developer perspective
+ ** Gain a basic knowledge of the features of the Podman Desktop Application
+ ** Understand and apply the components of the Podman AI Lab extension
+ ** Understand Podman AI Lab from a developer's perspective
 
  . Utilize the playground feature to interact with various AI Models 
  ** Experiment with AI Models to determine their capabilities
 
 
- . Use code samples to simplify integration with existing code bases
- **  Know where to locate code snippets to integrate  AI models to applications
+ . Use code samples to simplify the integration with existing code bases
+ **  Know where to locate code snippets for integrating  AI models into applications
 
- . Deploy an AI enabled application using pre-create templates called recipes.
- **  Reverse engineer open source code used in recipes for AI enabled applications
+ . Deploy an AI-enabled application using pre-created templates called recipes.
+ **  Reverse-engineer open-source code used in recipes for AI-enabled applications
 
  . Explain why Podman AI Lab is the entry point for customers into Red Hat's AI Ecosystem
 
@@ -35,9 +37,9 @@ This course will progress with the developers through installing Podman Desktop,
 
 == Prerequisites
 
-* Basic knowledge of large language model terminology
-* Interest the simplest way to interact with AI Models
-* Hardware with 4vCPUs, 8GB of memory, 20~60GB of disk space; for a good experience.
+* Basic knowledge of the large language model terminology.
+* Interest in the simplest way to interact with AI Models.
+* Hardware with 4vCPUs, 8GB of memory, and 20-60GB of disk space for a good experience.
 * MacOS, Windows, Linux Operating System with a GUI or Desktop enabled.
 
 
@@ -51,10 +53,10 @@ When ordering this demo item:
 
 * Select `Practice/Enablement` for the `Activity` field, and `Learning about the product` for the `Purpose`.
 
-* If you have a Salesforce ID for a customer sales opportunity, then copy it to the `Salesforce ID` field. Otherwise, leave the field blank
+* If you have a Salesforce ID for a customer sales opportunity, then copy it to the `Salesforce ID` field. Otherwise, leave the field blank.
 
-* In the `Region` field, select the region closest to your Geographic area.
+* In the `Region` field, select the region closest to your geographic area.
 
-* Review the auto-stop and auto-destroy timers. You can change this later after classroom provisioning by opening a ticket with the RHDP team.
+* Review the auto-stop and auto-destroy timers. You can change these later after classroom provisioning by opening a ticket with the RHDP team.
 
 

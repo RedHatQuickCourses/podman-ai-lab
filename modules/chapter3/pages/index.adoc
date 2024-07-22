@@ -2,11 +2,11 @@
 
 == Evaluating AI Models
 
-The GizmoGobble’s leadership team decided when it comes to LLM development, exhaust the path of least custom development before moving to more complicated and costly approaches.
+The GizmoGobble’s leadership team decided that, when it comes to LLM development, they would exhaust the path of least custom development before moving to more complicated and costly approaches.
 
-These are the requirement they forth:
+These are the requirement that they set forth:
 
- * Develop first using existing open source large language models (LLMs) 
+ * Develop first using existing open-source large language models (LLMs). 
 
  * Iterate through multiple LLMs to determine which one best fits the use case.
 
@@ -14,9 +14,9 @@ These are the requirement they forth:
 
  * Once you find the LLM that works best, focus on that LLM
 
- * We may make use of multiple LLMs depending on the task.
+ * Utilize multiple LLMs depending on the task.
 
- * Fine tune a LLM with custom data.
+ * Fine-tune an LLM with custom data.
 
-Now let's explore Podman AI considering the above GizmoGobble Corporation requirements to help us understand how Podman AI Lab can be used to kick-start AI enabled application development. 
+Now, let's explore Podman AI considering the above GizmoGobble Corporation requirements to help us understand how Podman AI Lab can be used to kick-start AI-enabled application development. 
 

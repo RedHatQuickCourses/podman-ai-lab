@@ -2,7 +2,7 @@
 
 https://podman-desktop.io/docs/ai-lab[Podman AI Lab Documentation]
 
-== Installing the Podman AI Lab extension
+== Installing the Podman AI Lab Extension
 
 *Procedure*
 
@@ -13,16 +13,16 @@ If you have Podman Desktop already installed, let's install the Podman AI Lab ex
 
 image::ai-lab-extention.png[width=800]
 
- . Click on the extention icon in Podman Desktop, it looks like a puzzle and will be located on the left hand side navigation bar. 
+ . Click on the extention icon in Podman Desktop. It looks like a puzzle and will be located on the left hand side navigation bar.
 
- . Optionally, search for Podman AI Lab Extension 
+ . Optionally, search for Podman AI Lab Extension.
 
- . Locate the Podman AI Lab extension tile
+ . Locate the Podman AI Lab extension tile.
 
- . Click the down arrow button to install Podman AI Lab - version 1.1.2 
+ . Click the down arrow button to install Podman AI Lab - version 1.1.2.
 
 image::ai-lab-extentionv2.png[width=800]
 
 Once the Podman AI Lab extension is installed, a new icon will appear in the Podman Desktop quick navigation bar on the left. Select this icon to access the Podman AI Lab dashboard.  
 
-Before we can use the AI Lab environment, there is one more step to complete, creating the Podman Machine.
+Before we can use the AI Lab environment, there is one more step to complete: creating the Podman Machine.
