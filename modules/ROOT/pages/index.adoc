@@ -1,7 +1,7 @@
 = Podman AI Lab
 :navtitle: Home
 
-
+video::podmanai_intro_v1.mp4[width=640]
 
 Welcome to this course on Podman AI Lab!
 
