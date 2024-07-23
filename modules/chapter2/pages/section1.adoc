@@ -2,7 +2,9 @@
 
 == GizmoGobble (GG) team and Podman Desktop
 
+
 As the GG developer team begins the installation of Podman Desktop on their various devices, which primarily consist of Macbook users, you will see macOS based screen captures as examples in this course. However, the team decided to compose notes on the installation instructions for Linux, macOS, and Windows as part of their onboarding future developers initiative.
+
 
 
 
@@ -18,13 +20,21 @@ https://podman-desktop.io/docs/installation[Podman Desktop Installation Document
 
 Download the *.dmg* file from the https://podman-desktop.io/downloads/macos[Downloads] section of this website.
 
+image::podman_macos_install.png[width=800]
+
 [NOTE]
 It is recommended to use the "universal" binary file, which will work irrespective of the chip architecture your Mac possesses. You also have the option to get the applicable .dmg file depending on your Mac Hardware Architecture (that is Intel or Apple M1+).
 
+
  . Locate the downloaded file, and double-click on it. (Usually, you will find the downloaded file in the Downloads folder.)
++
+image::podman_dmg_file.png[width=400]
+
 
  .  Drag Podman Desktop icon to the Applications folder.
 +
+
+image::podman_drag_folder.png[width=400]
 Start Podman Desktop from the 'Launchpad' or Mac's Applications directory.
 +
 . Install Podman from Podman Desktop, if it is not yet installed.

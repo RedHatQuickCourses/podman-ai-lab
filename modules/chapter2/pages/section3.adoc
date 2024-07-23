@@ -1,6 +1,8 @@
 = Create Podman Machine
 
+
 Before using the services available in Podman AI Lab, a Podman machine needs to be set up to provide CPU, memory, & storage resources.  In this case, a virtualized container instance on the desktop or laptop hardware.
+
 
 If the Podman machine is not running, you will see the following message in most AI Lab resources.
 
@@ -10,11 +12,14 @@ image::podman_machine.png[width=800]
 
 To start working with containers, Podman needs to be initialized.
 
+
 Podman desktop will automatically install the latest version of Podman. 
 
 From the Podman Desktop dashboard: Ensure the Podman Extension is now installed from the extensions menu.
 
-image::podman_extention.png[width=800]
+
+ * Start the extention and verify it is active
+
 
 From the Podman menu or widget section, click to install or initialize Podman.
 
@@ -22,17 +27,26 @@ From this same menu you can also start the Podman machine, which will create a c
 
 However, this machine, while optimized to run containers and applications, is properly sized to host the resources needed for AI model inference.
 
+image::podman_extention.png[width=800]
+
+[NOTE]
+From this same menu we can start the Podman machine by clicking play, this will create a container running without customizing the resources needed to run the Podman AI resources. This machine is optimized to run containers and micro service applications, is *NOT* properly sized to host the resources needed for AI Model inference in Podman AI Lab.  Instead use the customized Podman machine instructions below.
+
+
 == Create a custom Podman Instance
 
+In order to host AI Models, we going to need a container with a minimum of 5Gb of memory, 4 vCPUs, and 10GB of storage space.  For best experience during the lab, a podman machine with 5 vCPUs, 12GB of memory, and 20GB of storage is recommended.
  
+
 Open Podman Desktop dashboard.
 
 Click on "Settings" from the navigation menu (it's the gear icon at the bottom left). 
 
++
 image::create-podman-machine.png[width=800]
 
-Click *Create new Podman machine* (the button may show as "Create New"). If a machine is already running, stop and delete the machine. Then click "Create New".
 
+Click *Create new Podman machine* (the button may show as "Create New"). If a machine is already running, stop and delete the machine. Then click "Create New".
 
 
  . Optionally change the machine name if you plan to host multiple AI applications at once.
@@ -41,7 +55,9 @@ Click *Create new Podman machine* (the button may show as "Create New"). If a ma
  
  . Change the memory to at least 8GB (12-16GB is recommended if possible).
 
+
  . For the drive space, reduce the amount to 20-40GB  (this is not where downloaded models are stored).
+
 
  . Leave the defaults for the other options. 
 
@@ -55,4 +71,8 @@ It should take a short time for the Podman machine to become ready, which is ind
 image::running-podman-machine.png[width=800]
 
 
-Now it's time for the favorite part: working with AI. Let's get to it!
+
+With our compute resources ready to go, N\wow is time to get working with AI. 
+
+Let's being to explore the features of Podman AI Lab.
+

@@ -12,7 +12,7 @@ One of the main advantages of GGUF is that it allows users to run LLMs on their 
 the new GGUF (GPT-Generated Unified Format) framework has been developed to facilitate the operation of Large Language Models (LLMs) by predominantly using CPU resources while also tapping into GPU capabilities for enhanced processing of particular layers. This adaptability is of great benefit for systems that rely on CPU processing, including those running on Apple hardware. GGUF compresses the typically 16-bit floating-point model weights, optimizing the use of computational resources. The methodology is crafted to simplify the processes of loading and storing models, making it a more efficient, flexible, and user-friendly option for the inference phase of LLMs.
 
 
-lama-cpp-python
+==== llama-cpp-python
 llama-cpp-python is a Python library that features GPU acceleration, compatibility with LangChain, and serves as an API server aligned with OpenAI’s standards.
 
 

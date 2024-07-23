@@ -6,17 +6,21 @@ As businesses integrate generative AI into their operations, they are asking the
 
 What tools, services, and solutions are available today that will allow my product teams to get to market as quickly as possible based on their current skill sets, internal technology landscape, and data availability?
 
+
 What offers the least friction in development? How can we guide this with accelerators that don't require months of build time? How can we allow our product teams to focus on our company's core differentiators while combining the power of Large Language Models (LLMs) to innovate on behalf of our customers?
 
 The GizmoGobble's leadership team decided that when it comes to LLM development, they should exhaust the path of least custom development before moving to more complicated and costly approaches. 
+
 
 These are the requirements they set forth: 
 
 * 		Develop first using existing open-source large language models (LLMs).
 * 		Iterate through multiple LLMs to determine which one best fits the use case.
 *       Apply prompt engineering techniques against the LLM.
+
 * 		Once you find the LLM that works best, focus on that LLM.
 * 		We may make use of multiple LLMs depending on the task.
 * 		Fine tune an LLM with custom data.
 
 Now that we have an idea of the approach, let's take a step back to learn more about the GizmoGobble Corporation and how Podman AI Labs can help them achieve their AI goals.
+

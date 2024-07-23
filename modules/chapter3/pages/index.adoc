@@ -18,5 +18,6 @@ These are the requirement that they set forth:
 
  * Fine-tune an LLM with custom data.
 
+
 Now, let's explore Podman AI considering the above GizmoGobble Corporation requirements to help us understand how Podman AI Lab can be used to kick-start AI-enabled application development. 
 

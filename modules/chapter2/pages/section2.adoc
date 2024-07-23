@@ -6,7 +6,7 @@ https://podman-desktop.io/docs/ai-lab[Podman AI Lab Documentation]
 
 *Procedure*
 
-If you have Podman Desktop already installed, let's install the Podman AI Lab extension in Podman Desktop.
+With Podman Desktop already installed, let's install the Podman AI Lab extension in Podman Desktop.
 
 
 // Verification

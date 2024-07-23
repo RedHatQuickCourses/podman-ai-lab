@@ -1,17 +1,19 @@
 = AI Lab Playground
 
-=== GizmoGobble team on Ai Lab Playground
+=== GizmoGobble team on AI Lab Playground
 
 
-The integrated Playground environments allow for experimenting with available models in a local environment. An intuitive user prompt helps in exploring the capabilities and accuracy of various models and aids in finding the best model for the use case at hand. The Playground interface further allows for parameterizing models to further optimize the settings and attributes of each model.
+The integrated Playground environment allows for experimenting with available models in a local environment. An intuitive user interface helps in exploring the capabilities and accuracy of various models whle aiding in finding the best model for the use case at hand. 
+
 
 The playground is about experimentation and learning. While it may seem like random and non-essential learning, the playground is where ideas, theories, and hypotheses are tested to determine how base AI models respond to prompt scenarios, system messages, parameter turning to discover which models perform best. 
 
 
-image::playground.gif[width=640]
+image::ailab_playground.gif[width=800]
 
 
 == Starting a Playground Environment
+
 
 From the AI Lab navigation menu:
 
@@ -26,11 +28,14 @@ From the AI Lab navigation menu:
  . Click the Create Playground button to begin. 
 
 
+
 This will deploy:
 
  * a new *Model Service* for the selected AI Model, which exposes the AI Model via an inference endpoint API.
 
+
  * a new *ai-lab-playground-chat* container that provides a Visual user interface to allow interaction with the Model service.  This container can be viewed from the Podman Desktop containers dashboard.
+
 
 === Verify Resources are Running
 
@@ -41,12 +46,12 @@ This will deploy:
 
  . Next, select the Services menu and verify that there is now a service with a green indicator, showing that the service is running. We will return to this shortly.
 
+
  ** If no service is shown, wait a bit longer, as the first service may take a minute or so to create.
 
  . Return to the Playground menu, and once again select the Playground you deployed to open the environment. 
 
-[INFORMATION]
- 
+[NOTE]
 We can deploy multiple playgrounds utilizing a single model inference service.  This allows testing of various iterations of experiments occurring simultaneously while conserving resources usage.  
 
 == Exploring the Playground
@@ -74,7 +79,11 @@ The system prompt is where we can ask the AI to assume some personality or role,
 
 On the right side of the Playground Console is a *Settings widget*, with the message *next prompt will use these settings*. The Playground allows you to tune the model's behavior through several configuration parameters.
 
+
 There are three Model Parameters that can be adjusted from this sub-menu:
+
+image::playground_settings.png[width=400]
+
 
  . *Temperature*: Controls the randomness of responses. Lower values are more focused, and higher values are more creative. Accepts values between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. 
 
@@ -107,8 +116,8 @@ Interact with the Playground
 
 
 
-
 We use the Playground to experiment with various settings, when queried the models with various prompts. Now let's head over to the Model Serving dashboard to learn more about integrating our AI Models with existing or new applications. 
+
 
 
 [NOTE]

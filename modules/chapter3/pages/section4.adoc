@@ -1,6 +1,6 @@
 = Recipe Catalog
 
-Podman AI Lab ships with a *_Recipes Catalog_* that helps you navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple models allows finding the optimal one for your use case.
+Podman AI Lab ships with a *_Recipes Catalog_* that helps you navigate a number of core AI use cases and problem domains such as ChatBots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications with open source code that can be run with various large language models (LLMs). Experimenting with multiple models allows finding the optimal one for our use case.
 
 === GizmoGobble Team's Use of Recipe Catalog
 
@@ -8,7 +8,9 @@ The main goal of GizmoGenie application is to provide a ChatBot style interactio
 
 In the natural language section of the AI Lab Recipe Catalog, there is a recipe for a Chat application that provides features similar to the planned containerized version of the  GizmoGenie Chat interface.
 
+
 The best part about the Chat Application recipe is that it includes links to the source github repository that contains all the application code. This repo contains a recipe for building and running the containerized AI Model along with a second container that runs the front end application. Both of these are built using Red Hat's Universal bases image, which is free to use for customers, and provide a re-usable stable container platform. 
+
 
 These containerized AI recipes can be used to help developers quickly prototype new AI and LLM based applications locally, without the need for relying on any other externally hosted services. Since they are already containerized, it also helps developers move quickly from prototype to production.
 
@@ -62,11 +64,14 @@ Let's begin with the ChatBot Application in the natural language section.
 
  .. The model section option simply opens the models tab described above.
 
+
  .. Also shown is the repository location for the ai lab recipes, where the original application files are located
+
 
  . Click the Start AI App to launch the application. 
 
  .. If the selected model has not been downloaded, it will be downloaded first.
+
 
  .. If you use a model other than the default, you may need to use the Running menu dashboard to view and launch the application once it's running. Otherwise, you will see all the details of the model starting process in the AI App Details. 
 
@@ -77,7 +82,7 @@ Additionally, from the AI App Details sub-menu, there will also be options to op
 
 The application can now be launched in a web browser to interact with the model via the ChatBot client.
 
-This seems exactly like the playground, however the difference is how the application and model are served to work together.   The difference is the playground interaction happens within the Podman Desktop application while the Recipe is launched using an external web service that connects to the model via the inference endpoint. 
+This seems exactly like the playground, however the difference is how the application and model are served to work together.   
 
 Another difference in this user experience is that there are no tuning parameter options or system prompt provided to the user, as those will be set in the background by the developer and will stay consistent across users.
 

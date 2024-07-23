@@ -1,6 +1,6 @@
-= Roadmap
+= Podman Desktop Roadmap
 
-== Roadmap
+== Roadmap for AI Lab Extention
 
 The roadmap is always open and we are looking for your feedback. Please create new issues and upvote on the issues that are feeling the most important for you.
 

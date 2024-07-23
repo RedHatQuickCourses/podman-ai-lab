@@ -7,12 +7,13 @@ Podman AI Lab provides a curated list of open-source AI models and LLMs. Once do
 
 Like a software license, a Machine Learning (ML) model license governs the use, redistribution of the model and/or algorithm, and distribution of any derivatives of it. Additionally, there are other components to an AI system, such as data, source code, or applications, which may have their own separate licenses.
 
+
 You can choose to download one or more of the pre-curated models available in Podman AI Lab. These models all fall under the apache 2.0 license. 
+=======
+
 
 [NOTE]
 The Apache 2.0 license is a particular type of open-source, permissive software license that ensures that end-users are granted a license to any patent that is covered by the software in question. This license ensures the security and availability of safe and powerful open-source software. Check the Model's license and required resources before importing your own models.
-
-image::download-model.gif[width=640]
 
 ---
 
@@ -25,7 +26,7 @@ There are four tabs available in the Models Catalog:
  * *Imported* - Displays any models that were imported, and were not originally listed in the catalog
  * *Available* - Displays all catalog models that have not been downloaded.
 
-
+image::model_catalog.gif[width=800]
 
 
 
@@ -36,7 +37,11 @@ There are four tabs available in the Models Catalog:
 
  . Open the Podman Desktop Application.
 
+
  . Ensure that the Podman AI Lab extension is active from the extensions menu dashboard.
++
+image::active_extension.png[width=800]
+
 
  . Select the AI Lab menu icon to open the AI Lab dashboard.
 
@@ -48,21 +53,29 @@ There are four tabs available in the Models Catalog:
 This specific model is limited to a bolded name and needs some updates. This section includes details about the model creator, original model source location, and a description that includes details about the AI Model. For specific details on this model, visit: https://huggingface.co/instructlab/granite-7b-lab[huggingface hub model card for the Granite-7b-Lab]. 
 
 
+
  . Return to the catalog dashboard and use the DownArrow icon on the far right to start the download of the *Instructlab/granite-7b-lab-GGUF* file.
++
+image::model_download.gif[width=800]
+
 
  . Download any additional model files that you are interested in working with; here are some suggested models: 
  .. *Instructlab/merlinite-7b-lab-GGUF*
  .. *TheBloke/Mistral-7B-Instruct-v0.2-GGUF*
 
+
 In order for an AI Model to be available to the Services and Playground environments, it must be visible in the download tab of the Model Catalog with a green icon indicating that it's been copied to the local machine.
+
 
 ---
 
 ===  Importing an InstructLab Trained Model into Podman AI Lab
 
+
 Podman AI Lab supports models created during fine-tuning with the InstructLab Project.
 
 While LLMs are trained on vast amounts of data across variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open-source to AI model development. What’s neat is that this is possible on consumer-grade hardware. After following the instructions from the project repository, you'll end up with a quantized .gguf file in the model-trained directory, ready to use with Podman AI Lab.
+
 
 For more information on the InstructLab project and training models with specific knowledge and skills, visit the project homepage at  https://github.com/instructlab[InstructLab Project]. 
 
