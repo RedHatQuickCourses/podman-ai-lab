@@ -1,63 +1,78 @@
 = Create Podman Machine
 
-Before using the services available in Podman AI Lab, a Podman machine needs to be set up to provide cpu, memory, & storage resources.  In this use case a virtualized container instance on the desktop or laptop hardware.
+
+Before using the services available in Podman AI Lab, a Podman machine needs to be set up to provide CPU, memory, & storage resources.  In this case, a virtualized container instance on the desktop or laptop hardware.
+
 
 If the Podman machine is not running, you will see the following message in most AI Lab resources.
 
 image::podman_machine.png[width=800]
 
-== Initialize and start Podman
+== Initialize and Start Podman
 
 To start working with containers, Podman needs to be initialized.
 
- * Podman desktop will automatically install the latest version of Podman with Podman extention
 
- * From the Podman Desktop dashboard, return the extentions menu
+Podman desktop will automatically install the latest version of Podman. 
 
- * Insure the Podman Extension is installed, if not install it now
+From the Podman Desktop dashboard: Ensure the Podman Extension is now installed from the extensions menu.
+
 
  * Start the extention and verify it is active
 
+
+From the Podman menu or widget section, click to install or initialize Podman.
+
+From this same menu you can also start the Podman machine, which will create a container running virtually to host the resources needed to run the Podman AI resources.
+
+However, this machine, while optimized to run containers and applications, is properly sized to host the resources needed for AI model inference.
 
 image::podman_extention.png[width=800]
 
 [NOTE]
 From this same menu we can start the Podman machine by clicking play, this will create a container running without customizing the resources needed to run the Podman AI resources. This machine is optimized to run containers and micro service applications, is *NOT* properly sized to host the resources needed for AI Model inference in Podman AI Lab.  Instead use the customized Podman machine instructions below.
 
+
 == Create a custom Podman Instance
 
 In order to host AI Models, we going to need a container with a minimum of 5Gb of memory, 4 vCPUs, and 10GB of storage space.  For best experience during the lab, a podman machine with 5 vCPUs, 12GB of memory, and 20GB of storage is recommended.
  
- . Open Podman Desktop dashboard
 
- . Click on settings from the navigation menu, it's the gear icon at the bottom left. 
+Open Podman Desktop dashboard.
+
+Click on "Settings" from the navigation menu (it's the gear icon at the bottom left). 
+
 +
 image::create-podman-machine.png[width=800]
-+
- . Click *create new Podman machine* (the button may show as create new) or if a machine is already running, stop then delete the machine. Then click create new.
 
 
+Click *Create new Podman machine* (the button may show as "Create New"). If a machine is already running, stop and delete the machine. Then click "Create New".
 
- . Optionally change the machine name, if you plan to host multiple AI applications at once.
 
- . For the vCPUs, you can leave the default of 5
+ . Optionally change the machine name if you plan to host multiple AI applications at once.
+
+ . For the vCPUs, you can leave the default of 5.
  
- . Change the memory to at least 8GB recommended, 12-16GB if possible.
+ . Change the memory to at least 8GB (12-16GB is recommended if possible).
 
- . For the drive space, reduce the amount to 20-40GB  ( this is not where AI models are stored).
+
+ . For the drive space, reduce the amount to 20-40GB  (this is not where downloaded models are stored).
+
 
  . Leave the defaults for the other options. 
 
- . Click Create
+ . Click "Create".
 
 image::config-podman-machine.png[width=800]
 
-It should take a short time for the Podman machine to become ready, which is indicated by the resource meters and Running under the machine name.
+It should take a short time for the Podman machine to become ready, which is indicated by the resource meters and "Running" under the machine name.
 
 
 image::running-podman-machine.png[width=800]
 
 
+
 With our compute resources ready to go, N\wow is time to get working with AI. 
 
 Let's being to explore the features of Podman AI Lab.
+

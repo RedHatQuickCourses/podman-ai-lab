@@ -3,7 +3,7 @@
 
 image::instructlab-banner.png[width=640]
 
-InstructLab is a model-agnostic open source AI project that facilitates contributions to Large Language Models (LLMs).
+InstructLab is a model-agnostic open-source AI project that facilitates contributions to Large Language Models (LLMs).
 
 ---
 
@@ -18,7 +18,7 @@ InstructLab is here to solve these problems.
 
 The project enables community contributors to add additional "skills" or "knowledge" to a particular model.
 
-InstructLab's model-agnostic technology gives model upstreams with sufficient infrastructure resources the ability to create regular builds of their open source licensed models not by rebuilding and retraining the entire model but by composing new skills into it.
+InstructLab's model-agnostic technology gives model upstreams with sufficient infrastructure resources, the ability to create regular builds of their open-source licensed models not by rebuilding and retraining the entire model but by composing new skills into it.
 
 Take a look at "lab-enhanced" models on the https://huggingface.co/instructlab[InstructLab Hugging Face page].
 

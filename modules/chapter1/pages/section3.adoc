@@ -1,8 +1,10 @@
 = Podman AI Lab
 
-== What is Podman AI Lab
+== What is Podman AI Lab?
 
-Podman AI Lab is an open-source tool that enables users to work with large language models (LLMs) in a local environment, simplifying the process of getting started with AI powered applications in their projects.
+
+Podman AI Lab is an open-source tool that enables users to work with large language models (LLMs) on a local environment, simplifying the process of getting started with AI-powered applications in their projects.
+
 
 
 It offers resources and guidance for beginners, making it easy to explore AI and its potential.
@@ -20,19 +22,22 @@ The extension can be installed quickly and easily on macOS, Windows, and Linux s
 
 Podman AI Lab ships with a Recipes Catalog that helps us navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple AI models allows finding the optimal one for the business our use case.
 
- * *Chatbots* that simulate human conversation, using AI to comprehend user inquiries and offer suitable responses. These capabilities are often used to augment applications that provide self-service customer support or virtual personal assistance.
- * *Text summarizers* which provide versatile capabilities across many applications and industries, where they can deliver effective and efficient information management. Using this recipe, developers can build applications to assist with things like content creation and curation, research, news aggregation, social media monitoring, and language learning.
- * *Code generators* which empower developers to concentrate on higher-level design and problem-solving by automating repetitive tasks like project setup and API integration, or to produce code templates.
+ * *Chatbots* simulate human conversation, using AI to comprehend user inquiries and offer suitable responses. These capabilities are often used to augment applications that provide self-service customer support or virtual personal assistance.
+ * *Text summarizers* provide versatile capabilities across many applications and industries, where they can deliver effective and efficient information management. Using this recipe, developers can build applications to assist with things like content creation and curation, research, news aggregation, social media monitoring, and language learning.
+ * *Code generators* empower developers to concentrate on higher-level design and problem-solving by automating repetitive tasks like project setup and API integration, or to produce code templates.
  * *Object detection* helps identify and locate objects within digital images or video frames. It is a fundamental component in various applications, including autonomous vehicles, retail inventory management, precision agriculture, and sports broadcasting.
  * *Audio-to-text* transcription involves the process of automatically transcribing spoken language into written text, facilitating documentation, accessibility, and analysis of audio content.
 
 === AI Models Catalog
 
-The models catalog is a curated list of Open Source models with the Apache 2.0 license. Once downloaded, these models are available to be used for AI applications, model services and playgrounds. The catalog supports custom AI Models in the .GGUF format, allowing users to import AI model and store them. 
+
+The models catalog is a curated list of Open-Source models with the Apache 2.0 license. Once downloaded, these models are available to be used for AI applications, model services and playgrounds. The catalog will also allow users to import custom AI models and store them. 
 
 === Model Services
 
-The model service creates a local AI Model endpoint, supporting an OpenAI-compatible API, facilitating a seamless integration of AI capabilities into existing applications. Upon initialization, effortlessly access detailed service information and generate code snippets in multiple programming languages to ease application integration.
+A model service offers a configurable endpoint via an OpenAI-compatible web server, facilitating a seamless integration of AI capabilities into existing applications. Upon initialization, users can effortlessly access detailed service information and generate code snippets in multiple programming languages to ease application integration.
+
+The Services page within Podman AI allows users to access currently running model services and provides further details and code snippets to interact with them.
 
 
 === Playgrounds
@@ -41,19 +46,21 @@ Podman AI Lab includes a playground environment that allows users to interact wi
 
 
 
-== AI & Large Language Model supported format
+== AI & Large Language Model Supported Format
 
 === GGUF Format:
 
-Podman AI Lab supports large language models in the .gguf format and the ability to download or import these quantized, .gguf model files, and run them locally on a laptop, desktop, or equivalent virtual machine. 
-
 GPT-Generated Unified Format (GGUF) is a file format that streamlines the use and deployment of large language models (LLMs). GGUF is specially designed to store inference models and perform well on consumer-grade computer hardware.
 
+Podman AI Lab supports large language models in the GGUF format and the ability to download or import these quantized, GGUF model files, and run them locally on a laptop, desktop, or equivalent virtual machine. 
+// Since, the second paragraph was more informative, I shifted it on top.
 
-https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository] provides a tool to quickly convert and quantize a model from huggingface into the *.gguf format for use with Podman AI Lab. 
+
+https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository] provides a tool to quickly and easily convert and quantize a model from huggingface into the GGUF format for use with Podman AI Lab. 
 
 
-=== HuggingFace _ 
+
+=== HuggingFace :
 
 https://huggingface.co/[The Hugging Face Hub] is a platform with over 350k models, 75k datasets, and 150k demo apps (Spaces), all open source and publicly available, in an online platform where people can easily collaborate and build ML together.
 
