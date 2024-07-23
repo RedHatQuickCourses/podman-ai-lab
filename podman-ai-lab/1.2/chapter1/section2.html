@@ -163,7 +163,7 @@
 <article class="doc">
 <h1 class="page">Podman &amp; Podman Desktop</h1>
 <div class="sect1">
-<h2 id="_gizmogobble_gg_team_podman_research"><a class="anchor" href="#_gizmogobble_gg_team_podman_research"></a>GizmoGobble (GG) team Podman research</h2>
+<h2 id="_gizmogobble_gg_team_podman_research"><a class="anchor" href="#_gizmogobble_gg_team_podman_research"></a>GizmoGobble (GG) team Podman Research</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>As the GG developer team began their research into Podman Desktop &amp; AI Lab, they took notes that might be helpful for the rest of us to use. We&#8217;ll use these notes, beginning with a brief review of Podman to gain some basic knowledge before diving into the lab portion of this course.</p>
@@ -174,13 +174,13 @@
 <h2 id="_what_is_podman"><a class="anchor" href="#_what_is_podman"></a>What is Podman ?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Podman (short for pod manager) is an open source tool for developing, managing, and running containers. Developed by Red Hat engineers along with the open source community, Podman is capable of managing the entire container ecosystem.  Developers can also take advantage of Podman Desktop, a graphical user interface (GUI) for using Podman in local environments.</p>
+<p>Podman (short for pod manager) is an open-source tool for developing, managing, and running containers. Developed by Red Hat® engineers along with the open-source community, Podman is capable of managing the entire container ecosystem.  Developers can also take advantage of Podman Desktop, a graphical user interface (GUI) for using Podman in local environments.</p>
 </div>
 <div class="paragraph">
 <p>Users can run Podman on various Linux distributions, such as Red Hat Enterprise Linux, Fedora, CentOS, and Ubuntu.</p>
 </div>
 <div class="paragraph">
-<p>While <strong>"containers are Linux,"</strong> Podman also runs on Mac and Windows, where it provides a native podman CLI and embeds a guest Linux system to launch containers. This guest is referred to as a <strong>Podman machine</strong> and is managed with the Podman Machine command. Podman on Mac and Windows also listens for Docker API clients, supporting direct usage of Docker-based tools and programmatic access from your language of choice.</p>
+<p>While <strong>"containers are Linux,"</strong> Podman also runs on Mac and Windows, where it provides a native Podman CLI and embeds a guest Linux system to launch containers. This guest is referred to as a <strong>Podman machine</strong> and is managed with the Podman Machine command. Podman on Mac and Windows also listens for Docker API clients, supporting direct usage of Docker-based tools and programmatic access from your language of choice.</p>
 </div>
 <div class="paragraph">
 <p><a href="https://podman.io/">Visit the official Podman website for more details</a></p>
@@ -189,18 +189,18 @@
 <p>Regarding pricing, Podman is open-source and free to use. It was developed by Red Hat and is included in many Linux distributions. There are no direct costs associated with the tool, which makes it an interesting platform for companies on a tighter budget.</p>
 </div>
 <div class="sect2">
-<h3 id="_what_are_pods"><a class="anchor" href="#_what_are_pods"></a>What are pods?</h3>
+<h3 id="_what_are_pods"><a class="anchor" href="#_what_are_pods"></a>What are Pods?</h3>
 <div class="paragraph">
 <p>Pods are groups of containers that run together and share the same resources, similar to Kubernetes pods. Podman manages these pods via a simple command-line interface (CLI) and the libpod library, which provides application programming interfaces (APIs) for managing containers, pods, container images, and volumes. Podman&#8217;s CLI creates and supports Open Container Initiative (OCI) containers, which are designed to meet industry standards for container runtimes and formats.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_what_makes_podman_different_from_other_container_engines"><a class="anchor" href="#_what_makes_podman_different_from_other_container_engines"></a>What makes Podman different from other container engines?</h3>
+<h3 id="_what_makes_podman_different_from_other_container_engines"><a class="anchor" href="#_what_makes_podman_different_from_other_container_engines"></a>What makes Podman Different from other Container Engines?</h3>
 <div class="paragraph">
 <p>Podman stands out from other container engines because it’s daemonless, meaning it doesn&#8217;t rely on a process with root privileges to run containers.</p>
 </div>
 <div class="paragraph">
-<p>Daemons are processes that run in the background of your system to do the work of running containers without a user interface. Think of daemons as the intermediary communicating between the user and the container itself.</p>
+<p>Daemons are processes that run in the background of your system to do the work of running containers without a user interface. Think of daemons as the intermediaries communicating between the user and the container itself.</p>
 </div>
 <div class="paragraph">
 <p>While daemons can be a convenient way to manage your container environment, they can also introduce security vulnerabilities. Many daemons run with root privileges. In Linux systems, the root account acts as a superuser with administrative access (while bypassing the need for admin verification) to read files, install programs, edit applications, and more. This makes daemons an ideal target for hackers who want to gain control of your containers and infiltrate the host system.</p>
@@ -230,7 +230,7 @@ A graphical user interface (GUI) is a digital interface in which a user interact
 <p>Podman Desktop is a GUI for Podman, which provides a central place for developers to work with containers right on their laptop or workstation. Developers can build, push, and pull images and manage Podman resources directly using a GUI that’s consistent across local Linux, Windows, and macOS environments. Podman Desktop also lets developers deliver ready-to-deploy containerized applications to Kubernetes environments.</p>
 </div>
 <div class="paragraph">
-<p>Podman Desktop supports extension packs, which open up additional capabilities. One example, Podman AI Lab, adds recipes for building applications that work with large language models (LLMs) in a local environment and includes a curated catalog of open source-licensed LLMs.</p>
+<p>Podman Desktop supports extension packs, which open up additional capabilities. One example is , Podman AI Lab, which adds recipes for building applications that work with large language models (LLMs) in a local environment and includes a curated catalog of open-source licensed LLMs.</p>
 </div>
 <div class="paragraph">
 <p>Let&#8217;s explore the components of Podman Desktop with AI Labs in the next section.</p>

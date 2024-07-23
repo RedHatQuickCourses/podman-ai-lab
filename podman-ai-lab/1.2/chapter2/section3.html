@@ -165,7 +165,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Before using the services available in Podman AI Lab, a Podman machine needs to be set up to provide cpu, memory, &amp; storage resources.  In this use case a virtualized container instance on the desktop or laptop hardware.</p>
+<p>Before using the services available in Podman AI Lab, a Podman machine needs to be set up to provide CPU, memory, &amp; storage resources.  In this case, a virtualized container instance on the desktop or laptop hardware.</p>
 </div>
 <div class="paragraph">
 <p>If the Podman machine is not running, you will see the following message in most AI Lab resources.</p>
@@ -178,26 +178,32 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_initialize_and_start_podman"><a class="anchor" href="#_initialize_and_start_podman"></a>Initialize and start Podman</h2>
+<h2 id="_initialize_and_start_podman"><a class="anchor" href="#_initialize_and_start_podman"></a>Initialize and Start Podman</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>To start working with containers, Podman needs to be initialized.</p>
 </div>
+<div class="paragraph">
+<p>Podman desktop will automatically install the latest version of Podman.</p>
+</div>
+<div class="paragraph">
+<p>From the Podman Desktop dashboard: Ensure the Podman Extension is now installed from the extensions menu.</p>
+</div>
 <div class="ulist">
 <ul>
-<li>
-<p>Podman desktop will automatically install the latest version of Podman with Podman extention</p>
-</li>
-<li>
-<p>From the Podman Desktop dashboard, return the extentions menu</p>
-</li>
-<li>
-<p>Insure the Podman Extension is installed, if not install it now</p>
-</li>
 <li>
 <p>Start the extention and verify it is active</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>From the Podman menu or widget section, click to install or initialize Podman.</p>
+</div>
+<div class="paragraph">
+<p>From this same menu you can also start the Podman machine, which will create a container running virtually to host the resources needed to run the Podman AI resources.</p>
+</div>
+<div class="paragraph">
+<p>However, this machine, while optimized to run containers and applications, is properly sized to host the resources needed for AI model inference.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -224,39 +230,38 @@ From this same menu we can start the Podman machine by clicking play, this will 
 <div class="paragraph">
 <p>In order to host AI Models, we going to need a container with a minimum of 5Gb of memory, 4 vCPUs, and 10GB of storage space.  For best experience during the lab, a podman machine with 5 vCPUs, 12GB of memory, and 20GB of storage is recommended.</p>
 </div>
+<div class="paragraph">
+<p>Open Podman Desktop dashboard.</p>
+</div>
+<div class="paragraph">
+<p>Click on "Settings" from the navigation menu (it&#8217;s the gear icon at the bottom left).</p>
+</div>
+<div class="paragraph">
+<p>+
+image::create-podman-machine.png[width=800]</p>
+</div>
+<div class="paragraph">
+<p>Click <strong>Create new Podman machine</strong> (the button may show as "Create New"). If a machine is already running, stop and delete the machine. Then click "Create New".</p>
+</div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Open Podman Desktop dashboard</p>
+<p>Optionally change the machine name if you plan to host multiple AI applications at once.</p>
 </li>
 <li>
-<p>Click on settings from the navigation menu, it&#8217;s the gear icon at the bottom left.</p>
-<div class="imageblock">
-<div class="content">
-<img src="_images/create-podman-machine.png" alt="create podman machine" width="800">
-</div>
-</div>
+<p>For the vCPUs, you can leave the default of 5.</p>
 </li>
 <li>
-<p>Click <strong>create new Podman machine</strong> (the button may show as create new) or if a machine is already running, stop then delete the machine. Then click create new.</p>
+<p>Change the memory to at least 8GB (12-16GB is recommended if possible).</p>
 </li>
 <li>
-<p>Optionally change the machine name, if you plan to host multiple AI applications at once.</p>
-</li>
-<li>
-<p>For the vCPUs, you can leave the default of 5</p>
-</li>
-<li>
-<p>Change the memory to at least 8GB recommended, 12-16GB if possible.</p>
-</li>
-<li>
-<p>For the drive space, reduce the amount to 20-40GB  ( this is not where AI models are stored).</p>
+<p>For the drive space, reduce the amount to 20-40GB  (this is not where downloaded models are stored).</p>
 </li>
 <li>
 <p>Leave the defaults for the other options.</p>
 </li>
 <li>
-<p>Click Create</p>
+<p>Click "Create".</p>
 </li>
 </ol>
 </div>
@@ -266,7 +271,7 @@ From this same menu we can start the Podman machine by clicking play, this will 
 </div>
 </div>
 <div class="paragraph">
-<p>It should take a short time for the Podman machine to become ready, which is indicated by the resource meters and Running under the machine name.</p>
+<p>It should take a short time for the Podman machine to become ready, which is indicated by the resource meters and "Running" under the machine name.</p>
 </div>
 <div class="imageblock">
 <div class="content">
