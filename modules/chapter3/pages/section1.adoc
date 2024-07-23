@@ -9,7 +9,7 @@ Like a software license, a Machine Learning (ML) model license governs the use, 
 
 
 You can choose to download one or more of the pre-curated models available in Podman AI Lab. These models all fall under the apache 2.0 license. 
-=======
+
 
 
 [NOTE]
