@@ -299,18 +299,12 @@
 </li>
 </ul>
 </div>
-<hr>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_client_code"><a class="anchor" href="#_client_code"></a>Client Code</h2>
 <div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="_images/curl-example.png" alt="curl example" width="800">
-</div>
-</div>
 <div class="paragraph">
 <p>The <em>Client Code</em> Section is dedicated to making AI application integration simple.</p>
 </div>
@@ -321,7 +315,12 @@
 <p>The window will populate with sample code that includes all the correct information pre-populated to connect to the running model and have it return a response to the question:  What is the capital of France?</p>
 </div>
 <div class="paragraph">
-<p>In addition to prompt, the sample also includes a sample code snippet to send a system message along with the prompt.  Usually this is set outside of the users input, but included with the sample for inclusion in the application integration code if needed.</p>
+<p>The sample also includes a sample code snippet to send a system message along with the prompt.  Usually this is set outside of the users input, but included with the sample for inclusion in the application integration code if needed.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/curl-example.png" alt="curl example" width="800">
+</div>
 </div>
 <div class="paragraph">
 <p>An example of using the client code can be tested with a running model service,</p>
@@ -329,7 +328,7 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>open a terminal window</p>
+<p>open a terminal window on the local system</p>
 </li>
 <li>
 <p>copy the code snippet from the client code window for the CURL language</p>
@@ -343,7 +342,7 @@
 </ol>
 </div>
 <div class="paragraph">
-<p>In a few moments the answer will appear.  The format will not be ideal, but this example just demonstrates that the code in the sample is valid and will send the prompt to and collect the response from the AI model.</p>
+<p>In a few moments the answer will appear.  The format will not be ideal, but this example just demonstrates that the code in the sample is valid and will send the prompt to and collect the response from the served AI model.</p>
 </div>
 <div class="paragraph">
 <p>With support for over 20 combinations of programming languages and libraries, the client code section provides these benefits:</p>
@@ -367,10 +366,10 @@
 </div>
 <hr>
 <div class="paragraph">
-<p>Podman AI Lab enables you to serve the model as a containerized REST endpoint that your code can call, just like any other API. This allows testing of applicatione connectivity, application integration testing, and evaluation of the model&#8217;s base resource requirements.</p>
+<p>Podman AI Lab enables you to serve the model as a containerized REST endpoint that your code can call, just like any other API. This allows testing of application connectivity, application integration testing, and evaluation of the model&#8217;s base resource requirements.</p>
 </div>
 <div class="paragraph">
-<p>The GizmoGobble team used Model serving as part of the playground enteraction, however, they didn&#8217;t plan to integrate an application, they plan was to connect a chatbot to the AI Model service. So let&#8217;s try the <strong>AI Application Recipe Catalog</strong> in the next section where the example deploys the AI Model, A Chatbot and the integration service to connect them.</p>
+<p>The GizmoGobble team used Model serving as part of the playground interaction to evalute AI Models ability to respond to prompts for use with the GizmoGenie chatbot. So let&#8217;s try the <strong>AI Application Recipe Catalog</strong> in the next section where the example deploys the AI Model, a Chatbot and the integration service to connect them.</p>
 </div>
 </div>
 </div>

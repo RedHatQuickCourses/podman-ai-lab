@@ -164,14 +164,14 @@
 <div class="sect2">
 <h3 id="_gizmogobble_team_on_ai_lab_playground"><a class="anchor" href="#_gizmogobble_team_on_ai_lab_playground"></a>GizmoGobble team on AI Lab Playground</h3>
 <div class="paragraph">
-<p>The integrated Playground environment allows for experimenting with available models in a local environment. An intuitive user interface helps in exploring the capabilities and accuracy of various models whle aiding in finding the best model for the use case at hand.</p>
+<p>The integrated Playground environment allows for experimenting with available models in a local environment. An intuitive user interface helps in exploring the capabilities and accuracy of various models while aiding in finding the best model for the use case at hand.</p>
 </div>
 <div class="paragraph">
 <p>The playground is about experimentation and learning. While it may seem like random and non-essential learning, the playground is where ideas, theories, and hypotheses are tested to determine how base AI models respond to prompt scenarios, system messages, parameter turning to discover which models perform best.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/ailab_playground.gif" alt="ailab playground" width="800">
+<img src="_images/ailab_playground.gif" alt="ailab playground" width="640">
 </div>
 </div>
 </div>
@@ -209,7 +209,7 @@
 <p>a new <strong>Model Service</strong> for the selected AI Model, which exposes the AI Model via an inference endpoint API.</p>
 </li>
 <li>
-<p>a new <strong>ai-lab-playground-chat</strong> container that provides a Visual user interface to allow interaction with the Model service.  This container can be viewed from the Podman Desktop containers dashboard.</p>
+<p>a new <strong>ai-lab-playground-chat</strong> container that provides a visual user interface to allow interaction with the Model service.  This container can be viewed from the Podman Desktop containers dashboard.</p>
 </li>
 </ul>
 </div>
@@ -225,13 +225,18 @@
 <div class="ulist">
 <ul>
 <li>
-<p>If the green dot is present, you can continue. If not, address the error shown.</p>
+<p>If the green dot is present, you can continue. If not, address the error in step 3.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/model_services_running.png" alt="model services running" width="640">
+</div>
+</div>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Next, select the Services menu and verify that there is now a service with a green indicator, showing that the service is running. We will return to this shortly.</p>
+<p>Next, select the Services menu and verify that there is now a service with a green indicator, showing that the service is running. We&#8217;ll learn more on services in the next section.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -271,6 +276,12 @@ We can deploy multiple playgrounds utilizing a single model inference service.  
 <div class="paragraph">
 <p>System prompts are a set of instructions, guidelines, and contextual information provided to AI models before they engage with user queries. These prompts act as a framework, setting the stage for the AI to operate within specific parameters and generate responses that are coherent, relevant, and aligned with the desired outcome. System prompts play a pivotal role in bridging the gap between the vast knowledge acquired by AI models during training and their application in real-world scenarios.</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/system_prompt.png" alt="system prompt" width="640">
+</div>
+</div>
+<hr>
 <div class="paragraph">
 <p>Gizmo Gobble&#8217;s example system prompts:</p>
 </div>
@@ -310,10 +321,17 @@ We can deploy multiple playgrounds utilizing a single model inference service.  
 <p><strong>Temperature</strong>: Controls the randomness of responses. Lower values are more focused, and higher values are more creative. Accepts values between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.</p>
 </li>
 <li>
-<p><strong>Max Tokens</strong>: Sets the maximum length of the <strong>model&#8217;s output</strong>, influencing verbosity and resource consumption. Accepts values between -1 and 32768 tokens. This is also known as the context window length, context window, context length, or maximum sequence length. Setting the limit of input tokens is not specified at this time.</p>
+<p><strong>Max Tokens</strong>: Sets the maximum length of the <strong>model&#8217;s output</strong>, influencing verbosity and resource consumption. Accepts values between -1 and 32768 tokens. This is also known as the context window length, context window, context length, or maximum sequence length.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Setting the limit of input tokens is not an option at this time.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p><strong>Top-p</strong>: Adjusts the balance between relevance and diversity in word choices. Accepts values between 0 and 1. This is an alternative to sampling with temperature, where the model considers the results of the tokens with the top_p probability mass. So, 0.1 means only the tokens comprising the top 10% probability mass are considered.</p>
+<p><strong>Top-p</strong>: Adjusts the balance between relevance and diversity in word choices. Accepts values between 0 and 1. This is an alternative to sampling with temperature, where the model considers the results of the tokens with the top_p probability mass. So, 0.1 means only the tokens comprising the top 10% probability mass are considered, while higher values like 0.8 increase word selection diversity.</p>
 </li>
 </ol>
 </div>
@@ -332,11 +350,17 @@ We can deploy multiple playgrounds utilizing a single model inference service.  
 <div class="olist arabic">
 <ol class="arabic">
 <li>
+<p>Provision a new playground environment using the instructlab/granite-7b-lab-GGUF model.</p>
+</li>
+<li>
 <p>Set a system prompt and evaluate the various responses.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Use a system prompt that instructs the model to answer as a comedian, a scholar, or in case of our use case: a master chef and note the results of the questions.</p>
+<p>Use a system prompt that instructs the model to answer as a comedian, a scholar, or in GG&#8217;s use case: a master chef who knows all things about cooking and utensils.</p>
+</li>
+<li>
+<p>Evaluate the results of responses for each type of system prompt</p>
 </li>
 </ol>
 </div>
@@ -346,7 +370,7 @@ We can deploy multiple playgrounds utilizing a single model inference service.  
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Set the #(limit) of max tokens to 30. Ask a question that requires a more detailed response like: " Why is the Sky Blue?" and note what happens.  While this number is exceptionally low, limiting the number of tokens can reduce the cost and prevent random questions from resource consumption.</p>
+<p>Set the #(limit) of max tokens to 30. Ask a question that requires a more detailed response like: " Why is the Sky Blue?" and evalute what happens.  While this number is exceptionally low, limiting the number of tokens can reduce the cost and prevent random questions from resource consumption.</p>
 </li>
 <li>
 <p>Change the temperature setting to a number close to 2 such as 1.8 and ask an open question like "Tell me a story".  Evaluate the response, then set the value lower near 0.5 and ask for a new story. Note down the following: Which was more original or unique?, Which made more sense?, and Which did you prefer?.</p>
@@ -360,7 +384,7 @@ We can deploy multiple playgrounds utilizing a single model inference service.  
 </ol>
 </div>
 <div class="paragraph">
-<p>We use the Playground to experiment with various settings, when queried the models with various prompts. Now let&#8217;s head over to the Model Serving dashboard to learn more about integrating our AI Models with existing or new applications.</p>
+<p>We use the Playground to experiment with various settings, when quering AI models with various prompts. Now let&#8217;s head over to the Model Serving dashboard to learn more about integrating our AI Models with existing or new applications.</p>
 </div>
 <div class="admonitionblock note">
 <table>

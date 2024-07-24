@@ -164,7 +164,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Podman AI Lab ships with a <strong><em>Recipes Catalog</em></strong> that helps you navigate a number of core AI use cases and problem domains such as ChatBots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications with open source code that can be run with various large language models (LLMs). Experimenting with multiple models allows finding the optimal one for our use case.</p>
+<p>Podman AI Lab ships with a <strong><em>Recipes Catalog</em></strong> that helps us navigate a number of core AI use cases and problem domains such as ChatBots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications with open source code that can be run with various large language models (LLMs).</p>
 </div>
 </div>
 </div>
@@ -174,10 +174,10 @@
 <p>The main goal of GizmoGenie application is to provide a ChatBot style interaction for web customers. Now that GG&#8217;s Development team has evaluated a few AI models using the playground and model services, it is time to test their selections in a simulated ChatBot application that mirrors the web interface solution.</p>
 </div>
 <div class="paragraph">
-<p>In the natural language section of the AI Lab Recipe Catalog, there is a recipe for a Chat application that provides features similar to the planned containerized version of the  GizmoGenie Chat interface.</p>
+<p>In the natural language section of the AI Lab Recipe Catalog, there is a recipe for a Chat application that provides features similar to the planned containerized version of the GizmoGenie Chat interface.</p>
 </div>
 <div class="paragraph">
-<p>The best part about the Chat Application recipe is that it includes links to the source github repository that contains all the application code. This repo contains a recipe for building and running the containerized AI Model along with a second container that runs the front end application. Both of these are built using Red Hat&#8217;s Universal bases image, which is free to use for customers, and provide a re-usable stable container platform.</p>
+<p>The best part about the Chat Application recipe is that it includes links to the source github repository that contains all the application code. This repo contains a recipe for building and running the containerized AI Model along with a second container that runs the front end application. Both of these are built using Red Hat&#8217;s Universal bases image (UBI), which is free to use for customers, and provides a re-usable stable container platform.</p>
 </div>
 <div class="paragraph">
 <p>These containerized AI recipes can be used to help developers quickly prototype new AI and LLM based applications locally, without the need for relying on any other externally hosted services. Since they are already containerized, it also helps developers move quickly from prototype to production.</p>
@@ -246,7 +246,7 @@
 <h2 id="_lab_chatbot_application_deployment"><a class="anchor" href="#_lab_chatbot_application_deployment"></a>LAB: ChatBot Application Deployment</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Located in the AI Apps section of the AI Lab is the Recipe Catalog, along with the Running menu option.</p>
+<p>Located in the AI Apps section of Podman AI Lab is the Recipe Catalog, along with the Running menu option.</p>
 </div>
 <div class="paragraph">
 <p>When opened, the recipe catalog displays the sample applications sorted by category.</p>
@@ -270,7 +270,12 @@
 </div>
 </li>
 <li>
-<p>Depending on the available resources in your Podman container (machine) running in Podman desktop, you may receive a notification about increasing available resources to improve performance.</p>
+<p>Depending on the available resources in your Podman machine running in Podman desktop, you may receive a notification about increasing available resources to improve performance.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/podman_machine.png" alt="podman machine" width="800">
+</div>
+</div>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -287,10 +292,7 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>In the Model Section, there is a drop down to allow the user to select an alternative Model.</p>
-</li>
-<li>
-<p>The model section option simply opens the models tab described above.</p>
+<p>In the Model Section, there is a <em>swap for a different compatible model</em> link that switches us to the Models Tab.</p>
 </li>
 <li>
 <p>Also shown is the repository location for the ai lab recipes, where the original application files are located</p>
@@ -306,7 +308,7 @@
 <p>If the selected model has not been downloaded, it will be downloaded first.</p>
 </li>
 <li>
-<p>If you use a model other than the default, you may need to use the Running menu dashboard to view and launch the application once it&#8217;s running. Otherwise, you will see all the details of the model starting process in the AI App Details.</p>
+<p>If you use a model other than the default, you may need to use the Running menu dashboard to view and launch the application once it&#8217;s running. Otherwise, you will see all the details of the model starting process in the AI App Details widget.</p>
 </li>
 </ol>
 </div>
@@ -315,6 +317,14 @@
 </div>
 <div class="paragraph">
 <p>If you use the default AI Model, then you will get a checklist of the progress during the application deployment.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/running_ai_app_details_menu.png" alt="running ai app details menu" width="400">
+</div>
+</div>
+<div class="paragraph">
+<p>Once Chat Application has completed, a green icon will appear along with the words running at the top of the AI App Details console.</p>
 </div>
 <div class="paragraph">
 <p>Additionally, from the AI App Details sub-menu, there will also be options to open the application in a web browser, restart the application, and delete the application.</p>
@@ -326,40 +336,66 @@
 <p>This seems exactly like the playground, however the difference is how the application and model are served to work together.</p>
 </div>
 <div class="paragraph">
-<p>Another difference in this user experience is that there are no tuning parameter options or system prompt provided to the user, as those will be set in the background by the developer and will stay consistent across users.</p>
+<p>Another difference in this user experience is that there are no tuning parameters tions or system prompt modification options provided, as those will be set in the background by the developer and will stay consistent across users.</p>
 </div>
 <div class="sect2">
 <h3 id="_podman_desktop"><a class="anchor" href="#_podman_desktop"></a>Podman Desktop</h3>
 <div class="paragraph">
-<p>We can use the containers menu of Podman desktop to view the running container that make up this application.</p>
+<p>We can use the containers menu of Podman desktop to view the running containers that make up this application.</p>
 </div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the container menu icon, which looks like a 3D cube and is second from the top.</p>
+</li>
+<li>
+<p>In the image below, there is container image from the playground at the top.</p>
+</li>
+<li>
+<p>Next, is a pod, with 3 containers listed that make up the Chat Application Infrastructure</p>
 <div class="ulist">
 <ul>
 <li>
-<p>There is a container for the <strong>streamlit</strong> chat application</p>
+<p>There is a container for the <strong>streamlit</strong> web /chat application</p>
 </li>
 <li>
 <p>There is a container for the <strong>llama.cpp</strong> server hosting the AI Model</p>
 </li>
 <li>
-<p>There is a container for ???
-// What comes in place of the above ?</p>
+<p>An infrastructure container that expose external resources</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>In the Pod section of the Podman Desktop, the Pod that contains the three container is displayed as:</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/running_containers.png" alt="running containers" width="800">
+</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>View the kubernetes deployment</p>
+<p>Clicking on container image such as the llamacpp-server-podified will present a dashboard for interaction with individual containers include a Summary, Logs, Inspect, and Terminal.</p>
 </li>
 <li>
-<p>View the log files</p>
+<p>From the menu at the top right:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>view resources each container is consuming</p>
 </li>
 <li>
-<p>View the summary of containers running in the pod</p>
+<p>take action on the container such as stop, restart, export and download the container.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Understanding where to find logs are benifical for troubleshooting failures &amp; resolving technical conflicts.</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
 </li>
 </ol>
 </div>
@@ -368,11 +404,13 @@
 <h3 id="_additional_applications"><a class="anchor" href="#_additional_applications"></a>Additional Applications</h3>
 <div class="literalblock">
 <div class="content">
-<pre>Each additional recipe available will launch a service designed to help users gain experience with specific business cases for AI model development.</pre>
+<pre>Each additional recipes available will launch a service designed to help users gain experience with specific business cases for AI model development.</pre>
 </div>
 </div>
-<div class="paragraph">
-<p><strong>Note:</strong> There is a video walkthrough of each of the additional Recipe&#8217;s in action.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Experiment with lauching the Text Summarizer or Video Analysis recipes.</pre>
+</div>
 </div>
 <div class="paragraph">
 <p>For optimal performance:
@@ -381,7 +419,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Restart the Podman Container: Restart the Podman container to ensure the best performance of the Podman AI Lab environment.</p>
+<p>Restart the Podman machine: Restart the Podman machine between each new deployment to ensure the best performance of the Podman AI Lab environment.</p>
 </li>
 </ul>
 </div>
@@ -395,12 +433,6 @@
 <p>One of the most important features of the Podman AI Lab extension is the curated catalog of open-source recipes that enable you to navigate common AI use cases and solutions.</p>
 </div>
 <div class="paragraph">
-<p>To begin, click the top left option the Recipes Catalog menu option.</p>
-</div>
-<div class="paragraph">
-<p>This catalog is organized by categories of example use cases that can inspire you on how to infuse your app with AI. It includes pre-selected models (and the ability to swap), example code, and easy access to your IDE. The catalog of recipes is designed to provide the best practices and inspire you with use cases you can eventually benefit from in your applications.</p>
-</div>
-<div class="paragraph">
 <p>Once you&#8217;ve selected a recipe from the Recipes Catalog, you&#8217;ll be able to see a summary of what the recipe does and how it works. This will give you a better understanding of the recipe&#8217;s capabilities and help you decide if it&#8217;s right for your application. You&#8217;ll also find handy links to the application source code and the recommended model, as well as the ability to select other compatible models (curated from Hugging Face&#8217;s open source community).</p>
 </div>
 <div class="paragraph">
@@ -410,11 +442,20 @@
 <p>During the startup process, you&#8217;ll be shown a few steps that will be completed before the application is ready to use. These steps might include downloading the model, building the container images with the model and the application, etc.</p>
 </div>
 <div class="paragraph">
-<p>Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example, you can interact with the front end application, which is inferencing the model server, the selected Mistral-7B model. It’s this easy to set up a model server and start integrating generative AI in your applications.</p>
+<p>Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example, you can interact with the front end application, which is inferencing the model server, serving the running model. It"s this easy to set up a model server and start integrating generative AI in your applications.</p>
 </div>
 <div class="paragraph">
 <p>As you work in other areas of Podman Desktop for your container workflow, you&#8217;ll always be able to see your running AI apps (i.e., the recipes you started) in the dedicated Running section for Podman AI Lab.</p>
 </div>
+<div class="paragraph">
+<p>Continue to experient with Recipes, Playgrounds, and model serving to up your Gen AI /LLM application integration knowledge.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_end"><a class="anchor" href="#_the_end"></a>The End</h2>
+<div class="sectionbody">
+
 </div>
 </div>
 <nav class="pagination">
