@@ -89,11 +89,9 @@ image::service_details.png[width=640]
 +
 image::client_code.png[width=640]
 
----
 
 == Client Code 
 
-image::curl-example.png[width=800]
 
 The _Client Code_ Section is dedicated to making AI application integration simple.
 
@@ -102,12 +100,14 @@ In the client code section, simply select the programming language from the drop
 
 The window will populate with sample code that includes all the correct information pre-populated to connect to the running model and have it return a response to the question:  What is the capital of France? 
 
-In addition to prompt, the sample also includes a sample code snippet to send a system message along with the prompt.  Usually this is set outside of the users input, but included with the sample for inclusion in the application integration code if needed. 
+The sample also includes a sample code snippet to send a system message along with the prompt.  Usually this is set outside of the users input, but included with the sample for inclusion in the application integration code if needed. 
+
+image::curl-example.png[width=800]
 
 An example of using the client code can be tested with a running model service,  
 
 
- . open a terminal window 
+ . open a terminal window on the local system
  
  .  copy the code snippet from the client code window for the CURL language 
  
@@ -116,7 +116,7 @@ An example of using the client code can be tested with a running model service,
  . Press enter to execute the command
 
 
-In a few moments the answer will appear.  The format will not be ideal, but this example just demonstrates that the code in the sample is valid and will send the prompt to and collect the response from the AI model. 
+In a few moments the answer will appear.  The format will not be ideal, but this example just demonstrates that the code in the sample is valid and will send the prompt to and collect the response from the served AI model. 
 
 
 
@@ -133,9 +133,9 @@ Podman Desktop manages the model server container, ensuring high availability an
 
 ---
 
-Podman AI Lab enables you to serve the model as a containerized REST endpoint that your code can call, just like any other API. This allows testing of applicatione connectivity, application integration testing, and evaluation of the model's base resource requirements.
+Podman AI Lab enables you to serve the model as a containerized REST endpoint that your code can call, just like any other API. This allows testing of application connectivity, application integration testing, and evaluation of the model's base resource requirements.
 
-The GizmoGobble team used Model serving as part of the playground enteraction, however, they didn't plan to integrate an application, they plan was to connect a chatbot to the AI Model service. So let's try the *AI Application Recipe Catalog* in the next section where the example deploys the AI Model, A Chatbot and the integration service to connect them.  
+The GizmoGobble team used Model serving as part of the playground interaction to evalute AI Models ability to respond to prompts for use with the GizmoGenie chatbot. So let's try the *AI Application Recipe Catalog* in the next section where the example deploys the AI Model, a Chatbot and the integration service to connect them.  
 
 
 

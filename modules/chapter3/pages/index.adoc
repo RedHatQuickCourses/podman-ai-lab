@@ -14,8 +14,6 @@ These are the requirement that they set forth:
 
  * Once you find the LLM that works best, focus on that LLM
 
- * Utilize multiple LLMs depending on the task.
-
  * Fine-tune an LLM with custom data.
 
 

@@ -39,4 +39,6 @@ Podman Desktop is a GUI for Podman, which provides a central place for developer
 
 Podman Desktop supports extension packs, which open up additional capabilities. One example is , Podman AI Lab, which adds recipes for building applications that work with large language models (LLMs) in a local environment and includes a curated catalog of open-source licensed LLMs.
 
+https://podman-desktop.io//[Visit the official Podman desktop website for more details]
+
 Let's explore the components of Podman Desktop with AI Labs in the next section.
