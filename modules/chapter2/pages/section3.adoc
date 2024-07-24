@@ -21,11 +21,7 @@ From the Podman Desktop dashboard: Ensure the Podman Extension is now installed 
  * Start the extention and verify it is active
 
 
-From the Podman menu or widget section, click to install or initialize Podman.
-
 From this same menu you can also start the Podman machine, which will create a container running virtually to host the resources needed to run the Podman AI resources.
-
-However, this machine, while optimized to run containers and applications, is properly sized to host the resources needed for AI model inference.
 
 image::podman_extention.png[width=800]
 
@@ -35,15 +31,14 @@ From this same menu we can start the Podman machine by clicking play, this will 
 
 == Create a custom Podman Instance
 
-In order to host AI Models, we going to need a container with a minimum of 5Gb of memory, 4 vCPUs, and 10GB of storage space.  For best experience during the lab, a podman machine with 5 vCPUs, 12GB of memory, and 20GB of storage is recommended.
+In order to host AI Models, we are going to need a container with a minimum of 5Gb of memory, 4 vCPUs, and 10GB of storage space.  For best experience during the lab, a podman machine with 5 vCPUs, 12GB of memory, and 20GB of storage is recommended.
  
 
 Open Podman Desktop dashboard.
 
 Click on "Settings" from the navigation menu (it's the gear icon at the bottom left). 
 
-+
-image::create-podman-machine.png[width=800]
+image::create-podman-machine.png[width=640]
 
 
 Click *Create new Podman machine* (the button may show as "Create New"). If a machine is already running, stop and delete the machine. Then click "Create New".
@@ -63,7 +58,7 @@ Click *Create new Podman machine* (the button may show as "Create New"). If a ma
 
  . Click "Create".
 
-image::config-podman-machine.png[width=800]
+image::config-podman-machine.png[width=640]
 
 It should take a short time for the Podman machine to become ready, which is indicated by the resource meters and "Running" under the machine name.
 
@@ -72,7 +67,7 @@ image::running-podman-machine.png[width=800]
 
 
 
-With our compute resources ready to go, N\wow is time to get working with AI. 
+With our compute resources ready to go, Now is time to get working with AI. 
 
 Let's being to explore the features of Podman AI Lab.
 

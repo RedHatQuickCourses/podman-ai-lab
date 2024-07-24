@@ -19,7 +19,6 @@ These are the requirements they set forth:
 *       Apply prompt engineering techniques against the LLM.
 
 * 		Once you find the LLM that works best, focus on that LLM.
-* 		We may make use of multiple LLMs depending on the task.
 * 		Fine tune an LLM with custom data.
 
 Now that we have an idea of the approach, let's take a step back to learn more about the GizmoGobble Corporation and how Podman AI Labs can help them achieve their AI goals.

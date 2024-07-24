@@ -18,7 +18,7 @@ https://podman-desktop.io/docs/installation[Podman Desktop Installation Document
 === Installation for macOS
 
 
-Download the *.dmg* file from the https://podman-desktop.io/downloads/macos[Downloads] section of this website.
+Download the *.dmg* file from the https://podman-desktop.io/downloads/macos[Downloads] section of this Podman Desktop website.
 
 image::podman_macos_install.png[width=800]
 
