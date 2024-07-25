@@ -161,13 +161,31 @@
 </aside>
 <article class="doc">
 <h1 class="page">Recipe Catalog</h1>
-<div id="preamble">
+<div class="sect1">
+<h2 id="_recipes_catalog_overview"><a class="anchor" href="#_recipes_catalog_overview"></a>Recipes Catalog Overview</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>One of the most important features of the Podman AI Lab extension is the curated catalog of open-source recipes that enable you to navigate common AI use cases and solutions.</p>
+</div>
 <div class="paragraph">
 <p>Podman AI Lab ships with a <strong><em>Recipes Catalog</em></strong> that helps us navigate a number of core AI use cases and problem domains such as ChatBots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications with open source code that can be run with various large language models (LLMs).</p>
 </div>
+<div class="paragraph">
+<p>Once you&#8217;ve selected a recipe from the Recipes Catalog, you&#8217;ll be able to see a summary of what the recipe does and how it works. This will give you a better understanding of the recipe&#8217;s capabilities and help you decide if it&#8217;s right for your application. You&#8217;ll also find handy links to the application source code and the recommended model, as well as the ability to select other compatible models.</p>
 </div>
+<div class="paragraph">
+<p>When you&#8217;re ready to see the application live and running, you can start it by clicking the Start AI App button on the upper right-hand side. As the application starts, you&#8217;ll be able to see the model it uses and where the source code of the application is located. In the background, Podman is running an inference server for the downloaded model within a container using the freely redistributable Red Hat Enterprise Linux Universal Base Image.</p>
 </div>
+<div class="paragraph">
+<p>During the startup process, you&#8217;ll be shown a few steps that will be completed before the application is ready to use. These steps might include downloading the model, building the container images with the model and the application, etc.</p>
+</div>
+<div class="paragraph">
+<p>Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example, you can interact with the front end application, which is inferencing the model server, serving the running model. It"s this easy to set up a model server and start integrating generative AI in your applications.</p>
+</div>
+<div class="paragraph">
+<p>In this lesson we will experient with Recipes to up your Gen AI /LLM application integration knowledge.</p>
+</div>
+<hr>
 <div class="sect2">
 <h3 id="_gizmogobble_teams_use_of_recipe_catalog"><a class="anchor" href="#_gizmogobble_teams_use_of_recipe_catalog"></a>GizmoGobble Team&#8217;s Use of Recipe Catalog</h3>
 <div class="paragraph">
@@ -185,6 +203,8 @@
 <div class="imageblock">
 <div class="content">
 <img src="_images/start-ai-app.gif" alt="start ai app" width="640">
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -388,29 +408,23 @@
 </li>
 <li>
 <p>take action on the container such as stop, restart, export and download the container.</p>
-<div class="literalblock">
-<div class="content">
-<pre>Understanding where to find logs are benifical for troubleshooting failures &amp; resolving technical conflicts.</pre>
-</div>
-</div>
 </li>
 </ul>
 </div>
 </li>
 </ol>
 </div>
+<div class="paragraph">
+<p>Understanding where to find logs are benifical for troubleshooting failures &amp; resolving technical conflicts.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_additional_applications"><a class="anchor" href="#_additional_applications"></a>Additional Applications</h3>
-<div class="literalblock">
-<div class="content">
-<pre>Each additional recipes available will launch a service designed to help users gain experience with specific business cases for AI model development.</pre>
+<div class="paragraph">
+<p>Each additional recipes available will launch a service designed to help users gain experience with specific business cases for AI model development.</p>
 </div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Experiment with lauching the Text Summarizer or Video Analysis recipes.</pre>
-</div>
+<div class="paragraph">
+<p>Experiment with lauching the Text Summarizer or Video Analysis recipes.</p>
 </div>
 <div class="paragraph">
 <p>For optimal performance:
@@ -423,39 +437,14 @@
 </li>
 </ul>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_recipes_catalog_overview"><a class="anchor" href="#_recipes_catalog_overview"></a>Recipes Catalog Overview</h2>
-<div class="sectionbody">
+<hr>
 <div class="paragraph">
-<p>One of the most important features of the Podman AI Lab extension is the curated catalog of open-source recipes that enable you to navigate common AI use cases and solutions.</p>
+<p>Don&#8217;t rush to move to the next section until you have explored the recipes throughly.  In the next section on Advanced Concepts, you will be provided with two ways to augment an open-source model using commodity hardware in a local environments.</p>
 </div>
 <div class="paragraph">
-<p>Once you&#8217;ve selected a recipe from the Recipes Catalog, you&#8217;ll be able to see a summary of what the recipe does and how it works. This will give you a better understanding of the recipe&#8217;s capabilities and help you decide if it&#8217;s right for your application. You&#8217;ll also find handy links to the application source code and the recommended model, as well as the ability to select other compatible models (curated from Hugging Face&#8217;s open source community).</p>
-</div>
-<div class="paragraph">
-<p>When you&#8217;re ready to see the application live and running, you can start it by clicking the Start AI App button on the upper right-hand side. As the application starts, you&#8217;ll be able to see the model it uses and where the source code of the application is located. In the background, Podman is running an inference server for the downloaded model within a container using the freely redistributable Red Hat Enterprise Linux Universal Base Image.</p>
-</div>
-<div class="paragraph">
-<p>During the startup process, you&#8217;ll be shown a few steps that will be completed before the application is ready to use. These steps might include downloading the model, building the container images with the model and the application, etc.</p>
-</div>
-<div class="paragraph">
-<p>Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example, you can interact with the front end application, which is inferencing the model server, serving the running model. It"s this easy to set up a model server and start integrating generative AI in your applications.</p>
-</div>
-<div class="paragraph">
-<p>As you work in other areas of Podman Desktop for your container workflow, you&#8217;ll always be able to see your running AI apps (i.e., the recipes you started) in the dedicated Running section for Podman AI Lab.</p>
-</div>
-<div class="paragraph">
-<p>Continue to experient with Recipes, Playgrounds, and model serving to up your Gen AI /LLM application integration knowledge.</p>
+<p>There are links to labs that will challenge your knowledge, get ready!</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_the_end"><a class="anchor" href="#_the_end"></a>The End</h2>
-<div class="sectionbody">
-
 </div>
 </div>
 <nav class="pagination">
