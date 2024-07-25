@@ -110,7 +110,7 @@
     <a class="nav-link" href="index.html">Advanced Concepts</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section1.html">RAG</a>
+    <a class="nav-link" href="section1.html">RAG Lab</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="section2.html">InstructLab</a>
@@ -176,16 +176,67 @@
 </div>
 </div>
 <div class="sect2">
+<h3 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h3>
+<div class="paragraph">
+<p>InstructLab is an open source project for enhancing large language models (LLMs) used in generative artificial intelligence (gen AI) applications. Created by IBM and Red Hat, the InstructLab community project provides a cost-effective solution for improving the alignment of LLMs and opens the doors for those with minimal machine learning experience to contribute.</p>
+</div>
+<div class="paragraph">
+<p>AI practitioners often need to adapt a pretrained LLM to suit a particular business purpose. But there are limits to the ways you can modify an LLM:</p>
+</div>
+<div class="paragraph">
+<p>InstructLab can enhance an LLM using far less human-generated information and far fewer computing resources than are typically used to retrain a model.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_does_instructlab_work"><a class="anchor" href="#_how_does_instructlab_work"></a>How does InstructLab work?</h3>
+<div class="paragraph">
+<p>The LAB method consists of 3 components:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Taxonomy-driven data curation.</strong> Taxonomy is a set of diverse training data curated by humans as examples of new knowledge and skills for the model.</p>
+</li>
+<li>
+<p><strong>Large-scale synthetic data generation.</strong> The model is then used to generate new examples based on the seed training data. Recognizing that synthetic data can vary in quality, the LAB method adds an automated step to refine the example answers, making sure they’re grounded and safe.</p>
+</li>
+<li>
+<p><strong>Iterative, large-scale alignment tuning.</strong> Finally, the model is retrained based on the set of synthetic data. The LAB method includes 2 tuning phases: knowledge tuning, followed by skill tuning.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_alignment_tuning"><a class="anchor" href="#_alignment_tuning"></a>Alignment tuning</h3>
+<div class="paragraph">
+<p>After pretraining, LLMs undergo alignment tuning to make the model’s answers as accurate and useful as possible. The 1st step in alignment tuning is typically instruction tuning, in which a model is trained directly on specific tasks of interest. Next is preference tuning, which can include reinforcement learning from human feedback (RLHF). In this step, humans test the model and rate its output, noting if the model’s answers are preferred or unpreferred. An RLHF process may include multiple rounds of feedback and refinement to optimize a model.</p>
+</div>
+<div class="paragraph">
+<p>Researchers have found that the amount of feedback at this alignment tuning stage can be much smaller than the initial set of training data―tens of thousands of human annotations, compared to the trillions of tokens of data required for pretraining―and still unlock latent capabilities of the model.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_instructlab"><a class="anchor" href="#_instructlab"></a>InstructLab</h3>
+<div class="paragraph">
+<p>The LAB method emerged from the idea that it should be possible to realize the benefits of model alignment from an even smaller set of human-generated data. An AI model can use a handful of human examples to generate a large amount of synthetic data―then refine that list for quality―and use that high-quality synthetic data set for further tuning and training. In contrast to instruction tuning, which typically need thousands of examples of human feedback, LAB can make a model significantly better using relatively few examples provided by humans.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>How is InstructLab different from retrieval-augmented generation (RAG)?
+The short answer is InstructLab and retrieval-augmented generation (RAG) solve different problems.</p>
+</div>
+<div class="paragraph">
+<p>RAG is a cost-efficient method for supplementing an LLM with domain-specific knowledge that wasn’t part of its pretraining. RAG makes it possible for a chatbot to accurately answer questions related to a specific field or business without retraining the model. Knowledge documents are stored in a vector database, then retrieved in chunks and sent to the model as part of user queries. This is helpful for anyone who wants to add proprietary data to an LLM without giving up control of their information, or who needs an LLM to access timely information.</p>
+</div>
+<div class="paragraph">
+<p>This is in contrast to the InstructLab method, which sources end-user contributions to support regular builds of an enhanced version of an LLM. InstructLab helps add knowledge and unlock new skills of an LLM.</p>
+</div>
+<div class="paragraph">
+<p>It’s possible to "supercharge" a RAG process by using the RAG technique on an InstructLab-tuned model.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_why_instructlab"><a class="anchor" href="#_why_instructlab"></a>Why InstructLab</h3>
-<div class="paragraph">
-<p>There are many projects rapidly embracing and extending permissively licensed AI models, but they are faced with three main challenges:</p>
-</div>
-<div class="paragraph">
-<p>Contribution to LLMs is not possible directly. They show up as forks, which forces consumers to choose a “best-fit” model that isn’t easily extensible. Also, the forks are expensive for model creators to maintain.
-The ability to contribute ideas is limited by a lack of AI/ML expertise. One has to learn how to fork, train, and refine models to see their idea move forward. This is a high barrier to entry.
-There is no direct community governance or best practice around review, curation, and distribution of forked models.
-InstructLab is here to solve these problems.</p>
-</div>
 <div class="paragraph">
 <p>The project enables community contributors to add additional "skills" or "knowledge" to a particular model.</p>
 </div>
@@ -193,11 +244,27 @@ InstructLab is here to solve these problems.</p>
 <p>InstructLab&#8217;s model-agnostic technology gives model upstreams with sufficient infrastructure resources, the ability to create regular builds of their open-source licensed models not by rebuilding and retraining the entire model but by composing new skills into it.</p>
 </div>
 <div class="paragraph">
+<p>View the original article <a href="https://www.redhat.com/en/topics/ai/what-is-instructlab">What is instructlab at Redhat.com</a></p>
+</div>
+<div class="paragraph">
 <p>Take a look at "lab-enhanced" models on the <a href="https://huggingface.co/instructlab">InstructLab Hugging Face page</a>.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_optional_lab_instructlab_unleashed"><a class="anchor" href="#_optional_lab_instructlab_unleashed"></a>Optional Lab: <a href="https://github.com/RedHatQuickCourses/instructlab-insurance-lab/tree/main">InstructLab Unleashed</a></h3>
+<div class="paragraph">
+<p>InstructLab Unleashed: Training the Merlinite Model to Answer Questions for Parasol Insurance!
+This training lab focuses on equipping the Merlinite AI model with the capability to handle and respond to queries related to Parasol Insurance using InstructLab.</p>
+</div>
+<div class="paragraph">
+<p>You will learn how to train the model using specific datasets and techniques to ensure it can accurately and efficiently provide answers to common insurance-related questions.</p>
+</div>
+<div class="paragraph">
+<p>By the end of the training, you will have a comprehensive understanding of the processes involved in fine-tuning AI models for specialized applications within the insurance industry.</p>
+</div>
+</div>
 <nav class="pagination">
-  <span class="prev"><a href="section1.html">RAG</a></span>
+  <span class="prev"><a href="section1.html">RAG Lab</a></span>
   <span class="next"><a href="section3.html">Podman Desktop Roadmap</a></span>
 </nav>
 </article>
