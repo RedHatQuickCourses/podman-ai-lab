@@ -1,6 +1,23 @@
 = Recipe Catalog
 
+
+== Recipes Catalog Overview
+
+One of the most important features of the Podman AI Lab extension is the curated catalog of open-source recipes that enable you to navigate common AI use cases and solutions. 
+
 Podman AI Lab ships with a *_Recipes Catalog_* that helps us navigate a number of core AI use cases and problem domains such as ChatBots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications with open source code that can be run with various large language models (LLMs). 
+
+Once you've selected a recipe from the Recipes Catalog, you'll be able to see a summary of what the recipe does and how it works. This will give you a better understanding of the recipe's capabilities and help you decide if it's right for your application. You'll also find handy links to the application source code and the recommended model, as well as the ability to select other compatible models. 
+
+When you're ready to see the application live and running, you can start it by clicking the Start AI App button on the upper right-hand side. As the application starts, you'll be able to see the model it uses and where the source code of the application is located. In the background, Podman is running an inference server for the downloaded model within a container using the freely redistributable Red Hat Enterprise Linux Universal Base Image.
+
+During the startup process, you'll be shown a few steps that will be completed before the application is ready to use. These steps might include downloading the model, building the container images with the model and the application, etc.
+
+Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example, you can interact with the front end application, which is inferencing the model server, serving the running model. It"s this easy to set up a model server and start integrating generative AI in your applications.
+
+In this lesson we will experient with Recipes to up your Gen AI /LLM application integration knowledge.
+
+---
 
 === GizmoGobble Team's Use of Recipe Catalog
 
@@ -115,37 +132,23 @@ image::running_containers.png[width=800]
 
  ** take action on the container such as stop, restart, export and download the container.
 
- Understanding where to find logs are benifical for troubleshooting failures & resolving technical conflicts.
+Understanding where to find logs are benifical for troubleshooting failures & resolving technical conflicts.
 
 === Additional Applications
 
- Each additional recipes available will launch a service designed to help users gain experience with specific business cases for AI model development.
+Each additional recipes available will launch a service designed to help users gain experience with specific business cases for AI model development.
 
- Experiment with lauching the Text Summarizer or Video Analysis recipes.
+Experiment with lauching the Text Summarizer or Video Analysis recipes.
 
 For optimal performance:
  * Delete the Previous Receipe: Before starting a new receipe, remove the previous one.
  
  * Restart the Podman machine: Restart the Podman machine between each new deployment to ensure the best performance of the Podman AI Lab environment.
 
+---
 
+Don't rush to move to the next section until you have explored the recipes throughly.  In the next section on Advanced Concepts, you will be provided with two ways to augment an open-source model using commodity hardware in a local environments.  
 
-== Recipes Catalog Overview
+There are links to labs that will challenge your knowledge, get ready!
 
-One of the most important features of the Podman AI Lab extension is the curated catalog of open-source recipes that enable you to navigate common AI use cases and solutions. 
-
-Once you've selected a recipe from the Recipes Catalog, you'll be able to see a summary of what the recipe does and how it works. This will give you a better understanding of the recipe's capabilities and help you decide if it's right for your application. You'll also find handy links to the application source code and the recommended model, as well as the ability to select other compatible models (curated from Hugging Face's open source community). 
-
-When you're ready to see the application live and running, you can start it by clicking the Start AI App button on the upper right-hand side. As the application starts, you'll be able to see the model it uses and where the source code of the application is located. In the background, Podman is running an inference server for the downloaded model within a container using the freely redistributable Red Hat Enterprise Linux Universal Base Image.
-
-During the startup process, you'll be shown a few steps that will be completed before the application is ready to use. These steps might include downloading the model, building the container images with the model and the application, etc.
-
-Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example, you can interact with the front end application, which is inferencing the model server, serving the running model. It"s this easy to set up a model server and start integrating generative AI in your applications.
-
-As you work in other areas of Podman Desktop for your container workflow, you'll always be able to see your running AI apps (i.e., the recipes you started) in the dedicated Running section for Podman AI Lab.
-
-Continue to experient with Recipes, Playgrounds, and model serving to up your Gen AI /LLM application integration knowledge.
-
-
-== The End
 

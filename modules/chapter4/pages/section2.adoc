@@ -55,7 +55,7 @@ View the original article https://www.redhat.com/en/topics/ai/what-is-instructla
 
 Take a look at "lab-enhanced" models on the https://huggingface.co/instructlab[InstructLab Hugging Face page].
 
-===  Optional Lab: https://github.com/RedHatQuickCourses/instructlab-insurance-lab/tree/main[InstructLab Unleashed]
+===  Optional Lab: https://github.com/RedHatQuickCourses/instructlab-insurance-lab/tree/main[InstructLab Unleashed] --*COMING SOON*
 
 
 InstructLab Unleashed: Training the Merlinite Model to Answer Questions for Parasol Insurance!
