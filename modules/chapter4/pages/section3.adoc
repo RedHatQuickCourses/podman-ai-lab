@@ -8,7 +8,7 @@ Before you go, I wanted to share the upcoming features of Podman AI Lab in the o
 
 == Roadmap for AI Lab Extention
 
-https://github.com/containers/podman-desktop-extension-ai-lab[Official Podman Desktop extention AI Lab repository]
+https://github.com/containers/podman-desktop-extension-ai-lab[Official Podman Desktop extention AI Lab repository with Roadmap]
 
 The roadmap is always open and we are looking for your feedback. Please create new issues and upvote on the issues that are feeling the most important for you.
 

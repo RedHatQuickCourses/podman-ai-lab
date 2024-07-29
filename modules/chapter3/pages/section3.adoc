@@ -24,7 +24,7 @@ However, there will be times when we don't need the playground, such as when exp
 To create a model server, go to the Services page and click the Create Model service button. If your environment (Podman machine) does not have sufficient resources (memory), you will get a notification indicating that you need to increase the available memory. This can easily be updated from Podman Desktop's Settings page.
 
 
-If local resources are at capacity, stop an previously deployed Model services or playgrounds, then restart the podman machine to begin with a fresh virtual instance. 
+If local resources are at capacity, stop a previously deployed Model services or playgrounds, then restart the podman machine to begin with a fresh virtual instance. 
 
 Next, select the desired model you want to serve, and if necessary, customize the port you want to use to one already used in your application. 
 

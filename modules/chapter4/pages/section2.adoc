@@ -10,9 +10,7 @@ InstructLab is a model-agnostic open-source AI project that facilitates contribu
 === Overview
 InstructLab is an open source project for enhancing large language models (LLMs) used in generative artificial intelligence (gen AI) applications. Created by IBM and Red Hat, the InstructLab community project provides a cost-effective solution for improving the alignment of LLMs and opens the doors for those with minimal machine learning experience to contribute.
 
-AI practitioners often need to adapt a pretrained LLM to suit a particular business purpose. But there are limits to the ways you can modify an LLM:
-
-InstructLab can enhance an LLM using far less human-generated information and far fewer computing resources than are typically used to retrain a model. 
+AI practitioners often need to adapt a pretrained LLM to suit a particular business purpose. InstructLab can enhance an LLM using far less human-generated information and far fewer computing resources than are typically used to retrain a model. 
 
 
 === How does InstructLab work?
@@ -26,7 +24,7 @@ The LAB method consists of 3 components:
 
 
 === Alignment tuning
-After pretraining, LLMs undergo alignment tuning to make the model’s answers as accurate and useful as possible. The 1st step in alignment tuning is typically instruction tuning, in which a model is trained directly on specific tasks of interest. Next is preference tuning, which can include reinforcement learning from human feedback (RLHF). In this step, humans test the model and rate its output, noting if the model’s answers are preferred or unpreferred. An RLHF process may include multiple rounds of feedback and refinement to optimize a model.
+After pretraining, LLMs undergo alignment tuning to make the model’s answers as accurate and useful as possible. The 1st step in alignment tuning is typically instruction tuning, in which a model is trained directly on specific tasks of interest. Next is preference tuning, which can include *reinforcement learning from human feedback* (RLHF). In this step, humans test the model and rate its output, noting if the model’s answers are preferred or unpreferred. An RLHF process may include multiple rounds of feedback and refinement to optimize a model.
 
 Researchers have found that the amount of feedback at this alignment tuning stage can be much smaller than the initial set of training data―tens of thousands of human annotations, compared to the trillions of tokens of data required for pretraining―and still unlock latent capabilities of the model.
 
@@ -54,6 +52,8 @@ InstructLab's model-agnostic technology gives model upstreams with sufficient in
 View the original article https://www.redhat.com/en/topics/ai/what-is-instructlab[What is instructlab at Redhat.com]
 
 Take a look at "lab-enhanced" models on the https://huggingface.co/instructlab[InstructLab Hugging Face page].
+
+---
 
 ===  Optional Lab: https://github.com/RedHatQuickCourses/instructlab-insurance-lab/tree/main[InstructLab Unleashed] --*COMING SOON*
 

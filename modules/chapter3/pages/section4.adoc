@@ -136,14 +136,14 @@ Understanding where to find logs are benifical for troubleshooting failures & re
 
 === Additional Applications
 
-Each additional recipes available will launch a service designed to help users gain experience with specific business cases for AI model development.
+Each of the additional recipes available will launch a service designed to help you gain experience with specific business cases for AI model development.
 
 Experiment with lauching the Text Summarizer or Video Analysis recipes.
 
 For optimal performance:
- * Delete the Previous Receipe: Before starting a new receipe, remove the previous one.
+ * Delete the previous Receipe, before starting a new receipe.
  
- * Restart the Podman machine: Restart the Podman machine between each new deployment to ensure the best performance of the Podman AI Lab environment.
+ * Restart the Podman machine between each new deployment to ensure the best performance of the Podman AI Lab environment.
 
 ---
 
