@@ -18,26 +18,21 @@ This course will guide you through the developers' journey as they install Podma
 == Course Objectives:
 
 
- . Use Podman Desktop to create a container runtime environment to host an AI model: 
+ . Use Podman Desktop to host a AI Model exploration environment 
  ** Gain a basic knowledge of the features of the Podman Desktop Application
  ** Understand and apply the components of the Podman AI Lab extension
  ** Understand Podman AI Lab from a developer's perspective
 
-
- . Utilize the playground feature to interact with various AI Models 
+ . Deploy AI Models within the playground feature
  ** Experiment with AI Models to determine their capabilities
 
-
-
- . Use code samples to simplify the integration with existing code bases
- **  Know where to locate code snippets for integrating  AI models into applications
-
+ . Use the model serving feature to simplify the integration with existing code bases
+ **  Know where to locate code snippets for integrating AI models into applications
 
  . Deploy an AI-enabled application using pre-created templates called recipes.
  **  Reverse-engineer open-source code used in recipes for AI-enabled applications
 
  . Explain why Podman AI Lab is the entry point for customers into Red Hat's AI Ecosystem
-
 
 
 == Prerequisites
@@ -57,7 +52,7 @@ Red Hat associates can use the Red Hat Demo Platform to provision a Podman Deskt
 Use the https://demo.redhat.com/catalog?search=podman&item=babylon-catalog-prod%2Fsandboxes-gpte.rhel-podman-desktop.prod[Getting Started with Podman Desktop] catalog item from Red Hat Demo Platform (RHDP).
 
 [NOTE]
-This lab is currently being updated to latest version of Podman & Podman Desktop. Until that is complete the visuals may look different than those in this course.
+This lab was recently updated to the version 1.1.1 of Podman Desktop, which is the version used in this course. However, the workshop runs on RHEL 9, while the lessons in this course describe using Podman AI Lab installed on MacOs.  I plan to release a video providing instructions specific to this workshop ASAP.
 
 
 When ordering this demo item:
