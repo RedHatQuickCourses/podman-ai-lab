@@ -18,7 +18,7 @@ This course will guide you through the developers' journey as they install Podma
 == Course Objectives:
 
 
- . Use Podman Desktop to host a AI Model exploration environment 
+ . Use Podman Desktop to host an AI Model exploration environment 
  ** Gain a basic knowledge of the features of the Podman Desktop Application
  ** Understand and apply the components of the Podman AI Lab extension
  ** Understand Podman AI Lab from a developer's perspective
