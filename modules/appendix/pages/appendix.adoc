@@ -1,19 +1,39 @@
 = Appendix A
 
-== WORK IN PROGRESS
+== Clarification bits 
 
 === GGUF Format
 
 One of the main advantages of GGUF is that it allows users to run LLMs on their CPU. This is particularly beneficial for users who may not own a powerful GPU or who have limited access to GPU resources.
 
-"GGUF is a file format for storing models for inference with GGML and executors based on GGML. GGUF is a binary format that is designed for fast loading and saving of models, and for ease of reading. Models are traditionally developed using PyTorch or another framework, and then converted to GGUF for use in GGML."
+// "GGUF is a file format for storing models for inference with GGML and executors based on GGML. GGUF is a binary format that is designed for fast loading and saving of models, and for ease of reading. Models are traditionally developed using PyTorch or another framework, and then converted to GGUF for use in GGML."
+
+The new GGUF (GPT-Generated Unified Format) framework has been developed to facilitate the operation of Large Language Models (LLMs) by predominantly using CPU resources while also tapping into GPU capabilities for enhanced processing of particular layers. This adaptability is of great benefit for systems that rely on CPU processing, including those running on Apple hardware. GGUF compresses the typically 16-bit floating-point model weights, optimizing the use of computational resources. The methodology is crafted to simplify the processes of loading and storing models, making it a more efficient, flexible, and user-friendly option for the inference phase of LLMs.
 
 
-the new GGUF (GPT-Generated Unified Format) framework has been developed to facilitate the operation of Large Language Models (LLMs) by predominantly using CPU resources while also tapping into GPU capabilities for enhanced processing of particular layers. This adaptability is of great benefit for systems that rely on CPU processing, including those running on Apple hardware. GGUF compresses the typically 16-bit floating-point model weights, optimizing the use of computational resources. The methodology is crafted to simplify the processes of loading and storing models, making it a more efficient, flexible, and user-friendly option for the inference phase of LLMs.
-
-
-==== llama-cpp-python
+==== llama-cpp-python (prounouced llama - C -Plus -Plus )
 llama-cpp-python is a Python library that features GPU acceleration, compatibility with LangChain, and serves as an API server aligned with OpenAI’s standards.
+
+
+=== Convert and Quantize Models
+
+AI Lab Recipes' default model server is llamacpp_python, which needs models to be in a *.GGUF format.
+
+However, most models available on huggingface are not provided directly as *.GGUF files. More often they are provided as a set of *.bin or *.safetensor files with some additional metadata produced when the model is trained.
+
+There are of course a number of users on huggingface who provide *.GGUF versions of popular models. But this introduces an unnecessary interim dependency as well as possible security or licensing concerns.
+
+To avoid these concerns and provide users with the maximum freedom of choice for their models, we https://github.com/containers/ai-lab-recipes/tree/main/convert_models[provide a tool] to quickly and easily convert and quantize a model from huggingface into a *.GGUF format for use with our *.GGUF compatible model servers.
+
+=== What are Universal Base images?
+
+Red Hat Universal Base Images (UBI) are part of Red Hat Enterprise Linux, and it’s goal is to produce a set of base images for all the needs of developers, ISVs, and community projects. Developers, operations, and security teams in many IT organizations have extensive experience with Red Hat Enterprise Linux. UBI gives them familiar base images, packages, and package management tools that they can easily support without retraining. What’s new is that you don’t need to be a Red Hat customer to use UBI.
+
+UBI shares the same 10+ year lifecycle as the version of Red Hat Enterprise Linux on which it is based. UBI components are updated when the corresponding Red Hat Enterprise Linux components are updated.
+
+==== Do more with UBI
+Designed to be a foundation for cloud-native and web applications use cases in containers, UBI consistently delivers a reliable and secure format. There are no subscription management or registration requirements for using UBI. This, combined with the long support lifecycle, makes UBI an excellent choice for free software projects and automated build systems.
+
 
 
 
@@ -36,27 +56,6 @@ Compatible on Windows, macOS & Linux
 
 Podman Desktop 1.8.0+
 Podman 4.9.0+
-
-
-=== Convert and Quantize Models
-
-AI Lab Recipes' default model server is llamacpp_python, which needs models to be in a *.GGUF format.
-
-However, most models available on huggingface are not provided directly as *.GGUF files. More often they are provided as a set of *.bin or *.safetensor files with some additional metadata produced when the model is trained.
-
-There are of course a number of users on huggingface who provide *.GGUF versions of popular models. But this introduces an unnecessary interim dependency as well as possible security or licensing concerns.
-
-To avoid these concerns and provide users with the maximum freedom of choice for their models, we https://github.com/containers/ai-lab-recipes/tree/main/convert_models[provide a tool] to quickly and easily convert and quantize a model from huggingface into a *.GGUF format for use with our *.GGUF compatible model servers.
-
-=== What are Universal Base images?
-
-Red Hat Universal Base Images (UBI) are part of Red Hat Enterprise Linux, and it’s goal is to produce a set of base images for all the needs of developers, ISVs, and community projects. Developers, operations, and security teams in many IT organizations have extensive experience with Red Hat Enterprise Linux. UBI gives them familiar base images, packages, and package management tools that they can easily support without retraining. What’s new is that you don’t need to be a Red Hat customer to use UBI.
-
-UBI shares the same 10+ year lifecycle as the version of Red Hat Enterprise Linux on which it is based. UBI components are updated when the corresponding Red Hat Enterprise Linux components are updated.
-
-==== Do more with UBI
-Designed to be a foundation for cloud-native and web applications use cases in containers, UBI consistently delivers a reliable and secure format. There are no subscription management or registration requirements for using UBI. This, combined with the long support lifecycle, makes UBI an excellent choice for free software projects and automated build systems.
-
 
 === Model Catalog Example
 
