@@ -50,7 +50,7 @@ This course will be experienced from the perspective of a *development team* at 
 
 == Workshop Environment for Red Hat Associates
 
-Red Hat associates can use the Red Hat Demo Platform to provision a Podman Desktop environment.
+Red Hat associates can use the Red Hat® Demo Platform to provision a Podman Desktop environment.
 
 Use the https://demo.redhat.com/catalog?search=podman&item=babylon-catalog-prod%2Fsandboxes-gpte.rhel-podman-desktop.prod[Getting Started with Podman Desktop] catalog item from Red Hat Demo Platform (RHDP).
 
