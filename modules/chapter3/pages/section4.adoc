@@ -3,9 +3,9 @@
 
 == Recipes Catalog Overview
 
-One of the most important features of the Podman AI Lab extension is the curated catalog of open-source recipes that enable you to navigate common AI use cases and solutions. 
+One of the most important features of the Podman AI Lab extension is the curated catalog of open source recipes that enable you to navigate common AI use cases and solutions. 
 
-Podman AI Lab ships with a *_Recipes Catalog_* that helps us navigate a number of core AI use cases and problem domains such as ChatBots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications with open source code that can be run with various large language models (LLMs). 
+Podman AI Lab ships with a *_Recipes Catalog_* that helps us navigate a number of core AI use cases such as ChatBots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications with open source code that can be run with various large language models (LLMs). 
 
 Once you've selected a recipe from the Recipes Catalog, you'll be able to see a summary of what the recipe does and how it works. This will give you a better understanding of the recipe's capabilities and help you decide if it's right for your application. You'll also find handy links to the application source code and the recommended model, as well as the ability to select other compatible models. 
 
@@ -13,9 +13,9 @@ When you're ready to see the application live and running, you can start it by c
 
 During the startup process, you'll be shown a few steps that will be completed before the application is ready to use. These steps might include downloading the model, building the container images with the model and the application, etc.
 
-Once the application has started, you can open it from the UI and use it from your web browser. In the chatbot example, you can interact with the front end application, which is inferencing the model server, serving the running model. It"s this easy to set up a model server and start integrating generative AI in your applications.
+Once the application has started, you can open it from the UI and use it from your web browser. In the ChatBot example, you can interact with the front end application, which is inferencing the model server, serving the running model. It"s this easy to set up a model server and start integrating generative AI in your applications.
 
-In this lesson we will experient with Recipes to up your Gen AI /LLM application integration knowledge.
+In this lesson, we will experiment with Recipes to increase your Gen AI/LLM application integration knowledge.
 
 ---
 
@@ -26,7 +26,7 @@ The main goal of GizmoGenie application is to provide a ChatBot style interactio
 In the natural language section of the AI Lab Recipe Catalog, there is a recipe for a Chat application that provides features similar to the planned containerized version of the GizmoGenie Chat interface.
 
 
-The best part about the Chat Application recipe is that it includes links to the source github repository that contains all the application code. This repo contains a recipe for building and running the containerized AI Model along with a second container that runs the front end application. Both of these are built using Red Hat's Universal bases image (UBI), which is free to use for customers, and provides a re-usable stable container platform. 
+The best part about the Chat Application recipe is that it includes links to the source github repository that contains all the application code. This repo contains a recipe for building and running the containerized AI Model along with a second container that runs the front end application. Both of these are built using Red Hat's Universal bases image (UBI), which is free to use for customers, and provides a reusable stable container platform. 
 
 
 These containerized AI recipes can be used to help developers quickly prototype new AI and LLM based applications locally, without the need for relying on any other externally hosted services. Since they are already containerized, it also helps developers move quickly from prototype to production.
@@ -38,7 +38,7 @@ image::start-ai-app.gif[width=640]
 
 *Natural Language Processing*
 
- * *Chatbots* that simulate human conversation, using AI to comprehend user inquiries and offer suitable responses. These capabilities are often used to augment applications that provide self-service customer support or virtual personal assistance.
+ * *ChatBots* that simulate human conversation, using AI to comprehend user inquiries and offer suitable responses. These capabilities are often used to augment applications that provide self-service customer support or virtual personal assistance.
  * *Text summarizers* which provide versatile capabilities across many applications and industries, where they can deliver effective and efficient information management. Using this recipe, developers can build applications to assist with things like content creation and curation, research, news aggregation, social media monitoring, and language learning.
  * *Code generators* which empower developers to concentrate on higher-level design and problem-solving by automating repetitive tasks like project setup and API integration, or to produce code templates.
  * - *coming soon* - *RAG (Retrieval Augmented Generation)*, is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response.
@@ -69,7 +69,7 @@ Let's begin with the ChatBot Application in the natural language section.
  .. The Summary tab displays details about the application.   
  .. The Models tab allows the user to select a compatible model for the application to use.  
  
- . Depending on the available resources in your Podman machine running in Podman desktop, you may receive a notification about increasing available resources to improve performance. 
+ . Depending on the available resources in your Podman machine running in Podman Desktop, you may receive a notification about increasing available resources to improve performance. 
 +
 image::podman_machine.png[width=800]
 
@@ -81,7 +81,7 @@ image::podman_machine.png[width=800]
 
  .. In the Model Section, there is a _swap for a different compatible model_ link that switches us to the Models Tab. 
 
- .. Also shown is the repository location for the ai lab recipes, where the original application files are located
+ .. Also shown is the repository location for the AI lab recipes, where the original application files are located
 
 
  . Click the Start AI App to launch the application. 
@@ -108,7 +108,7 @@ Another difference in this user experience is that there are no tuning parameter
 
 === Podman Desktop 
 
-We can use the containers menu of Podman desktop to view the running containers that make up this application.
+We can use the containers menu of Podman Desktop to view the running containers that make up this application.
 
  . Select the container menu icon, which looks like a 3D cube and is second from the top.
 
@@ -132,7 +132,8 @@ image::running_containers.png[width=800]
 
  ** take action on the container such as stop, restart, export and download the container.
 
-Understanding where to find logs are benifical for troubleshooting failures & resolving technical conflicts.
+
+Understanding where to find logs is crucial for troubleshooting failures and resolving technical conflicts.
 
 === Additional Applications
 
@@ -141,13 +142,14 @@ Each of the additional recipes available will launch a service designed to help 
 Experiment with lauching the Text Summarizer or Video Analysis recipes.
 
 For optimal performance:
- * Delete the previous Receipe, before starting a new receipe.
+
+ * Delete the previous Recipe, before starting a new recipe.
  
  * Restart the Podman machine between each new deployment to ensure the best performance of the Podman AI Lab environment.
 
 ---
 
-Don't rush to move to the next section until you have explored the recipes throughly.  In the next section on Advanced Concepts, you will be provided with two ways to augment an open-source model using commodity hardware in a local environments.  
+Don't rush to move to the next section until you have explored the recipes throughly.  In the next section on Advanced Concepts, you will be provided with two ways to augment an open source model using commodity hardware in a local environments.  
 
 There are links to labs that will challenge your knowledge, get ready!
 

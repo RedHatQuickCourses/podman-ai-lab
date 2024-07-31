@@ -5,15 +5,16 @@ Podman AI Lab provides a curated list of open source AI models and LLMs in the M
 == AI Model License
 
 
-Like a software license, a Machine Learning (ML) model license governs the use, redistribution of the model and algorithm, and distribution of any derivatives of it. Additionally, there are other components to an AI system, such as data, source code, or applications, which may have their own separate licenses.
+
+Like a software license, a Machine Learning (ML) model license governs the use, redistribution of the model algorithm, and distribution of any derivatives of it. Additionally, there are other components to an AI system, such as data, source code, or applications, which may have their own separate licenses.
 
 
 You can choose to download one or more of the pre-curated models available in Podman AI Lab. These models all fall under the Apache 2.0 license. 
 
 
-
 [NOTE]
-The Apache 2.0 license is a particular type of open source, permissive software license that ensures that end-users are granted a license to any patent that is covered by the software in question. This license ensures the security and availability of safe and powerful open-source software. Check the model's license and required resources before importing your own models.
+The Apache 2.0 license is a particular type of open source, permissive software license that ensures that end-users are granted a license to any patent that is covered by the software in question. This license ensures the security and availability of safe and powerful open source software. Check the Model's license and required resources before importing your own models.
+
 
 ---
 
@@ -82,7 +83,7 @@ For more information on the InstructLab project and training models with specifi
 
 == GizmoGobble Environment
 
-The development team at GG sorted through the models Catalog list of AI Models. After researching several models in detail, they selected three AI Models as possible candidates for the GizmoGenie chatbot.
+The development team at GG sorted through the models Catalog list of AI Models. After researching several models in detail, they selected three AI Models as possible candidates for the GizmoGenie ChatBot.
 
  * Instructlab/merlinite-7b-lab-GGUF
  

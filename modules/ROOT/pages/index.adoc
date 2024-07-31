@@ -7,13 +7,13 @@ Welcome to this course on Podman AI Lab!
 
 In this course, you will use *Podman Desktop with the AI Lab Extension* to increase your knowledge and gain capabilities in using open source AI Models to provide businesses with AI driven solutions.  
 
- * Accomplished through hands-on practice of successfully installing Podman Desktop, 
- * Adding the Podman AI Lab extension, downloading & serving AI models, 
+ * Accomplished through hands-on practice of successfully installing Podman Desktop 
+ * Adding the Podman AI Lab extension, downloading & serving AI models 
  * Using the playground to experiment & investigate the effectiveness of AI Models
- * Using the recipe catalog to deploy various AI enabled applications.
+ * Using the recipe catalog to deploy various AI enabled applications
 
 
-This course will be experienced from the perspective of a *development team* at the GizmoGobble  corporation. They have been tasked with integrating an AI powered Chatbot into multiple web interfaces. GizmoGobble's development team has no experience with the Podman AI Lab software, AI Model serving, or integration of existing applications with AI technology.
+This course will be experienced from the perspective of a *development team* at the GizmoGobble  corporation. They have been tasked with integrating an AI powered ChatBot into multiple web interfaces. GizmoGobble's development team has no experience with the Podman AI Lab software, AI Model serving, or integration of existing applications with AI technology.
 // Can we add a hyperlink for GizmoGobble corporation? This way, someone who is interested to learn more about it can visit the page and get information.
 
 

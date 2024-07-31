@@ -93,9 +93,9 @@ image::client_code.png[width=640]
 == Client Code 
 
 
-The _Client Code_ Section is dedicated to making AI application integration simple.
+The _Client code_ Section is dedicated to making AI application integration simple.
 
-In the client code section, simply select the programming language from the dropdown in the top right.  
+In the Client code section, simply select the programming language from the dropdown in the top right.  
 
 
 The window will populate with sample code that includes all the correct information pre-populated to connect to the running model and have it return a response to the question:  What is the capital of France? 
@@ -109,7 +109,7 @@ An example of using the client code can be tested with a running model service,
 
  . open a terminal window on the local system
  
- .  copy the code snippet from the client code window for the CURL language 
+ . copy the code snippet from the Client code window for the CURL language 
  
  . paste the generated code from the Curl language in the terminal window
 
@@ -118,11 +118,7 @@ An example of using the client code can be tested with a running model service,
 
 In a few moments the answer will appear.  The format will not be ideal, but this example just demonstrates that the code in the sample is valid and will send the prompt to and collect the response from the served AI model. 
 
-
-
-With support for over 20 combinations of programming languages and libraries, the client code section provides these benefits:
-
- * Simplifies developers having to search for, research, or learn new technologies to create the integration code base, allowing them to focus on outcomes of the integration.
+The client code section supports over 20 combinations of programming languages and libraries. It also simplifies how users search for, research, or learn new technologies to create the integration code base, allowing developers to focus on the integration outcomes
 
 
 Podman Desktop manages the model server container, ensuring high availability and efficient resource utilization. You can monitor its performance and logs through the Podman Desktop dashboard. Since it runs locally, you can keep full control of your data and intellectual property.
@@ -135,7 +131,7 @@ Podman Desktop manages the model server container, ensuring high availability an
 
 Podman AI Lab enables you to serve the model as a containerized REST endpoint that your code can call, just like any other API. This allows testing of application connectivity, application integration testing, and evaluation of the model's base resource requirements.
 
-The GizmoGobble team used Model serving as part of the playground interaction to evalute AI Models ability to respond to prompts for use with the GizmoGenie chatbot. So let's try the *AI Application Recipe Catalog* in the next section where the example deploys the AI Model, a Chatbot and the integration service to connect them.  
+The GizmoGobble team used Model serving as part of the playground interaction to evalute AI Models ability to respond to prompts for use with the GizmoGenie ChatBot. So let's try the *AI Application Recipe Catalog* in the next section where the example deploys the AI Model, a ChatBot and the integration service to connect them.  
 
 
 
