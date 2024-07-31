@@ -18,8 +18,10 @@ As we experienced during our playground lab, a model service is automatically cr
 
 However, there will be times when we don't need the playground, such as when experimenting with connecting an existing or new application with the AI Model directly.
 
-==== Model creation details (read only section - not a lab)
+==== Model creation details 
 
+[NOTE]
+*This section is information only providing context for the upcoming lab.*
 
 To create a model server, go to the Services page and click the Create Model service button. If your environment (Podman machine) does not have sufficient resources (memory), you will get a notification indicating that you need to increase the available memory. This can easily be updated from Podman Desktop's Settings page.
 
