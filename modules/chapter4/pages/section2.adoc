@@ -19,12 +19,12 @@ The LAB method consists of 3 components:
 
  . *Taxonomy-driven data curation.* Taxonomy is a set of diverse training data curated by humans as examples of new knowledge and skills for the model.
  . *Large-scale synthetic data generation.* The model is then used to generate new examples based on the seed training data. Recognizing that synthetic data can vary in quality, the LAB method adds an automated step to refine the example answers, making sure they’re grounded and safe.
- . *Iterative, large-scale alignment tuning.* Finally, the model is retrained based on the set of synthetic data. The LAB method includes 2 tuning phases: knowledge tuning, followed by skill tuning.
+ . *Iterative, large-scale alignment tuning.* Finally, the model is retrained based on the set of synthetic data. The LAB method includes two tuning phases: knowledge tuning, followed by skill tuning.
 
 
 
 === Alignment tuning
-After pretraining, LLMs undergo alignment tuning to make the model’s answers as accurate and useful as possible. The 1st step in alignment tuning is typically instruction tuning, in which a model is trained directly on specific tasks of interest. Next is preference tuning, which can include *reinforcement learning from human feedback* (RLHF). In this step, humans test the model and rate its output, noting if the model’s answers are preferred or unpreferred. An RLHF process may include multiple rounds of feedback and refinement to optimize a model.
+After pretraining, LLMs undergo alignment tuning to make the model’s answers as accurate and useful as possible. The first step in alignment tuning is typically instruction tuning, in which a model is trained directly on specific tasks of interest. Next is preference tuning, which can include *reinforcement learning from human feedback* (RLHF). In this step, humans test the model and rate its output, noting if the model’s answers are preferred or unpreferred. An RLHF process may include multiple rounds of feedback and refinement to optimize a model.
 
 Researchers have found that the amount of feedback at this alignment tuning stage can be much smaller than the initial set of training data―tens of thousands of human annotations, compared to the trillions of tokens of data required for pretraining―and still unlock latent capabilities of the model.
 
@@ -55,7 +55,9 @@ Take a look at "lab-enhanced" models on the https://huggingface.co/instructlab[I
 
 ---
 
-===  Optional Lab: https://github.com/RedHatQuickCourses/instructlab-insurance-lab/tree/main[InstructLab Unleashed] --*COMING SOON*
+// ===  Optional Lab: https://github.com/RedHatQuickCourses/instructlab-insurance-lab/tree/main
+
+=== InstructLab Unleashed --*COMING SOON*
 
 
 InstructLab Unleashed: Training the Merlinite Model to Answer Questions for Parasol Insurance!

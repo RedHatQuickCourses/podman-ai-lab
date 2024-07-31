@@ -41,7 +41,7 @@ This course will be experienced from the perspective of a *development team* at 
 == Prerequisites
 
 
-* Basic knowledge of the Large Language mMdel (LLM) terminology.
+* Basic knowledge of the Large Language Model (LLM) terminology.
 * Interest in the simplest way to interact with AI Models.
 * Hardware with 4vCPUs, 8GB of memory, and 20-60GB of disk space for a good experience.
 * MacOS, Windows, Linux Operating System with a GUI or Desktop enabled.

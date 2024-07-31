@@ -8,7 +8,7 @@ What tools, services, and solutions are available today that will allow my produ
 
  * What offers the least friction in development? 
  * How can we guide this with accelerators that don't require months of build time? 
- * How can we allow our product teams to focus on our company's core differentiators while combining the power of Large Language Models (LLMs) to innovate on behalf of our customers?
+ * How can we allow our product teams to focus on our company's core differentiators while combining the power of large language models (LLMs) to innovate on behalf of our customers?
 
 The GizmoGobble's leadership team decided that when it comes to LLM development, they should exhaust the path of least custom development before moving to more complicated and costly approaches. 
 

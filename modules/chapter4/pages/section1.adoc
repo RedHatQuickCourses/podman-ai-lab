@@ -4,7 +4,7 @@
 
 RAG (Retrieval-Augmented Generation) is an AI framework that combines the strengths of traditional information retrieval systems (such as databases) with the capabilities of generative large language models (LLMs).
 
-Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response. Large Language Models (LLMs) are trained on vast volumes of data and use billions of parameters to generate original output for tasks like answering questions, translating languages, and completing sentences. 
+Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response. Large language models (LLMs) are trained on vast volumes of data and use billions of parameters to generate original output for tasks like answering questions, translating languages, and completing sentences. 
 
 RAG extends the already powerful capabilities of LLMs to specific domains or an organization's internal knowledge base, all without the need to retrain the model. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts.
 
@@ -17,7 +17,7 @@ Known challenges of LLMs include:
  * Creating a response from non-authoritative sources.
  * Creating inaccurate responses due to terminology confusion, wherein different training sources use the same terminology to talk about different things.
  
-You can think of the Large Language Model as an over-enthusiastic new employee who refuses to stay informed with current events but will always answer every question with absolute confidence. Unfortunately, such an attitude can negatively impact user trust and is not something you want your ChatBots to emulate!
+You can think of the large language model as an over-enthusiastic new employee who refuses to stay informed with current events but will always answer every question with absolute confidence. Unfortunately, such an attitude can negatively impact user trust and is not something you want your ChatBots to emulate!
 
 RAG is one approach to solving some of these challenges. It redirects the LLM to retrieve relevant information from authoritative, pre-determined knowledge sources. Organizations have greater control over the generated text output, and users gain insights into how the LLM generates the response.
 
@@ -52,7 +52,7 @@ The following lab is an excellent example of the steps the GizmoGobble developer
 
 Podman AI Lab is an excellent place to evaluate and test models, but you'll eventually want to see how this will actually be deployed in your enterprise. For that, we can use OpenShift and OpenShift AI along with the Elasticsearch vector database to create a Retrieval Augmented Generation (RAG) integrated ChatBot.
 
-==== lab overview and requirements
+==== Lab Overview and Requirements
 
 This above article will direct you to website which will walk you through how to go from a ChatBot recipe in the Podman AI Lab extension to a RAG ChatBot deployed on OpenShift and OpenShift AI.
 
