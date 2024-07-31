@@ -19,7 +19,7 @@ They turned to *Podman AI Lab*, an open source extension for local AI developmen
 Excited by this new opportunity, GizmoGobble's developers began exploring the offerings of Podman AI Lab. They were particularly intrigued by the Recipes Catalog, which provided detailed explanations and sample applications for various core AI use cases like ChatBots, Code Generators, and Text Summarizers. By experimenting with multiple AI models, they hoped to find the optimal one for their unique ChatBot application.
 
 
-Next, they discovered the Model Catalog, a curated list of open source Generative AI Large Language Models (LLMs) provided by Podman AI Lab. Once downloaded, these models could be used for various AI applications, model services, and playgrounds,  enabling model evaluation and experimentation.
+Next, they discovered the Model Catalog, a curated list of open source Generative AI large language models (LLMs) provided by Podman AI Lab. Once downloaded, these models could be used for various AI applications, model services, and playgrounds,  enabling model evaluation and experimentation.
 
 GG's team was eager to incorporate these advanced technologies into GizmoGenie.
 With a newfound sense of determination and the intuitive user interface of Podman AI Lab, it was easy for them to explore and learn about AI technology.
@@ -27,7 +27,4 @@ With a newfound sense of determination and the intuitive user interface of Podma
 Now it's your turn to discover how Podman Desktop's AI Lab extension provides the perfect entry point for any organization looking to implement AI intelligence into their products. 
 
 
-If you are new to Podman & Podman Desktop continue onto the next section, or if you are already familiar with these products, feel free to skip ahead to the Podman AI Lab section. 
-
-
-
+If you are new to Podman & Podman Desktop continue onto the next section, or if you are already familiar with these products, feel free to skip ahead to the Podman AI Lab section using the dropdown menu on the left.

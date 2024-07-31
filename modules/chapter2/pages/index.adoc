@@ -2,10 +2,10 @@
 
 === Install Podman Desktop on Local Hardware
 
- . Instructions on how to https://podman-desktop.io/docs/installation[Install Podman Desktop on Mac, Linux, or Windows].  
+ . Instructions on how to https://podman-desktop.io/docs/installation[install Podman Desktop on Mac, Linux, or Windows,window=_blank].  
   * This does *NOT* have Podman AI Lab extension pre-installed.
 
- . Instructions on how to https://podman-desktop.io/docs/ai-lab/installing[Install the Podman AI Lab extention].
+ . Instructions on how to https://podman-desktop.io/docs/ai-lab/installing[install the Podman AI Lab extention,window=_blank].
 
- . Instructions on how to https://podman-desktop.io/docs/podman/creating-a-podman-machine[creating a Podman Machine]
+ . Instructions on https://podman-desktop.io/docs/podman/creating-a-podman-machine[creating a Podman Machine,window=_blank]
 

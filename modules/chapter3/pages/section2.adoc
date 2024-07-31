@@ -130,7 +130,7 @@ Interact with the Playground
 
 
 
-We use the Playground to experiment with various settings, when querying AI models with various prompts. Now let's head over to the Model Serving dashboard to learn more about integrating our AI Models with existing or new applications. 
+We use the Playground to experiment with various settings, when querying AI models with various prompts. Now let's head over to the Model Serving dashboard to learn more about integrating our AI models with existing or new applications. 
 
 
 

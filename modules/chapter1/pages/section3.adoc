@@ -40,7 +40,7 @@ image::models_catalog.png[width=640]
 
 A model service offers a configurable endpoint via an OpenAI-compatible web server, facilitating a seamless integration of AI capabilities into existing applications. Upon initialization, users can effortlessly access detailed service information and generate code snippets in multiple programming languages to ease application integration.
 
-The Services page within Podman AI allows users to access currently running model services, connection details and code snippets to interact with the model programmatically. 
+The Service Details page within Podman AI allows users to access currently running model services, connection details and code snippets to interact with the model programmatically. 
 
 image::model_service_details.png[width=640]
 image::client_code.png[width=640]
@@ -62,12 +62,12 @@ Podman AI Lab supports large language models in the GGUF format and the ability 
 // Since, the second paragraph was more informative, I shifted it on top.
 
 
-https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository] provides a tool to quickly and easily convert and quantize a model from huggingface into the GGUF format for use with Podman AI Lab. 
+https://github.com/containers/ai-lab-recipes/tree/main/convert_models[ai-lab-recipes github respository,window=_blank] provides a tool to quickly and easily convert and quantize a model from huggingface into the GGUF format for use with Podman AI Lab. 
 
 
 
-=== HuggingFace :
+=== HuggingFace:
 
-https://huggingface.co/[The Hugging Face Hub] is a platform with over 350k models, 75k datasets, and 150k demo apps (Spaces), most are open source and publicly available, in an online platform where people can easily collaborate and build ML together.
+https://huggingface.co/[The Hugging Face Hub,window=_blank] is a platform with over 350k models, 75k datasets, and 150k demo apps (Spaces), most are open source and publicly available, in an online platform where people can easily collaborate and build ML together.
 
 

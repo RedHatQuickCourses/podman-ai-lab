@@ -1,6 +1,6 @@
 = Podman AI Lab Extension
 
-https://podman-desktop.io/docs/ai-lab[Podman AI Lab Documentation]
+https://podman-desktop.io/docs/ai-lab[Podman AI Lab Documentation,window=_blank]
 
 == Installing the Podman AI Lab Extension
 

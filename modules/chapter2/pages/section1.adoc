@@ -10,13 +10,13 @@ As the GG developer team begins the installation of Podman Desktop on their vari
 
 
 [NOTE]
-https://podman-desktop.io/docs/installation[Podman Desktop Installation Documentation]
+https://podman-desktop.io/docs/installation[Podman Desktop Installation Documentation,window=_blank]
 
 
 === Installation for macOS
 
 
-Download the *.dmg* file from the https://podman-desktop.io/downloads/macos[Downloads] section of this Podman Desktop website.
+Download the *.dmg* file from the https://podman-desktop.io/downloads/macos[Downloads,window=_blank] section of this Podman Desktop website.
 
 image::podman_macos_install.png[width=800]
 
@@ -56,7 +56,7 @@ Optional installation using brew:
 
 To install Podman Desktop:
 
- . https://podman-desktop.io/downloads/windows[Download the Windows installer.]
+ . https://podman-desktop.io/downloads/windows[Download the Windows installer.,window=_blank]
 
  . To start the Podman Desktop installer, open the downloaded file.
 

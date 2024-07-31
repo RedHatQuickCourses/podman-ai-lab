@@ -18,8 +18,10 @@ As we experienced during our playground lab, a model service is automatically cr
 
 However, there will be times when we don't need the playground, such as when experimenting with connecting an existing or new application with the AI Model directly.
 
-==== Model creation details (read only section - not a lab)
+==== Model creation details 
 
+[NOTE]
+*This section is information only providing context for the upcoming lab.*
 
 To create a model server, go to the Services page and click the Create Model service button. If your environment (Podman machine) does not have sufficient resources (memory), you will get a notification indicating that you need to increase the available memory. This can easily be updated from Podman Desktop's Settings page.
 
@@ -131,7 +133,7 @@ Podman Desktop manages the model server container, ensuring high availability an
 
 Podman AI Lab enables you to serve the model as a containerized REST endpoint that your code can call, just like any other API. This allows testing of application connectivity, application integration testing, and evaluation of the model's base resource requirements.
 
-The GizmoGobble team used Model serving as part of the playground interaction to evalute AI Models ability to respond to prompts for use with the GizmoGenie ChatBot. So let's try the *AI Application Recipe Catalog* in the next section where the example deploys the AI Model, a ChatBot and the integration service to connect them.  
+The GizmoGobble team used Model serving as part of the playground interaction to evalute AI Models ability to respond to prompts for use with the GizmoGenie ChatBot. So let's try the *AI Application Recipe Catalog* in the next section where the example deploys the AI model, a ChatBot and the integration service to connect them.  
 
 
 
