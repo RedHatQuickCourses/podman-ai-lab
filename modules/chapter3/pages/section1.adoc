@@ -1,19 +1,19 @@
 = Model Catalog
 
-Podman AI Lab provides a curated list of open-source AI models and LLMs in the Model Catalog. Once downloaded, these models are available to be used for AI applications, model services, and playgrounds. 
+Podman AI Lab provides a curated list of open source AI models and LLMs in the Model Catalog. Once downloaded, these models are available to be used for AI applications, model services, and playgrounds. 
 
 == AI Model License
 
 
-Like a software license, a Machine Learning (ML) model license governs the use, redistribution of the model and/or algorithm, and distribution of any derivatives of it. Additionally, there are other components to an AI system, such as data, source code, or applications, which may have their own separate licenses.
+Like a software license, a Machine Learning (ML) model license governs the use, redistribution of the model and algorithm, and distribution of any derivatives of it. Additionally, there are other components to an AI system, such as data, source code, or applications, which may have their own separate licenses.
 
 
-You can choose to download one or more of the pre-curated models available in Podman AI Lab. These models all fall under the apache 2.0 license. 
+You can choose to download one or more of the pre-curated models available in Podman AI Lab. These models all fall under the Apache 2.0 license. 
 
 
 
 [NOTE]
-The Apache 2.0 license is a particular type of open-source, permissive software license that ensures that end-users are granted a license to any patent that is covered by the software in question. This license ensures the security and availability of safe and powerful open-source software. Check the Model's license and required resources before importing your own models.
+The Apache 2.0 license is a particular type of open source, permissive software license that ensures that end-users are granted a license to any patent that is covered by the software in question. This license ensures the security and availability of safe and powerful open-source software. Check the model's license and required resources before importing your own models.
 
 ---
 
@@ -23,7 +23,7 @@ There are four tabs available in the Models Catalog:
 
  * *All* - Displays all available catalog models. Whether downloaded or available is indicated by the model icon being highlighted in green for downloaded models.
  * *Downloaded* - Displays all models that have been stored locally for offline use. 
- * *Imported* - Displays any models that were imported, and were not originally listed in the catalog
+ * *Imported* - Displays any models that were imported, and were not originally listed in the catalog.
  * *Available* - Displays all catalog models that have not been downloaded.
 
 image::model_catalog.gif[width=800]
@@ -74,7 +74,7 @@ In order for an AI Model to be available to the Services and Playground environm
 
 Podman AI Lab supports models created during fine-tuning with the InstructLab Project.
 
-While LLMs are trained on vast amounts of data across variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open-source to AI model development. What’s neat is that this is possible on consumer-grade hardware. After following the instructions from the project repository, you'll end up with a quantized .gguf file in the model-trained directory, ready to use with Podman AI Lab.
+While LLMs are trained on vast amounts of data across variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open source to AI model development. What’s neat is that this is possible on consumer-grade hardware. After following the instructions from the project repository, you'll end up with a quantized .gguf file in the model-trained directory, ready to use with Podman AI Lab.
 
 
 For more information on the InstructLab project and training models with specific knowledge and skills, visit the project homepage at  https://github.com/instructlab[InstructLab Project]. 

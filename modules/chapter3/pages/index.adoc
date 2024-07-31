@@ -4,9 +4,9 @@
 
 The GizmoGobble’s leadership team decided that, when it comes to LLM development, they would exhaust the path of least custom development before moving to more complicated and costly approaches.
 
-These are the requirement that they set forth:
+These are the requirements that they set forth:
 
- * Develop first using existing open-source large language models (LLMs). 
+ * Develop first using existing open source large language models (LLMs). 
 
  * Iterate through multiple LLMs to determine which one best fits the use case.
 
