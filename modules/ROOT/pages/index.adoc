@@ -5,15 +5,15 @@ video::podmanai_intro_v1.mp4[width=640]
 
 Welcome to this course on Podman AI Lab!
 
-In this course, you will use *Podman Desktop with the AI Lab Extension* to increase your knowledge and gain capabilities in using open source AI Models to provide businesses with AI driven solutions.  
+In this course, you will use *Podman Desktop with the AI Lab Extension* to increase your knowledge and gain capabilities in using open source AI models to provide businesses with AI driven solutions.  
 
  * Accomplished through hands-on practice of successfully installing Podman Desktop 
  * Adding the Podman AI Lab extension, downloading & serving AI models 
- * Using the playground to experiment & investigate the effectiveness of AI Models
+ * Using the playground to experiment & investigate the effectiveness of AI models
  * Using the recipe catalog to deploy various AI enabled applications
 
 
-This course will be experienced from the perspective of a *development team* at the GizmoGobble  corporation. They have been tasked with integrating an AI powered ChatBot into multiple web interfaces. GizmoGobble's development team has no experience with the Podman AI Lab software, AI Model serving, or integration of existing applications with AI technology.
+This course will be experienced from the perspective of a *development team* at the GizmoGobble  corporation. They have been tasked with integrating an AI powered ChatBot into multiple web interfaces. GizmoGobble's development team has no experience with the Podman AI Lab software, AI model serving, or integration of existing applications with AI technology.
 // Can we add a hyperlink for GizmoGobble corporation? This way, someone who is interested to learn more about it can visit the page and get information.
 
 
@@ -26,8 +26,8 @@ This course will be experienced from the perspective of a *development team* at 
  ** Understand and apply the components of the Podman AI Lab extension
  ** Understand Podman AI Lab from a developer's perspective
 
- . Deploy AI Models within the playground feature
- ** Experiment with AI Models to determine their capabilities
+ . Deploy AI models within the playground feature
+ ** Experiment with AI models to determine their capabilities
 
  . Use the model serving feature to simplify the integration with existing code bases
  **  Know where to locate code snippets for integrating AI models into applications
@@ -42,7 +42,7 @@ This course will be experienced from the perspective of a *development team* at 
 
 
 * Basic knowledge of the Large Language Model (LLM) terminology.
-* Interest in the simplest way to interact with AI Models.
+* Interest in the simplest way to interact with AI models.
 * Hardware with 4vCPUs, 8GB of memory, and 20-60GB of disk space for a good experience.
 * MacOS, Windows, Linux Operating System with a GUI or Desktop enabled.
 
@@ -52,7 +52,7 @@ This course will be experienced from the perspective of a *development team* at 
 
 Red Hat associates can use the Red Hat® Demo Platform to provision a Podman Desktop environment.
 
-Use the https://demo.redhat.com/catalog?search=podman&item=babylon-catalog-prod%2Fsandboxes-gpte.rhel-podman-desktop.prod[Getting Started with Podman Desktop] catalog item from Red Hat Demo Platform (RHDP).
+Use the https://demo.redhat.com/catalog?search=podman&item=babylon-catalog-prod%2Fsandboxes-gpte.rhel-podman-desktop.prod[Getting Started with Podman Desktop,window=_blank] catalog item from Red Hat Demo Platform (RHDP).
 
 [NOTE]
 The Workshop deploys an AWS instance with the RHEL 9.4 desktop operating system installed.  The lastest version of Podman Desktop can be access through the activities menu. You will need to install the AI lab extension.  While playground, services, and model catalog environments function well; performance is limited for recipe catalog applications. 

@@ -49,9 +49,9 @@ The project enables community contributors to add additional "skills" or "knowle
 
 InstructLab's model-agnostic technology gives model upstreams with sufficient infrastructure resources, the ability to create regular builds of their open-source licensed models not by rebuilding and retraining the entire model but by composing new skills into it.
 
-View the original article https://www.redhat.com/en/topics/ai/what-is-instructlab[What is instructlab at Redhat.com]
+View the original article https://www.redhat.com/en/topics/ai/what-is-instructlab[What is instructlab at Redhat.com,window=_blank]
 
-Take a look at "lab-enhanced" models on the https://huggingface.co/instructlab[InstructLab Hugging Face page].
+Take a look at "lab-enhanced" models on the https://huggingface.co/instructlab[InstructLab Hugging Face page,window=_blank].
 
 ---
 

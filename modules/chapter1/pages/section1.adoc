@@ -27,7 +27,4 @@ With a newfound sense of determination and the intuitive user interface of Podma
 Now it's your turn to discover how Podman Desktop's AI Lab extension provides the perfect entry point for any organization looking to implement AI intelligence into their products. 
 
 
-If you are new to Podman & Podman Desktop continue onto the next section, or if you are already familiar with these products, feel free to skip ahead to the Podman AI Lab section. 
-
-
-
+If you are new to Podman & Podman Desktop continue onto the next section, or if you are already familiar with these products, feel free to skip ahead to the Podman AI Lab section using the dropdown menu on the left.

@@ -51,7 +51,7 @@ image::active_extension.png[width=800]
  . Select the instructlab/granite-7b-lab-GGUF model file by clicking the name to view details about the AI Model. 
 +
 [NOTE]
-This section includes details about the model creator, original model source location, and a description that includes details about the AI Model. This Granite model is limited to a bolded name and needs some updates to its details. For specifics on this model, visit: https://huggingface.co/instructlab/granite-7b-lab[huggingface hub model card for the Granite-7b-Lab]. 
+This section includes details about the model creator, original model source location, and a description that includes details about the AI Model. This Granite model is limited to a bolded name and needs some updates to its details. For specifics on this model, visit: https://huggingface.co/instructlab/granite-7b-lab[huggingface hub model card for the Granite-7b-Lab,window=_blank]. 
 
 
 
@@ -78,12 +78,12 @@ Podman AI Lab supports models created during fine-tuning with the InstructLab Pr
 While LLMs are trained on vast amounts of data across variety of subjects, the InstructLab approach allows you to fine-tune a model on knowledge and skills for specific use cases, and brings true open source to AI model development. What’s neat is that this is possible on consumer-grade hardware. After following the instructions from the project repository, you'll end up with a quantized .gguf file in the model-trained directory, ready to use with Podman AI Lab.
 
 
-For more information on the InstructLab project and training models with specific knowledge and skills, visit the project homepage at  https://github.com/instructlab[InstructLab Project]. 
+For more information on the InstructLab project and training models with specific knowledge and skills, visit the project homepage at  https://github.com/instructlab[InstructLab Project,window=_blank]. 
 
 
 == GizmoGobble Environment
 
-The development team at GG sorted through the models Catalog list of AI Models. After researching several models in detail, they selected three AI Models as possible candidates for the GizmoGenie ChatBot.
+The development team at GG sorted through the models Catalog list of AI models. After researching several models in detail, they selected three AI models as possible candidates for the GizmoGenie ChatBot.
 
  * Instructlab/merlinite-7b-lab-GGUF
  

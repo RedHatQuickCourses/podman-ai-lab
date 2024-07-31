@@ -42,15 +42,15 @@ RAG allows the LLM to present accurate information with source attribution. The 
 
 With RAG, developers can test and improve their chat applications more efficiently. They can control and change the LLM's information sources to adapt to changing requirements or cross-functional usage. Developers can also restrict sensitive information retrieval to different authorization levels and ensure that LLM generates appropriate responses. In addition to that, they can also troubleshoot and make fixes if the LLM references incorrect information sources for specific questions. Organizations can implement generative AI technology more confidently for a broader range of applications.
 
-Visit the Redhat.com blog to read the original source:   https://www.redhat.com/en/topics/ai/what-is-retrieval-augmented-generation[What is retrieval-augmented generation?]
+Visit the Redhat.com blog to read the original source:   https://www.redhat.com/en/topics/ai/what-is-retrieval-augmented-generation[What is retrieval-augmented generation?,window=_blank]
 
 ---
 
-The following lab is an excellent example of the steps the GizmoGobble developer team plans to implement to enhance the GizmoGenie ChatBot with the specific GizmoGobble product and support knowledge.
+The following workshop  is an excellent example of the steps the GizmoGobble developer team plans to implement to enhance the GizmoGenie ChatBot with the specific GizmoGobble product and support knowledge.
 
-=== Optional Lab: https://ai-on-openshift.io/demos/podman-ai-lab-to-rhoai/podman-ai-lab-to-rhoai/#ingest-data-into-the-elasticsearch-vector-database[From Podman AI to OpenShift AI]
+=== Optional Guided Workshop: https://ai-on-openshift.io/demos/podman-ai-lab-to-rhoai/podman-ai-lab-to-rhoai/#ingest-data-into-the-elasticsearch-vector-database[From Podman AI to OpenShift AI,window=_blank]
 
-Podman AI Lab is an excellent place to evaluate and test models, but you'll eventually want to see how this will actually be deployed in your enterprise. For that, we can use OpenShift and OpenShift AI along with the Elasticsearch vector database to create a Retrieval Augmented Generation (RAG) integrated ChatBot.
+// Podman AI Lab is an excellent place to evaluate and test models, but you'll eventually want to see how this will actually be deployed in your enterprise. For that, we can use OpenShift and OpenShift AI along with the Elasticsearch vector database to create a Retrieval Augmented Generation (RAG) integrated ChatBot.
 
 ==== Lab Overview and Requirements
 
@@ -75,4 +75,4 @@ image::high_level_overview_arch.png[width=640]
 
 It is expected that you have admin access to an OpenShift 4.12+ cluster. The following code was tested with an OpenShift 4.15 cluster and OpenShift AI 2.9.
 
-https://github.com/redhat-ai-services/podman-ai-lab-to-rhoai[Github repository with code samples]
+https://github.com/redhat-ai-services/podman-ai-lab-to-rhoai[Github repository with code samples,window=_blank]

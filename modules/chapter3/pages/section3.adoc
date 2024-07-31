@@ -131,7 +131,7 @@ Podman Desktop manages the model server container, ensuring high availability an
 
 Podman AI Lab enables you to serve the model as a containerized REST endpoint that your code can call, just like any other API. This allows testing of application connectivity, application integration testing, and evaluation of the model's base resource requirements.
 
-The GizmoGobble team used Model serving as part of the playground interaction to evalute AI Models ability to respond to prompts for use with the GizmoGenie ChatBot. So let's try the *AI Application Recipe Catalog* in the next section where the example deploys the AI Model, a ChatBot and the integration service to connect them.  
+The GizmoGobble team used Model serving as part of the playground interaction to evalute AI Models ability to respond to prompts for use with the GizmoGenie ChatBot. So let's try the *AI Application Recipe Catalog* in the next section where the example deploys the AI model, a ChatBot and the integration service to connect them.  
 
 
 
