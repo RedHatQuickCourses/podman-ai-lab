@@ -74,7 +74,7 @@ Gizmo Gobble's example system prompts:
 
 . You are a fantastic story teller injecting humor and entertainment into every answer.
 
-. You are a helpful, respectful and honest Master Chef with years of experience in the Culinary Arts. You are familiar with various types of cooking utensils and can recommend the best one for the task at hand. 
+. You are a helpful, respectful and honest Master Chef with years of experience in the culinary arts. You are familiar with various types of cooking utensils and can recommend the best one for the task at hand. 
 
 The system prompt is where we can ask the AI to assume some personality or role, and act as that type of persona, while also adding guidelines and rules for which the AI's responses adhere to.
 
@@ -82,7 +82,7 @@ The system prompt is where we can ask the AI to assume some personality or role,
 
 === Model Parameters 
 
-On the right side of the Playground Console is a *Settings widget*, with the message *next prompt will use these settings*. The Playground allows you to tune the model's behavior through several configuration parameters.
+On the right side of the Playground console is a *Settings widget*, with the message *next prompt will use these settings*. The Playground allows you to tune the model's behavior through several configuration parameters.
 
 
 There are three Model Parameters that can be adjusted from this sub-menu:
@@ -99,7 +99,7 @@ image::playground_settings.png[width=400]
  . *Top-p*: Adjusts the balance between relevance and diversity in word choices. Accepts values between 0 and 1. This is an alternative to sampling with temperature, where the model considers the results of the tokens with the top_p probability mass. So, 0.1 means only the tokens comprising the top 10% probability mass are considered, while higher values like 0.8 increase word selection diversity. 
 
 
-Experiment with these settings interactively to find the optimal configuration for your use case. You'll notice that there are tradeoffs between predictability and creativity, as well as conciseness and comprehensiveness.
+Experiment with these settings to find the optimal configuration for your use case. You'll notice that there are tradeoffs between predictability and creativity, as well as conciseness and comprehensiveness.
 
 == LAB
 
@@ -114,9 +114,13 @@ Interact with the Playground
 
  . Change the model parameter settings and evaluate response actions.
 
- .. Set the #(limit) of max tokens to 30. Ask a question that requires a more detailed response like: " Why is the Sky Blue?" and evalute what happens.  While this number is exceptionally low, limiting the number of tokens can reduce the cost and prevent random questions from resource consumption. 
+ .. *Set the #(limit) of max tokens to 30.* Ask a question that requires a more detailed response like: " Why is the sky blue?" and evalute what happens.  While this number is exceptionally low, limiting the number of tokens can reduce the cost and prevent random questions from resource consumption. 
 
- .. Change the temperature setting to a number close to 2 such as 1.8 and ask an open question like "Tell me a story".  Evaluate the response, then set the value lower near 0.5 and ask for a new story. Note down the following: Which was more original or unique?, Which made more sense?, and Which did you prefer?.
+ .. *Change the temperature setting to a number close to 2 such as 1.8* and ask an open question like "Tell me a story".  Evaluate the response, then set the value lower near 0.5 and ask for a new story. Note down the following: 
+ 
+ ...  Which was more original or unique?, 
+ ...  Which made more sense?
+ ...  Which did you prefer?.
 
 
 .. The top_p setting is similar to temperature, but increases the vocabulary of the model's responses. Change the temperature to 1.9, and the top-p to 1.0. Give this a try and find out what the results are.  This should yield a response with words that are less frequently heard in the English language. 
@@ -126,7 +130,7 @@ Interact with the Playground
 
 
 
-We use the Playground to experiment with various settings, when quering AI models with various prompts. Now let's head over to the Model Serving dashboard to learn more about integrating our AI Models with existing or new applications. 
+We use the Playground to experiment with various settings, when querying AI models with various prompts. Now let's head over to the Model Serving dashboard to learn more about integrating our AI Models with existing or new applications. 
 
 
 

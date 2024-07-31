@@ -31,7 +31,7 @@ Next, select the desired model you want to serve, and if necessary, customize th
 
 The list of models displayed in the Model dropdown will only include models that are currently downloaded. 
 
-Once the model service has been started, we can open its detail page. This helps you understand the details of the model-service endpoint and explore a number of code snippets that help you learn how to interact with the model service from your application.
+Once the model service has been started, we can open its detail page. This helps you understand the details of the model service endpoint and explore a number of code snippets that help you learn how to interact with the model service from your application.
 
 image::start-inference-server.gif[width=640]
 
