@@ -6,7 +6,6 @@
 Podman AI Lab is an open-source tool that enables users to work with large language models (LLMs) on a local environment, simplifying the process of getting started with AI-powered applications in their projects.
 
 
-
 It offers resources and guidance for beginners, making it easy to explore AI and its potential.
 Users can experiment with various models and prompts to find the best fit for their needs, thanks to the model experimentation capability.
 
@@ -20,7 +19,7 @@ The extension can be installed quickly and easily on macOS, Windows, and Linux s
 
 === Recipes Catalog
 
-Podman AI Lab ships with a Recipes Catalog that helps us navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple AI models allows finding the optimal one for the business use case.
+Podman AI Lab ships with a Recipes Catalog that helps us navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple AI models helps find the optimal one for the business use case.
 
  * *Chatbots* simulate human conversation, using AI to comprehend user inquiries and offer suitable responses. These capabilities are often used to augment applications that provide self-service customer support or virtual personal assistance.
  * *Text summarizers* provide versatile capabilities across many applications and industries, where they can deliver effective and efficient information management. Using this recipe, developers can build applications to assist with things like content creation and curation, research, news aggregation, social media monitoring, and language learning.
@@ -33,7 +32,7 @@ image::recipe_catalog.png[width=640]
 === AI Models Catalog
 
 
-The models catalog is a curated list of Open-Source models with the Apache 2.0 license. Once downloaded, these models are available to be used for AI applications, model services and playgrounds. The catalog will also allow users to import custom AI models and store them. 
+The models catalog is a curated list of open source models with the Apache 2.0 license. Once downloaded, these models are available to be used for AI applications, model services and playgrounds. The catalog will also allow users to import custom AI models and store them. 
 
 image::models_catalog.png[width=640]
 
@@ -49,11 +48,11 @@ image::client_code.png[width=640]
 
 === Playgrounds
 
-Podman AI Lab includes a playground environment that allows users to interact with AI models and observe their behavior. Each playground ships with a generic chat client to interact with an AI deployed via the AI Lab model service. A customizable system prompt & parameter modification settings widget helps in exploring the capabilities and accuracy of various models. We can deploy multiple playgrounds against a single served AI Model to aid in finding the best model with the best settings for the task.
+Podman AI Lab includes a playground environment that allows users to interact with AI models and observe their behavior. Each playground ships with a generic chat client to interact with an AI deployed via the AI Lab model service. A customizable system prompt & parameter modification settings widget helps in exploring the capabilities and accuracy of various models. We can deploy multiple playgrounds against a single serve AI Model to find the best model with the best settings for the task.
 
 image::playground.png[width=640]
 
-== AI & Large Language Model Supported Format
+== AI and Large Language Model Supported Format
 
 === GGUF Format:
 
