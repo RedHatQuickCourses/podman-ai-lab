@@ -2,7 +2,7 @@
 
 As the developer team at GizmoGobble wrapped up AI model evaluation, exploration, and application validation with Podman AI Labs, they are now moving onto the next steps in their development process.
 
-While they achieved successful results with the open source models, the AI models evaluated lacked specific GizmoGobble product details, support documentation, and cooking specific knowledge and information required by GizmoGenie Chatbot application.
+While they achieved successful results with the open source models, the AI models evaluated lacked specific GizmoGobble product details, support documentation, and cooking specific knowledge and information required by GizmoGenie ChatBot application.
 
 In this Advanced concepts section, we discuss two ways to augment an open-source model using commodity hardware in a local environment. 
 

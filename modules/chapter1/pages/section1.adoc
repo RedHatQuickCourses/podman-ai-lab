@@ -7,15 +7,15 @@ In the bustling heart of Silicon Valley, there was a quirky little company named
 
 Despite their whimsical and innovative offerings, GizmoGobble's website traffic remained steadily medium-sized. The team at GizmoGobble was always *on the lookout for ways to engage visitors and keep them coming back for more*. They knew that excellent customer service could be a game-changer, *but their support team was often overwhelmed with inquiries*.
 
-Determined to tackle this challenge in-house, GizmoGobble's brilliant development team, who were not yet familiar with AI technology, embarked on an exciting new project: *creating a chatbot to provide top-notch customer service on their website*. They named their creation *"GizmoGenie,"* and set out to design a friendly and helpful bot that could answer frequently asked questions about GizmoGobble's products, offer cooking tips, and even share a joke or two to keep things lively.
+Determined to tackle this challenge in-house, GizmoGobble's brilliant development team, who were not yet familiar with AI technology, embarked on an exciting new project: *creating a ChatBot to provide top-notch customer service on their website*. They named their creation *"GizmoGenie,"* and set out to design a friendly and helpful bot that could answer frequently asked questions about GizmoGobble's products, offer cooking tips, and even share a joke or two to keep things lively.
 
 One concern of leadership was the leaking of proprietary information.  The team wanted to start their knowledge development & AI model exploration without risking their intellectual property online. 
 
-They turned to *Podman AI Lab*, an open-source extension for local AI development. Podman AI Lab provided them with the key tools they needed to start building AI model use cases within their own environment and with existing hardware.
+They turned to *Podman AI Lab*, an open source extension for local AI development. Podman AI Lab provided them with the key tools they needed to start building AI model use cases within their own environment and with existing hardware.
 
-Excited by this new opportunity, GizmoGobble's developers began exploring the offerings of Podman AI Lab. They were particularly intrigued by the Recipes Catalog, which provided detailed explanations and sample applications for various core AI use cases like ChatBots, Code Generators, and Text Summarizers. By experimenting with multiple AI models, they hoped to find the optimal one for their unique chatbot application.
+Excited by this new opportunity, GizmoGobble's developers began exploring the offerings of Podman AI Lab. They were particularly intrigued by the Recipes Catalog, which provided detailed explanations and sample applications for various core AI use cases like ChatBots, Code Generators, and Text Summarizers. By experimenting with multiple AI models, they hoped to find the optimal one for their unique ChatBot application.
 
-Next, they discovered the Model Catalog, a curated list of open-source Generative AI Large Language Models (LLMs) provided by Podman AI Lab. Once downloaded, these models could be used for various AI applications, model services, and playgrounds,  enabling model evaluation and experimentation.
+Next, they discovered the Model Catalog, a curated list of open source Generative AI Large Language Models (LLMs) provided by Podman AI Lab. Once downloaded, these models could be used for various AI applications, model services, and playgrounds,  enabling model evaluation and experimentation.
 
 GizmoGobble's team was eager to incorporate these advanced technologies into GizmoGenie.
 With a newfound sense of determination and the intuitive user interface of Podman AI Lab, it was easy for them to explore and learn about AI technology.
@@ -23,7 +23,7 @@ With a newfound sense of determination and the intuitive user interface of Podma
 Now it's your turn to discover how Podman Desktop's AI Lab extension provides the perfect entry point for any organization looking to implement AI intelligence into their products. 
 
 
-If you are new to Podman & Podman desktop continue onto the next section, or if you are already familiar with these products, feel free to skip ahead to the Podman AI Lab section. 
+If you are new to Podman & Podman Desktop continue onto the next section, or if you are already familiar with these products, feel free to skip ahead to the Podman AI Lab section. 
 
 
 

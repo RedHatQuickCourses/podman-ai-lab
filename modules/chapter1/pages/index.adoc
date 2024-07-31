@@ -22,4 +22,3 @@ These are the requirements they set forth:
 * 		Fine tune an LLM with custom data.
 
 Now that we have an idea of the approach, let's take a step back to learn more about the GizmoGobble Corporation and how Podman AI Labs can help them achieve their AI goals.
-

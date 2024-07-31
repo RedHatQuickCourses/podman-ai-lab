@@ -3,7 +3,7 @@
 == What is Podman AI Lab?
 
 
-Podman AI Lab is an open-source tool that enables users to work with large language models (LLMs) on a local environment, simplifying the process of getting started with AI-powered applications in their projects.
+Podman AI Lab is an open source tool that enables users to work with large language models (LLMs) on a local environment, simplifying the process of getting started with AI-powered applications in their projects.
 
 
 
@@ -11,7 +11,7 @@ It offers resources and guidance for beginners, making it easy to explore AI and
 Users can experiment with various models and prompts to find the best fit for their needs, thanks to the model experimentation capability.
 
 
-The extension provides interactive environments for users to try out and test various AI applications, such as chatbots, natural language processing, and computer vision tasks, through playgrounds for common use cases.
+The extension provides interactive environments for users to try out and test various AI applications, such as ChatBots, natural language processing, and computer vision tasks, through playgrounds for common use cases.
 
 The extension can be installed quickly and easily on macOS, Windows, and Linux systems using the Podman Desktop interface.
 
@@ -22,7 +22,7 @@ The extension can be installed quickly and easily on macOS, Windows, and Linux s
 
 Podman AI Lab ships with a Recipes Catalog that helps us navigate a number of core AI use cases and problem domains such as Chat Bots, Code Generators and Text Summarizers. Each recipe comes with detailed explanations and sample applications that can be run with various large language models (LLMs). Experimenting with multiple AI models allows finding the optimal one for the business use case.
 
- * *Chatbots* simulate human conversation, using AI to comprehend user inquiries and offer suitable responses. These capabilities are often used to augment applications that provide self-service customer support or virtual personal assistance.
+ * *ChatBots* simulate human conversation, using AI to comprehend user inquiries and offer suitable responses. These capabilities are often used to augment applications that provide self-service customer support or virtual personal assistance.
  * *Text summarizers* provide versatile capabilities across many applications and industries, where they can deliver effective and efficient information management. Using this recipe, developers can build applications to assist with things like content creation and curation, research, news aggregation, social media monitoring, and language learning.
  * *Code generators* empower developers to concentrate on higher-level design and problem-solving by automating repetitive tasks like project setup and API integration, or to produce code templates.
  * *Object detection* helps identify and locate objects within digital images or video frames. It is a fundamental component in various applications, including autonomous vehicles, retail inventory management, precision agriculture, and sports broadcasting.
@@ -33,7 +33,7 @@ image::recipe_catalog.png[width=640]
 === AI Models Catalog
 
 
-The models catalog is a curated list of Open-Source models with the Apache 2.0 license. Once downloaded, these models are available to be used for AI applications, model services and playgrounds. The catalog will also allow users to import custom AI models and store them. 
+The models catalog is a curated list of open source models with the Apache 2.0 license. Once downloaded, these models are available to be used for AI applications, model services and playgrounds. The catalog will also allow users to import custom AI models and store them. 
 
 image::models_catalog.png[width=640]
 

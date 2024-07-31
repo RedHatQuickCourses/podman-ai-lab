@@ -8,7 +8,7 @@ Retrieval-Augmented Generation (RAG) is the process of optimizing the output of 
 
 RAG extends the already powerful capabilities of LLMs to specific domains or an organization's internal knowledge base, all without the need to retrain the model. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts.
 
-LLMs are a key artificial intelligence (AI) technology that power intelligent chatbots and other natural language processing (NLP) applications. The goal is to create bots that can answer user questions in various contexts by cross-referencing authoritative knowledge sources. Unfortunately, the nature of LLM technology introduces unpredictability in LLM responses. Additionally, LLM training data is static and introduces a cut-off date on the knowledge it has.
+LLMs are a key artificial intelligence (AI) technology that power intelligent ChatBots and other natural language processing (NLP) applications. The goal is to create bots that can answer user questions in various contexts by cross-referencing authoritative knowledge sources. Unfortunately, the nature of LLM technology introduces unpredictability in LLM responses. Additionally, LLM training data is static and introduces a cut-off date on the knowledge it has.
 
 Known challenges of LLMs include:
 
@@ -17,7 +17,7 @@ Known challenges of LLMs include:
  * Creating a response from non-authoritative sources.
  * Creating inaccurate responses due to terminology confusion, wherein different training sources use the same terminology to talk about different things.
  
-You can think of the Large Language Model as an over-enthusiastic new employee who refuses to stay informed with current events but will always answer every question with absolute confidence. Unfortunately, such an attitude can negatively impact user trust and is not something you want your chatbots to emulate!
+You can think of the Large Language Model as an over-enthusiastic new employee who refuses to stay informed with current events but will always answer every question with absolute confidence. Unfortunately, such an attitude can negatively impact user trust and is not something you want your ChatBots to emulate!
 
 RAG is one approach to solving some of these challenges. It redirects the LLM to retrieve relevant information from authoritative, pre-determined knowledge sources. Organizations have greater control over the generated text output, and users gain insights into how the LLM generates the response.
 
@@ -25,7 +25,7 @@ RAG technology brings several benefits to an organization's generative AI effort
 
 ==== Cost-effective implementation
 
-Chatbot development typically begins using a foundation model. Foundation models (FMs) are API-accessible LLMs trained on a broad spectrum of generalized and unlabeled data. The computational and financial costs of retraining FMs for organization or domain-specific information are high. RAG is a more cost-effective approach to introducing new data to the LLM. It makes generative artificial intelligence (generative AI) technology more broadly accessible and usable.
+ChatBot development typically begins using a foundation model. Foundation models (FMs) are API-accessible LLMs trained on a broad spectrum of generalized and unlabeled data. The computational and financial costs of retraining FMs for organization or domain-specific information are high. RAG is a more cost-effective approach to introducing new data to the LLM. It makes generative artificial intelligence (generative AI) technology more broadly accessible and usable.
 
 ==== Current Information
 
@@ -46,30 +46,30 @@ Visit the Redhat.com blog to read the original source:   https://www.redhat.com/
 
 ---
 
-The following lab is an excellent example of the steps the GizmoGobble developer team plans to implement to enhance the GizmoGenie Chatbot with the specific GizmoGobble product and support knowledge.
+The following lab is an excellent example of the steps the GizmoGobble developer team plans to implement to enhance the GizmoGenie ChatBot with the specific GizmoGobble product and support knowledge.
 
 === Optional Lab: https://ai-on-openshift.io/demos/podman-ai-lab-to-rhoai/podman-ai-lab-to-rhoai/#ingest-data-into-the-elasticsearch-vector-database[From Podman AI to OpenShift AI]
 
-Podman AI Lab is an excellent place to evaluate and test models, but you'll eventually want to see how this will actually be deployed in your enterprise. For that, we can use OpenShift and OpenShift AI along with the Elasticsearch vector database to create a Retrieval Augmented Generation (RAG) integrated chatbot.
+Podman AI Lab is an excellent place to evaluate and test models, but you'll eventually want to see how this will actually be deployed in your enterprise. For that, we can use OpenShift and OpenShift AI along with the Elasticsearch vector database to create a Retrieval Augmented Generation (RAG) integrated ChatBot.
 
 ==== lab overview and requirements
 
-This above article will direct you to website which will walk you through how to go from a chatbot recipe in the Podman AI Lab extension to a RAG chatbot deployed on OpenShift and OpenShift AI.
+This above article will direct you to website which will walk you through how to go from a ChatBot recipe in the Podman AI Lab extension to a RAG ChatBot deployed on OpenShift and OpenShift AI.
 
 
 image::high_level_overview_arch.png[width=640]
 
  . An LLM is downloaded through Podman AI Lab.
 
- . A chatbot recipe is started in Podman AI Lab with the downloaded model.
+ . A ChatBot recipe is started in Podman AI Lab with the downloaded model.
 
-. The chatbot recipe code from Podman AI Lab is updated in VS Code with LangChain to connect to the Elasticsearch vector database and OpenShift AI model serving inference endpoint.
+. The ChatBot recipe code from Podman AI Lab is updated in VS Code with LangChain to connect to the Elasticsearch vector database and OpenShift AI model serving inference endpoint.
 
 . An ingestion notebook is run in OpenShift AI to add data to the Elasticsearch vector database.
 
    . The LLM we downloaded from Podman AI Lab is deployed to OpenShift AI on a custom serving runtime.
 
- . The updated chatbot with LangChain is built as a container and deployed to OpenShift.
+ . The updated ChatBot with LangChain is built as a container and deployed to OpenShift.
 
 ==== Requirements
 
