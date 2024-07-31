@@ -6,8 +6,6 @@
 As the GG developer team begins the installation of Podman Desktop on their various devices, which primarily consist of Macbook users, you will see macOS based screen captures as examples in this course. However, the team decided to compose notes on the installation instructions for Linux, macOS, and Windows as part of their onboarding future developers initiative.
 
 
-
-
 == Podman Desktop Installation
 
 
@@ -72,10 +70,10 @@ Requirements:
 
  .. 6 GB RAM for the Podman Machine.
  .. Windows Subsystem for Linux version 2 (WSL 2) prerequisites. See Enabling WSL 2, WSL basic commands, and Troubleshooting WSL 2:
- ... The Windows user has administrator privileges.
- ... Windows 64bit.
- ... Windows 10 Build 19043 or greater, or Windows 11.
- ... On a virtual machine: Nested Virtualization enabled.
+ .. The Windows user has administrator privileges.
+ .. Windows 64bit.
+ .. Windows 10 Build 19043 or greater, or Windows 11.
+ .. On a virtual machine: Nested Virtualization enabled.
 
 To install the Podman Machine:
 
@@ -85,19 +83,19 @@ Open the Command Prompt, and run the following command:
 
   wsl --install --no-distribution
 
- * Restart your computer.
+ . Restart your computer.
 
- * The Dashboard screen displays:  Podman needs to be set up.
+ . The Dashboard screen displays:  Podman needs to be set up.
 
- * Click the Set up button.
+ . Click the Set up button.
 
- * Review and validate all confirmation screens to set up the Podman Machine.
+ . Review and validate all confirmation screens to set up the Podman Machine.
 
- * When necessary, follow the instructions to install system prerequisites.
+ . When necessary, follow the instructions to install system prerequisites.
 
 To verify that Podman is set up:
-
- * In the Dashboard, the Podman tile displays Podman is running.
++
+ . In the Dashboard, the Podman tile displays Podman is running.
 
 ---
 
@@ -135,5 +133,5 @@ To verify that Podman is set up:
 
 ---
 
-With Podman Desktop & Podman installed, let's continue with the installation of the Podman AI Lab in the next section.
+With Podman Desktop and Podman installed, let's continue with the installation of the Podman AI Lab in the next section.
 
